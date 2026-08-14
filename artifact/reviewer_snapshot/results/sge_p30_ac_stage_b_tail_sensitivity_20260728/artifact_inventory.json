@@ -1,0 +1,16 @@
+{
+  "file_count": 2,
+  "files": [
+    {
+      "path": "sensitivity_report.json",
+      "sha256": "9291b5ddf4e8befaa771da95fc9f01ead95155c1e7f75e6e6c0ae2cfca7c7a9a",
+      "size_bytes": 85100
+    },
+    {
+      "path": "case_eligibility_overlay.json",
+      "sha256": "531fdf93b4d20186ee9ae34ea1fd59e192aeeafcca7768ed415391d9e10b914c",
+      "size_bytes": 23466
+    }
+  ],
+  "schema_version": "sge-p30-ac-stage-b-tail-sensitivity-inventory-v1"
+}

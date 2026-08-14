@@ -1,0 +1,194 @@
+{
+  "branches": [],
+  "case_id": "swebench_verified_scikit-learn_scikit-learn-25973",
+  "derivation_contract": "PSB-TRACE-REFERENCE-DAG-V4",
+  "duration_coverage": {
+    "coverage_ratio": null,
+    "imputed_seconds": null,
+    "measured_seconds": null,
+    "uncovered_seconds": null,
+    "whole_task_observed_duration_eligible": false
+  },
+  "edges": [
+    {
+      "dependency_class": "discovery",
+      "dst": "n_primary_context",
+      "edge_id": "se_target_primary",
+      "guard_id": null,
+      "rationale": "The target search reveals the primary resources that are read into the primary context artifact.",
+      "src": "n_target_search"
+    },
+    {
+      "dependency_class": "discovery",
+      "dst": "n_primary_context",
+      "edge_id": "se_inventory_primary",
+      "guard_id": null,
+      "rationale": "The project inventory reveals additional evidence required by the primary context read.",
+      "src": "n_project_inventory"
+    },
+    {
+      "dependency_class": "discovery",
+      "dst": "n_secondary_search",
+      "edge_id": "se_target_secondary_search",
+      "guard_id": null,
+      "rationale": "The initial scoped search reveals the adjacent evidence-search scope.",
+      "src": "n_target_search"
+    },
+    {
+      "dependency_class": "discovery",
+      "dst": "n_secondary_context",
+      "edge_id": "se_target_secondary_context",
+      "guard_id": null,
+      "rationale": "The initial search directly reveals resources incorporated into the secondary context artifact.",
+      "src": "n_target_search"
+    },
+    {
+      "dependency_class": "discovery",
+      "dst": "n_secondary_context",
+      "edge_id": "se_secondary_search_context",
+      "guard_id": null,
+      "rationale": "The adjacent evidence search reveals a resource consumed by the secondary context read.",
+      "src": "n_secondary_search"
+    },
+    {
+      "dependency_class": "data",
+      "dst": "n_patch_candidate",
+      "edge_id": "se_primary_patch",
+      "guard_id": null,
+      "rationale": "The candidate implementation consumes the diagnosed constraints represented by the primary context artifact; this data flow follows semantic work roles rather than temporal adjacency.",
+      "src": "n_primary_context"
+    },
+    {
+      "dependency_class": "data",
+      "dst": "n_patch_candidate",
+      "edge_id": "se_secondary_patch",
+      "guard_id": null,
+      "rationale": "The candidate implementation consumes the adjacent behavioral context needed to address the reported interaction; this data flow is inferred independently of sequence-only edges.",
+      "src": "n_secondary_context"
+    },
+    {
+      "dependency_class": "validation",
+      "dst": "n_behavior_validation",
+      "edge_id": "se_patch_validation",
+      "guard_id": null,
+      "rationale": "Behavior validation operates on the materialized implementation candidate.",
+      "src": "n_patch_candidate"
+    },
+    {
+      "dependency_class": "discovery",
+      "dst": "n_documentation_review",
+      "edge_id": "se_target_documentation",
+      "guard_id": null,
+      "rationale": "The initial scoped search reveals evidence incorporated into the documentation compatibility review.",
+      "src": "n_target_search"
+    }
+  ],
+  "nodes": [
+    {
+      "artifact_class": "target_resource_index",
+      "batchability": "initial_frontier_parallelizable",
+      "depends_on": [],
+      "guard_ids": [],
+      "intent": "Locate project resources relevant to the reported iterable cross-validation behavior.",
+      "kind": "grep",
+      "node_id": "n_target_search",
+      "risk_class": "low_read_only"
+    },
+    {
+      "artifact_class": "project_resource_inventory",
+      "batchability": "initial_frontier_parallelizable",
+      "depends_on": [],
+      "guard_ids": [],
+      "intent": "Discover the available project resource structure needed to orient subsequent evidence reading.",
+      "kind": "grep",
+      "node_id": "n_project_inventory",
+      "risk_class": "low_read_only"
+    },
+    {
+      "artifact_class": "primary_behavior_context",
+      "batchability": "parallelizable_after_discovery_join",
+      "depends_on": [
+        "n_project_inventory",
+        "n_target_search"
+      ],
+      "guard_ids": [],
+      "intent": "Read the primary discovered resources needed to characterize the reported behavior and its implementation context.",
+      "kind": "read",
+      "node_id": "n_primary_context",
+      "risk_class": "low_read_only"
+    },
+    {
+      "artifact_class": "adjacent_evidence_index",
+      "batchability": "serial_after_target_discovery",
+      "depends_on": [
+        "n_target_search"
+      ],
+      "guard_ids": [],
+      "intent": "Locate adjacent evidence needed to understand the broader validation and cross-validation interaction.",
+      "kind": "grep",
+      "node_id": "n_secondary_search",
+      "risk_class": "low_read_only"
+    },
+    {
+      "artifact_class": "adjacent_behavior_context",
+      "batchability": "parallelizable_with_primary_context_after_prerequisites",
+      "depends_on": [
+        "n_secondary_search",
+        "n_target_search"
+      ],
+      "guard_ids": [],
+      "intent": "Read the adjacent discovered resources needed to complete the behavioral diagnosis.",
+      "kind": "read",
+      "node_id": "n_secondary_context",
+      "risk_class": "low_read_only"
+    },
+    {
+      "artifact_class": "implementation_candidate",
+      "batchability": "join_required_not_batchable",
+      "depends_on": [
+        "n_primary_context",
+        "n_secondary_context"
+      ],
+      "guard_ids": [],
+      "intent": "Materialize a candidate implementation state addressing the reported iterable-split behavior.",
+      "kind": "patch_candidate",
+      "node_id": "n_patch_candidate",
+      "risk_class": "high_behavioral_change"
+    },
+    {
+      "artifact_class": "focused_behavior_validation",
+      "batchability": "serial_after_patch",
+      "depends_on": [
+        "n_patch_candidate"
+      ],
+      "guard_ids": [],
+      "intent": "Run focused behavioral validation against the candidate implementation state.",
+      "kind": "test",
+      "node_id": "n_behavior_validation",
+      "risk_class": "medium_execution"
+    },
+    {
+      "artifact_class": "documentation_compatibility_review",
+      "batchability": "parallelizable_after_target_discovery",
+      "depends_on": [
+        "n_target_search"
+      ],
+      "guard_ids": [],
+      "intent": "Review project documentation and associated discovered evidence for the declared cross-validation input expectations.",
+      "kind": "read",
+      "node_id": "n_documentation_review",
+      "risk_class": "low_read_only"
+    }
+  ],
+  "raw_candidate_sha256": "6985a911538c78146253dad866e058dda107946407f311129189f1656c27088f",
+  "schema_version": "psb-conditional-semantic-reference-dag-v2",
+  "status": "adjudicated_candidate_pending_independent_audit",
+  "system_envelope": [
+    {
+      "depends_on": [],
+      "envelope_id": "env_workspace_orchestration",
+      "rationale": "These actions and their internal ordering are retained as execution context while remaining disjoint from the semantic work graph.",
+      "role": "Workspace-state observations and opaque shell orchestration that expose no accepted semantic artifact in the blinded projection."
+    }
+  ]
+}

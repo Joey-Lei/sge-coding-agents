@@ -1,0 +1,89 @@
+{
+  "classification": "prompt_conditioned_gmin_functional_paired_pilot",
+  "default": {
+    "arm": "default",
+    "e2e_wall_seconds": 279.825414542,
+    "evaluator": {
+      "digest": "9d2a74b7736e86e989bb7636528401c94acaee8b14a927b85f1b2e09734a5353",
+      "identity": "Web-Bench flex cumulative official evaluator tasks 1-5",
+      "raw_output_path": "default/evaluator.stdout.log",
+      "score": 19,
+      "status": "passed",
+      "wall_seconds": 6.452530916000001
+    },
+    "evaluator_wall_seconds": 6.452530916000001,
+    "final_source_sha256": "3592486a12574402bf11ce8b2b9c90fac6dea9c2ad2bb000bad3df819e647105",
+    "model_finished_at": "2026-07-19T13:02:55.270031Z",
+    "model_return_code": 0,
+    "model_started_at": "2026-07-19T12:58:21.900942Z",
+    "model_timed_out": false,
+    "model_wall_seconds": 273.36943287500003,
+    "monetary_cost": null,
+    "reported_noncached_tokens": 65308,
+    "reported_total_tokens": 532636,
+    "status": "passed",
+    "task_arrival_epoch": 1784465901.9008708,
+    "trace_summary": {
+      "command_count": 35,
+      "command_overlap_seconds": 2.3052725819999864,
+      "max_concurrent_commands": 2
+    },
+    "usage": {
+      "cached_input_tokens": 467328,
+      "input_tokens": 525658,
+      "output_tokens": 6978,
+      "reasoning_output_tokens": 1458
+    }
+  },
+  "experiment_id": "EXP-20260716-PSB-WEBBENCH-FLEX-GMIN-DIRECT-PAIRED",
+  "fallback_count": 0,
+  "limitations": [
+    "single paired sample on a functional-only macOS host",
+    "ChatGPT login-state invocation exposes tokens but no monetary price",
+    "DAG treatment is one direct Codex invocation conditioned on G_min, not the older five-node recovery controller",
+    "speedup remains diagnostic until independent trace conformance audit"
+  ],
+  "metrics_path": "metrics.json",
+  "packet_id": "PSB-PILOT-01-webbench-flex-task1-5-gmin-direct-pair-20260716",
+  "perfect_dag": {
+    "arm": "perfect_dag",
+    "e2e_wall_seconds": 170.18879912500006,
+    "evaluator": {
+      "digest": "9d2a74b7736e86e989bb7636528401c94acaee8b14a927b85f1b2e09734a5353",
+      "identity": "Web-Bench flex cumulative official evaluator tasks 1-5",
+      "raw_output_path": "perfect_dag/evaluator.stdout.log",
+      "score": 19,
+      "status": "passed",
+      "wall_seconds": 7.1351733330000116
+    },
+    "evaluator_wall_seconds": 7.1351733330000116,
+    "final_source_sha256": "2c123d884d6d656a72dfbfb2181f7f6b8ac6cd287272e05fcfffc82b0e393429",
+    "model_finished_at": "2026-07-19T13:18:38.456972Z",
+    "model_return_code": 0,
+    "model_started_at": "2026-07-19T13:03:01.728313Z",
+    "model_timed_out": false,
+    "model_wall_seconds": 163.04660470800002,
+    "monetary_cost": null,
+    "reported_noncached_tokens": 34909,
+    "reported_total_tokens": 188893,
+    "status": "passed",
+    "task_arrival_epoch": 1784466181.72825,
+    "trace_summary": {
+      "command_count": 24,
+      "command_overlap_seconds": 0.0002572519999830547,
+      "max_concurrent_commands": 3
+    },
+    "usage": {
+      "cached_input_tokens": 153984,
+      "input_tokens": 185038,
+      "output_tokens": 3855,
+      "reasoning_output_tokens": 961
+    }
+  },
+  "prepared_source_unchanged": true,
+  "retry_count": 0,
+  "same_base_digest": "4d814fe496773ec417fd336c4b03b8e5a9e0f86d4835910558d7a7ddfd144a79",
+  "schema_version": "psb-gmin-direct-paired-result-v1",
+  "status": "pending_independent_trace_audit",
+  "temporary_workspace_root": "<TEMP_ROOT>"
+}

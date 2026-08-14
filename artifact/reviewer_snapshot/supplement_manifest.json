@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "venue": "MLForSys 2026",
+  "policy_snapshot": "VENUE_POLICY.md",
+  "review_status": "optional",
+  "main_text_self_contained_after_actions": true,
+  "anonymity_ready_after_actions": true,
+  "items": [
+    {
+      "item_id": "A1-offline-reproduction",
+      "title": "Offline claim recomputation and figure build",
+      "path": "reproduce.py",
+      "action": "keep-optional",
+      "categories": ["reproducibility"],
+      "reason": "Recomputes reported values and figures without network, model, or evaluator calls."
+    },
+    {
+      "item_id": "A2-code",
+      "title": "SGE estimators, analyzers, and auditors",
+      "path": "scripts",
+      "action": "keep-optional",
+      "categories": ["code-artifact", "reproducibility"],
+      "reason": "Provides inspectable offline implementation support while the main paper carries the claims; historical live executor prototypes are intentionally excluded."
+    },
+    {
+      "item_id": "A3-annotation-contract",
+      "title": "Trace-to-reference-DAG annotation contract",
+      "path": "experiments/perfect_speculation_speedup_bound/direct_pair/trace_to_reference_dag",
+      "action": "keep-optional",
+      "categories": ["prompts", "reproducibility"],
+      "reason": "Makes semantic DAG construction and adjudication inspectable."
+    },
+    {
+      "item_id": "A4-derived-evidence",
+      "title": "Reviewer-safe derived evidence",
+      "path": "results",
+      "action": "sanitize",
+      "categories": ["extended-results", "reproducibility"],
+      "reason": "Contains the minimum derived rows and compact summaries needed for offline checks; raw restricted families are excluded."
+    },
+    {
+      "item_id": "A5-invalid-pairs",
+      "title": "Strict invalid-pair evidence",
+      "path": "results/sge_p30_paired_scale_audit_20260728",
+      "action": "keep-optional",
+      "categories": ["limitations", "extended-results"],
+      "reason": "Preserves P007 and P018 failures and null paired metrics to prevent selective reporting."
+    },
+    {
+      "item_id": "A6-privacy-audit",
+      "title": "Privacy and restricted-material audit",
+      "path": "audit",
+      "action": "sanitize",
+      "categories": ["anonymity-audit", "reproducibility"],
+      "reason": "Records path/account sanitization and verifies exclusion of credentials and raw runtime evidence."
+    },
+    {
+      "item_id": "A7-figure-governance",
+      "title": "Evidence-governed figure contract and accessibility audit",
+      "path": "evidence/figure_contract.json",
+      "action": "keep-optional",
+      "categories": ["reproducibility"],
+      "reason": "Pins figure sources and evidence boundaries and declares geometry, font, vector, and accessibility checks."
+    }
+  ]
+}

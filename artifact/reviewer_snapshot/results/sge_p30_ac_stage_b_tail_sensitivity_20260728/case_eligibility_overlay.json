@@ -1,0 +1,743 @@
+{
+  "case_count": 30,
+  "preregistered_primary": false,
+  "primary_result": false,
+  "rows": [
+    {
+      "breaker_compliant_excluding_tail": {
+        "attrition_reasons": [
+          "original_target_incomplete"
+        ],
+        "audited_effective_dag": false,
+        "contiguous_e2e_phase": false,
+        "observed_duration_join": false,
+        "paired_executor_D": false,
+        "source_trace": false
+      },
+      "case_id": "swebench_verified_astropy_astropy-14995",
+      "including_post_breaker_tail": {
+        "attrition_reasons": [
+          "original_target_incomplete"
+        ],
+        "audited_effective_dag": false,
+        "contiguous_e2e_phase": false,
+        "observed_duration_join": false,
+        "paired_executor_D": false,
+        "source_trace": false
+      },
+      "position": 1,
+      "preselected_tail": false
+    },
+    {
+      "breaker_compliant_excluding_tail": {
+        "attrition_reasons": [
+          "original_target_incomplete"
+        ],
+        "audited_effective_dag": false,
+        "contiguous_e2e_phase": false,
+        "observed_duration_join": false,
+        "paired_executor_D": false,
+        "source_trace": false
+      },
+      "case_id": "swebench_verified_django_django-16100",
+      "including_post_breaker_tail": {
+        "attrition_reasons": [
+          "original_target_incomplete"
+        ],
+        "audited_effective_dag": false,
+        "contiguous_e2e_phase": false,
+        "observed_duration_join": false,
+        "paired_executor_D": false,
+        "source_trace": false
+      },
+      "position": 2,
+      "preselected_tail": false
+    },
+    {
+      "breaker_compliant_excluding_tail": {
+        "attrition_reasons": [],
+        "audited_effective_dag": true,
+        "contiguous_e2e_phase": false,
+        "observed_duration_join": true,
+        "paired_executor_D": false,
+        "source_trace": true
+      },
+      "case_id": "swebench_verified_matplotlib_matplotlib-25287",
+      "including_post_breaker_tail": {
+        "attrition_reasons": [],
+        "audited_effective_dag": true,
+        "contiguous_e2e_phase": false,
+        "observed_duration_join": true,
+        "paired_executor_D": false,
+        "source_trace": true
+      },
+      "position": 3,
+      "preselected_tail": false
+    },
+    {
+      "breaker_compliant_excluding_tail": {
+        "attrition_reasons": [
+          "original_target_incomplete"
+        ],
+        "audited_effective_dag": false,
+        "contiguous_e2e_phase": false,
+        "observed_duration_join": false,
+        "paired_executor_D": false,
+        "source_trace": false
+      },
+      "case_id": "swebench_verified_psf_requests-5414",
+      "including_post_breaker_tail": {
+        "attrition_reasons": [
+          "original_target_incomplete"
+        ],
+        "audited_effective_dag": false,
+        "contiguous_e2e_phase": false,
+        "observed_duration_join": false,
+        "paired_executor_D": false,
+        "source_trace": false
+      },
+      "position": 4,
+      "preselected_tail": false
+    },
+    {
+      "breaker_compliant_excluding_tail": {
+        "attrition_reasons": [
+          "original_target_incomplete"
+        ],
+        "audited_effective_dag": false,
+        "contiguous_e2e_phase": false,
+        "observed_duration_join": false,
+        "paired_executor_D": false,
+        "source_trace": false
+      },
+      "case_id": "swebench_verified_pydata_xarray-3993",
+      "including_post_breaker_tail": {
+        "attrition_reasons": [
+          "original_target_incomplete"
+        ],
+        "audited_effective_dag": false,
+        "contiguous_e2e_phase": false,
+        "observed_duration_join": false,
+        "paired_executor_D": false,
+        "source_trace": false
+      },
+      "position": 5,
+      "preselected_tail": false
+    },
+    {
+      "breaker_compliant_excluding_tail": {
+        "attrition_reasons": [
+          "blocked_active_effective_dag_predecessor_without_duration"
+        ],
+        "audited_effective_dag": true,
+        "contiguous_e2e_phase": false,
+        "observed_duration_join": false,
+        "paired_executor_D": false,
+        "source_trace": true
+      },
+      "case_id": "swebench_verified_pylint-dev_pylint-6903",
+      "including_post_breaker_tail": {
+        "attrition_reasons": [
+          "blocked_active_effective_dag_predecessor_without_duration"
+        ],
+        "audited_effective_dag": true,
+        "contiguous_e2e_phase": false,
+        "observed_duration_join": false,
+        "paired_executor_D": false,
+        "source_trace": true
+      },
+      "position": 6,
+      "preselected_tail": false
+    },
+    {
+      "breaker_compliant_excluding_tail": {
+        "attrition_reasons": [],
+        "audited_effective_dag": true,
+        "contiguous_e2e_phase": true,
+        "observed_duration_join": true,
+        "paired_executor_D": false,
+        "source_trace": true
+      },
+      "case_id": "swebench_verified_pytest-dev_pytest-6202",
+      "including_post_breaker_tail": {
+        "attrition_reasons": [],
+        "audited_effective_dag": true,
+        "contiguous_e2e_phase": true,
+        "observed_duration_join": true,
+        "paired_executor_D": false,
+        "source_trace": true
+      },
+      "position": 7,
+      "preselected_tail": false
+    },
+    {
+      "breaker_compliant_excluding_tail": {
+        "attrition_reasons": [],
+        "audited_effective_dag": true,
+        "contiguous_e2e_phase": true,
+        "observed_duration_join": true,
+        "paired_executor_D": false,
+        "source_trace": true
+      },
+      "case_id": "swebench_verified_scikit-learn_scikit-learn-12682",
+      "including_post_breaker_tail": {
+        "attrition_reasons": [],
+        "audited_effective_dag": true,
+        "contiguous_e2e_phase": true,
+        "observed_duration_join": true,
+        "paired_executor_D": false,
+        "source_trace": true
+      },
+      "position": 8,
+      "preselected_tail": false
+    },
+    {
+      "breaker_compliant_excluding_tail": {
+        "attrition_reasons": [
+          "blocked_active_effective_dag_predecessor_without_duration"
+        ],
+        "audited_effective_dag": true,
+        "contiguous_e2e_phase": true,
+        "observed_duration_join": false,
+        "paired_executor_D": false,
+        "source_trace": true
+      },
+      "case_id": "swebench_verified_sphinx-doc_sphinx-8269",
+      "including_post_breaker_tail": {
+        "attrition_reasons": [
+          "blocked_active_effective_dag_predecessor_without_duration"
+        ],
+        "audited_effective_dag": true,
+        "contiguous_e2e_phase": true,
+        "observed_duration_join": false,
+        "paired_executor_D": false,
+        "source_trace": true
+      },
+      "position": 9,
+      "preselected_tail": false
+    },
+    {
+      "breaker_compliant_excluding_tail": {
+        "attrition_reasons": [
+          "semantic_or_overlay_contract_failure"
+        ],
+        "audited_effective_dag": false,
+        "contiguous_e2e_phase": true,
+        "observed_duration_join": false,
+        "paired_executor_D": false,
+        "source_trace": true
+      },
+      "case_id": "swebench_verified_sympy_sympy-22080",
+      "including_post_breaker_tail": {
+        "attrition_reasons": [
+          "semantic_or_overlay_contract_failure"
+        ],
+        "audited_effective_dag": false,
+        "contiguous_e2e_phase": true,
+        "observed_duration_join": false,
+        "paired_executor_D": false,
+        "source_trace": true
+      },
+      "position": 10,
+      "preselected_tail": false
+    },
+    {
+      "breaker_compliant_excluding_tail": {
+        "attrition_reasons": [
+          "original_zero_dispatch_gitlink_failure"
+        ],
+        "audited_effective_dag": false,
+        "contiguous_e2e_phase": false,
+        "observed_duration_join": false,
+        "paired_executor_D": false,
+        "source_trace": false
+      },
+      "case_id": "swebench_verified_astropy_astropy-7671",
+      "including_post_breaker_tail": {
+        "attrition_reasons": [
+          "original_zero_dispatch_gitlink_failure"
+        ],
+        "audited_effective_dag": false,
+        "contiguous_e2e_phase": false,
+        "observed_duration_join": false,
+        "paired_executor_D": false,
+        "source_trace": false
+      },
+      "position": 11,
+      "preselected_tail": false
+    },
+    {
+      "breaker_compliant_excluding_tail": {
+        "attrition_reasons": [],
+        "audited_effective_dag": true,
+        "contiguous_e2e_phase": true,
+        "observed_duration_join": true,
+        "paired_executor_D": false,
+        "source_trace": true
+      },
+      "case_id": "swebench_verified_django_django-15467",
+      "including_post_breaker_tail": {
+        "attrition_reasons": [],
+        "audited_effective_dag": true,
+        "contiguous_e2e_phase": true,
+        "observed_duration_join": true,
+        "paired_executor_D": false,
+        "source_trace": true
+      },
+      "position": 12,
+      "preselected_tail": false
+    },
+    {
+      "breaker_compliant_excluding_tail": {
+        "attrition_reasons": [
+          "semantic_or_overlay_contract_failure"
+        ],
+        "audited_effective_dag": false,
+        "contiguous_e2e_phase": true,
+        "observed_duration_join": false,
+        "paired_executor_D": false,
+        "source_trace": true
+      },
+      "case_id": "swebench_verified_matplotlib_matplotlib-26342",
+      "including_post_breaker_tail": {
+        "attrition_reasons": [
+          "semantic_or_overlay_contract_failure"
+        ],
+        "audited_effective_dag": false,
+        "contiguous_e2e_phase": true,
+        "observed_duration_join": false,
+        "paired_executor_D": false,
+        "source_trace": true
+      },
+      "position": 13,
+      "preselected_tail": false
+    },
+    {
+      "breaker_compliant_excluding_tail": {
+        "attrition_reasons": [
+          "blocked_active_effective_dag_predecessor_without_duration"
+        ],
+        "audited_effective_dag": true,
+        "contiguous_e2e_phase": true,
+        "observed_duration_join": false,
+        "paired_executor_D": false,
+        "source_trace": true
+      },
+      "case_id": "swebench_verified_psf_requests-2317",
+      "including_post_breaker_tail": {
+        "attrition_reasons": [
+          "blocked_active_effective_dag_predecessor_without_duration"
+        ],
+        "audited_effective_dag": true,
+        "contiguous_e2e_phase": true,
+        "observed_duration_join": false,
+        "paired_executor_D": false,
+        "source_trace": true
+      },
+      "position": 14,
+      "preselected_tail": false
+    },
+    {
+      "breaker_compliant_excluding_tail": {
+        "attrition_reasons": [],
+        "audited_effective_dag": true,
+        "contiguous_e2e_phase": true,
+        "observed_duration_join": true,
+        "paired_executor_D": false,
+        "source_trace": true
+      },
+      "case_id": "swebench_verified_pydata_xarray-6938",
+      "including_post_breaker_tail": {
+        "attrition_reasons": [],
+        "audited_effective_dag": true,
+        "contiguous_e2e_phase": true,
+        "observed_duration_join": true,
+        "paired_executor_D": false,
+        "source_trace": true
+      },
+      "position": 15,
+      "preselected_tail": false
+    },
+    {
+      "breaker_compliant_excluding_tail": {
+        "attrition_reasons": [],
+        "audited_effective_dag": true,
+        "contiguous_e2e_phase": true,
+        "observed_duration_join": true,
+        "paired_executor_D": false,
+        "source_trace": true
+      },
+      "case_id": "swebench_verified_pylint-dev_pylint-6528",
+      "including_post_breaker_tail": {
+        "attrition_reasons": [],
+        "audited_effective_dag": true,
+        "contiguous_e2e_phase": true,
+        "observed_duration_join": true,
+        "paired_executor_D": false,
+        "source_trace": true
+      },
+      "position": 16,
+      "preselected_tail": false
+    },
+    {
+      "breaker_compliant_excluding_tail": {
+        "attrition_reasons": [
+          "blocked_active_effective_dag_predecessor_without_duration"
+        ],
+        "audited_effective_dag": true,
+        "contiguous_e2e_phase": true,
+        "observed_duration_join": false,
+        "paired_executor_D": false,
+        "source_trace": true
+      },
+      "case_id": "swebench_verified_pytest-dev_pytest-7324",
+      "including_post_breaker_tail": {
+        "attrition_reasons": [
+          "blocked_active_effective_dag_predecessor_without_duration"
+        ],
+        "audited_effective_dag": true,
+        "contiguous_e2e_phase": true,
+        "observed_duration_join": false,
+        "paired_executor_D": false,
+        "source_trace": true
+      },
+      "position": 17,
+      "preselected_tail": false
+    },
+    {
+      "breaker_compliant_excluding_tail": {
+        "attrition_reasons": [],
+        "audited_effective_dag": true,
+        "contiguous_e2e_phase": true,
+        "observed_duration_join": true,
+        "paired_executor_D": false,
+        "source_trace": true
+      },
+      "case_id": "swebench_verified_scikit-learn_scikit-learn-25973",
+      "including_post_breaker_tail": {
+        "attrition_reasons": [],
+        "audited_effective_dag": true,
+        "contiguous_e2e_phase": true,
+        "observed_duration_join": true,
+        "paired_executor_D": false,
+        "source_trace": true
+      },
+      "position": 18,
+      "preselected_tail": false
+    },
+    {
+      "breaker_compliant_excluding_tail": {
+        "attrition_reasons": [
+          "blocked_active_effective_dag_predecessor_without_duration"
+        ],
+        "audited_effective_dag": true,
+        "contiguous_e2e_phase": true,
+        "observed_duration_join": false,
+        "paired_executor_D": false,
+        "source_trace": true
+      },
+      "case_id": "swebench_verified_sphinx-doc_sphinx-9320",
+      "including_post_breaker_tail": {
+        "attrition_reasons": [
+          "blocked_active_effective_dag_predecessor_without_duration"
+        ],
+        "audited_effective_dag": true,
+        "contiguous_e2e_phase": true,
+        "observed_duration_join": false,
+        "paired_executor_D": false,
+        "source_trace": true
+      },
+      "position": 19,
+      "preselected_tail": false
+    },
+    {
+      "breaker_compliant_excluding_tail": {
+        "attrition_reasons": [
+          "blocked_active_effective_dag_predecessor_without_duration"
+        ],
+        "audited_effective_dag": true,
+        "contiguous_e2e_phase": true,
+        "observed_duration_join": false,
+        "paired_executor_D": false,
+        "source_trace": true
+      },
+      "case_id": "swebench_verified_sympy_sympy-21596",
+      "including_post_breaker_tail": {
+        "attrition_reasons": [
+          "blocked_active_effective_dag_predecessor_without_duration"
+        ],
+        "audited_effective_dag": true,
+        "contiguous_e2e_phase": true,
+        "observed_duration_join": false,
+        "paired_executor_D": false,
+        "source_trace": true
+      },
+      "position": 20,
+      "preselected_tail": false
+    },
+    {
+      "breaker_compliant_excluding_tail": {
+        "attrition_reasons": [
+          "semantic_or_overlay_contract_failure"
+        ],
+        "audited_effective_dag": false,
+        "contiguous_e2e_phase": true,
+        "observed_duration_join": false,
+        "paired_executor_D": false,
+        "source_trace": true
+      },
+      "case_id": "swebench_verified_astropy_astropy-14096",
+      "including_post_breaker_tail": {
+        "attrition_reasons": [
+          "semantic_or_overlay_contract_failure"
+        ],
+        "audited_effective_dag": false,
+        "contiguous_e2e_phase": true,
+        "observed_duration_join": false,
+        "paired_executor_D": false,
+        "source_trace": true
+      },
+      "position": 21,
+      "preselected_tail": false
+    },
+    {
+      "breaker_compliant_excluding_tail": {
+        "attrition_reasons": [],
+        "audited_effective_dag": true,
+        "contiguous_e2e_phase": true,
+        "observed_duration_join": true,
+        "paired_executor_D": false,
+        "source_trace": true
+      },
+      "case_id": "swebench_verified_django_django-14351",
+      "including_post_breaker_tail": {
+        "attrition_reasons": [],
+        "audited_effective_dag": true,
+        "contiguous_e2e_phase": true,
+        "observed_duration_join": true,
+        "paired_executor_D": false,
+        "source_trace": true
+      },
+      "position": 22,
+      "preselected_tail": false
+    },
+    {
+      "breaker_compliant_excluding_tail": {
+        "attrition_reasons": [
+          "semantic_or_overlay_contract_failure"
+        ],
+        "audited_effective_dag": false,
+        "contiguous_e2e_phase": true,
+        "observed_duration_join": false,
+        "paired_executor_D": false,
+        "source_trace": true
+      },
+      "case_id": "swebench_verified_matplotlib_matplotlib-25960",
+      "including_post_breaker_tail": {
+        "attrition_reasons": [
+          "semantic_or_overlay_contract_failure"
+        ],
+        "audited_effective_dag": false,
+        "contiguous_e2e_phase": true,
+        "observed_duration_join": false,
+        "paired_executor_D": false,
+        "source_trace": true
+      },
+      "position": 23,
+      "preselected_tail": false
+    },
+    {
+      "breaker_compliant_excluding_tail": {
+        "attrition_reasons": [
+          "blocked_active_effective_dag_predecessor_without_duration"
+        ],
+        "audited_effective_dag": true,
+        "contiguous_e2e_phase": true,
+        "observed_duration_join": false,
+        "paired_executor_D": false,
+        "source_trace": true
+      },
+      "case_id": "swebench_verified_psf_requests-1142",
+      "including_post_breaker_tail": {
+        "attrition_reasons": [
+          "blocked_active_effective_dag_predecessor_without_duration"
+        ],
+        "audited_effective_dag": true,
+        "contiguous_e2e_phase": true,
+        "observed_duration_join": false,
+        "paired_executor_D": false,
+        "source_trace": true
+      },
+      "position": 24,
+      "preselected_tail": false
+    },
+    {
+      "breaker_compliant_excluding_tail": {
+        "attrition_reasons": [
+          "blocked_active_effective_dag_predecessor_without_duration"
+        ],
+        "audited_effective_dag": true,
+        "contiguous_e2e_phase": true,
+        "observed_duration_join": false,
+        "paired_executor_D": false,
+        "source_trace": true
+      },
+      "case_id": "swebench_verified_pydata_xarray-4966",
+      "including_post_breaker_tail": {
+        "attrition_reasons": [
+          "blocked_active_effective_dag_predecessor_without_duration"
+        ],
+        "audited_effective_dag": true,
+        "contiguous_e2e_phase": true,
+        "observed_duration_join": false,
+        "paired_executor_D": false,
+        "source_trace": true
+      },
+      "position": 25,
+      "preselected_tail": false
+    },
+    {
+      "breaker_compliant_excluding_tail": {
+        "attrition_reasons": [
+          "blocked_active_effective_dag_predecessor_without_duration",
+          "excluded_post_breaker_continuation_tail"
+        ],
+        "audited_effective_dag": false,
+        "contiguous_e2e_phase": true,
+        "observed_duration_join": false,
+        "paired_executor_D": false,
+        "source_trace": true
+      },
+      "case_id": "swebench_verified_pylint-dev_pylint-4661",
+      "including_post_breaker_tail": {
+        "attrition_reasons": [
+          "blocked_active_effective_dag_predecessor_without_duration"
+        ],
+        "audited_effective_dag": true,
+        "contiguous_e2e_phase": true,
+        "observed_duration_join": false,
+        "paired_executor_D": false,
+        "source_trace": true
+      },
+      "position": 26,
+      "preselected_tail": true
+    },
+    {
+      "breaker_compliant_excluding_tail": {
+        "attrition_reasons": [
+          "excluded_post_breaker_continuation_tail"
+        ],
+        "audited_effective_dag": false,
+        "contiguous_e2e_phase": true,
+        "observed_duration_join": false,
+        "paired_executor_D": false,
+        "source_trace": true
+      },
+      "case_id": "swebench_verified_pytest-dev_pytest-5809",
+      "including_post_breaker_tail": {
+        "attrition_reasons": [],
+        "audited_effective_dag": true,
+        "contiguous_e2e_phase": true,
+        "observed_duration_join": true,
+        "paired_executor_D": false,
+        "source_trace": true
+      },
+      "position": 27,
+      "preselected_tail": true
+    },
+    {
+      "breaker_compliant_excluding_tail": {
+        "attrition_reasons": [
+          "excluded_post_breaker_continuation_tail",
+          "semantic_or_overlay_contract_failure"
+        ],
+        "audited_effective_dag": false,
+        "contiguous_e2e_phase": true,
+        "observed_duration_join": false,
+        "paired_executor_D": false,
+        "source_trace": true
+      },
+      "case_id": "swebench_verified_scikit-learn_scikit-learn-12973",
+      "including_post_breaker_tail": {
+        "attrition_reasons": [
+          "semantic_or_overlay_contract_failure"
+        ],
+        "audited_effective_dag": false,
+        "contiguous_e2e_phase": true,
+        "observed_duration_join": false,
+        "paired_executor_D": false,
+        "source_trace": true
+      },
+      "position": 28,
+      "preselected_tail": true
+    },
+    {
+      "breaker_compliant_excluding_tail": {
+        "attrition_reasons": [
+          "blocked_active_effective_dag_predecessor_without_duration",
+          "excluded_post_breaker_continuation_tail"
+        ],
+        "audited_effective_dag": false,
+        "contiguous_e2e_phase": true,
+        "observed_duration_join": false,
+        "paired_executor_D": false,
+        "source_trace": true
+      },
+      "case_id": "swebench_verified_sphinx-doc_sphinx-10435",
+      "including_post_breaker_tail": {
+        "attrition_reasons": [
+          "blocked_active_effective_dag_predecessor_without_duration"
+        ],
+        "audited_effective_dag": true,
+        "contiguous_e2e_phase": true,
+        "observed_duration_join": false,
+        "paired_executor_D": false,
+        "source_trace": true
+      },
+      "position": 29,
+      "preselected_tail": true
+    },
+    {
+      "breaker_compliant_excluding_tail": {
+        "attrition_reasons": [
+          "blocked_active_effective_dag_predecessor_without_duration",
+          "excluded_post_breaker_continuation_tail"
+        ],
+        "audited_effective_dag": false,
+        "contiguous_e2e_phase": true,
+        "observed_duration_join": false,
+        "paired_executor_D": false,
+        "source_trace": true
+      },
+      "case_id": "swebench_verified_sympy_sympy-19954",
+      "including_post_breaker_tail": {
+        "attrition_reasons": [
+          "blocked_active_effective_dag_predecessor_without_duration"
+        ],
+        "audited_effective_dag": true,
+        "contiguous_e2e_phase": true,
+        "observed_duration_join": false,
+        "paired_executor_D": false,
+        "source_trace": true
+      },
+      "position": 30,
+      "preselected_tail": true
+    }
+  ],
+  "schema_version": "sge-p30-ac-stage-b-tail-eligibility-overlay-v1",
+  "scientific_result": false,
+  "tail_case_ids": [
+    "swebench_verified_pylint-dev_pylint-4661",
+    "swebench_verified_pytest-dev_pytest-5809",
+    "swebench_verified_scikit-learn_scikit-learn-12973",
+    "swebench_verified_sphinx-doc_sphinx-10435",
+    "swebench_verified_sympy_sympy-19954"
+  ],
+  "tail_positions": [
+    26,
+    27,
+    28,
+    29,
+    30
+  ]
+}

@@ -1,0 +1,4968 @@
+{
+  "case_count_intention": 30,
+  "cases": [
+    {
+      "active_effective_semantic_node_ids": [
+        "n01",
+        "n02",
+        "n03",
+        "n04",
+        "n05",
+        "n06",
+        "n07",
+        "n08",
+        "n09"
+      ],
+      "all_action_seconds": 51.588008746985,
+      "case_id": "swebench_verified_django_django-14351",
+      "conservation_delta_seconds": 0.0,
+      "duration_partition_seconds": {
+        "effective_semantic_work": 50.16950091399485,
+        "redundant_exploration": 0.0,
+        "system_envelope": 0.9746885829808889,
+        "tool_noise": 0.4438192500092555
+      },
+      "effective_action_overlay_sha256": "cdf2ba47decdadc3b41d07267ed4c4fe94cd238097d0b19b2ae428d65efd351a",
+      "effective_reference_dag_sha256": "56ea427746b01e142fb2aae4dfc893082b0141120bc6bcb8e948c54a70ca827c",
+      "imputed_duration_seconds": 0.0,
+      "inactive_effective_semantic_node_ids": [],
+      "mapping_claim_layers": {
+        "effective_mapping": "outcome_adjudicated_not_duration_blind",
+        "stage_a_mapping": "duration_outcome_result_blind_immutable"
+      },
+      "rows": [
+        {
+          "duration_partition_category": "tool_noise",
+          "duration_seconds": 0.4438192500092555,
+          "effective_disposition": "discard_tool_noise",
+          "effective_semantic_node_ids": [],
+          "observed_action_id": "item_1",
+          "projected_action_id": "a001",
+          "semantic_allocations_seconds": {},
+          "source_node_id": "n1",
+          "stage_a_disposition": "discard_tool_noise",
+          "stage_a_semantic_node_ids": [],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.6291330000094604,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n01"
+          ],
+          "observed_action_id": "item_2",
+          "projected_action_id": "a002",
+          "semantic_allocations_seconds": {
+            "n01": 0.6291330000094604
+          },
+          "source_node_id": "n2",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n01"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.9168764579953859,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n01"
+          ],
+          "observed_action_id": "item_3",
+          "projected_action_id": "a003",
+          "semantic_allocations_seconds": {
+            "n01": 0.9168764579953859
+          },
+          "source_node_id": "n3",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n01"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.34391108399722725,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n02"
+          ],
+          "observed_action_id": "item_5",
+          "projected_action_id": "a004",
+          "semantic_allocations_seconds": {
+            "n02": 0.34391108399722725
+          },
+          "source_node_id": "n4",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n02"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.3458686670055613,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n02"
+          ],
+          "observed_action_id": "item_6",
+          "projected_action_id": "a005",
+          "semantic_allocations_seconds": {
+            "n02": 0.3458686670055613
+          },
+          "source_node_id": "n5",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n02"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.391743290994782,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n02"
+          ],
+          "observed_action_id": "item_7",
+          "projected_action_id": "a006",
+          "semantic_allocations_seconds": {
+            "n02": 0.391743290994782
+          },
+          "source_node_id": "n6",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n02"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.38345283300441224,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n02"
+          ],
+          "observed_action_id": "item_8",
+          "projected_action_id": "a007",
+          "semantic_allocations_seconds": {
+            "n02": 0.38345283300441224
+          },
+          "source_node_id": "n7",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n02"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.3842182920052437,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n02"
+          ],
+          "observed_action_id": "item_9",
+          "projected_action_id": "a008",
+          "semantic_allocations_seconds": {
+            "n02": 0.3842182920052437
+          },
+          "source_node_id": "n8",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n02"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.4426235830032965,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n02"
+          ],
+          "observed_action_id": "item_11",
+          "projected_action_id": "a009",
+          "semantic_allocations_seconds": {
+            "n02": 0.4426235830032965
+          },
+          "source_node_id": "n9",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n02"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.4426632079994306,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n02"
+          ],
+          "observed_action_id": "item_12",
+          "projected_action_id": "a010",
+          "semantic_allocations_seconds": {
+            "n02": 0.4426632079994306
+          },
+          "source_node_id": "n10",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n02"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.45687137500499375,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n02"
+          ],
+          "observed_action_id": "item_13",
+          "projected_action_id": "a011",
+          "semantic_allocations_seconds": {
+            "n02": 0.45687137500499375
+          },
+          "source_node_id": "n11",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n02"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.4326325000001816,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n02"
+          ],
+          "observed_action_id": "item_14",
+          "projected_action_id": "a012",
+          "semantic_allocations_seconds": {
+            "n02": 0.4326325000001816
+          },
+          "source_node_id": "n12",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n02"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.4442640420020325,
+          "effective_disposition": "retain",
+          "effective_semantic_node_ids": [
+            "n03"
+          ],
+          "observed_action_id": "item_15",
+          "projected_action_id": "a013",
+          "semantic_allocations_seconds": {
+            "n03": 0.4442640420020325
+          },
+          "source_node_id": "n13",
+          "stage_a_disposition": "retain",
+          "stage_a_semantic_node_ids": [
+            "n03"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.4154782500118017,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n04"
+          ],
+          "observed_action_id": "item_17",
+          "projected_action_id": "a014",
+          "semantic_allocations_seconds": {
+            "n04": 0.4154782500118017
+          },
+          "source_node_id": "n14",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n04"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.4355271249951329,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n04"
+          ],
+          "observed_action_id": "item_18",
+          "projected_action_id": "a015",
+          "semantic_allocations_seconds": {
+            "n04": 0.4355271249951329
+          },
+          "source_node_id": "n15",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n04"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.42274145800911356,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n04"
+          ],
+          "observed_action_id": "item_19",
+          "projected_action_id": "a016",
+          "semantic_allocations_seconds": {
+            "n04": 0.42274145800911356
+          },
+          "source_node_id": "n16",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n04"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.42582074999518227,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n04"
+          ],
+          "observed_action_id": "item_20",
+          "projected_action_id": "a017",
+          "semantic_allocations_seconds": {
+            "n04": 0.42582074999518227
+          },
+          "source_node_id": "n17",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n04"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.36292891699122265,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n04"
+          ],
+          "observed_action_id": "item_21",
+          "projected_action_id": "a018",
+          "semantic_allocations_seconds": {
+            "n04": 0.36292891699122265
+          },
+          "source_node_id": "n18",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n04"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.37538070799200796,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n04"
+          ],
+          "observed_action_id": "item_22",
+          "projected_action_id": "a019",
+          "semantic_allocations_seconds": {
+            "n04": 0.37538070799200796
+          },
+          "source_node_id": "n19",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n04"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.34887870799866505,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n04"
+          ],
+          "observed_action_id": "item_24",
+          "projected_action_id": "a020",
+          "semantic_allocations_seconds": {
+            "n04": 0.34887870799866505
+          },
+          "source_node_id": "n20",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n04"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.35241550000500865,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n04"
+          ],
+          "observed_action_id": "item_23",
+          "projected_action_id": "a021",
+          "semantic_allocations_seconds": {
+            "n04": 0.35241550000500865
+          },
+          "source_node_id": "n21",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n04"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.41992195800412446,
+          "effective_disposition": "retain",
+          "effective_semantic_node_ids": [
+            "n05"
+          ],
+          "observed_action_id": "item_26",
+          "projected_action_id": "a022",
+          "semantic_allocations_seconds": {
+            "n05": 0.41992195800412446
+          },
+          "source_node_id": "n22",
+          "stage_a_disposition": "retain",
+          "stage_a_semantic_node_ids": [
+            "n05"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.3386281249986496,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n06"
+          ],
+          "observed_action_id": "item_28",
+          "projected_action_id": "a023",
+          "semantic_allocations_seconds": {
+            "n06": 0.3386281249986496
+          },
+          "source_node_id": "n23",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n06"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.34210829199582804,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n06"
+          ],
+          "observed_action_id": "item_27",
+          "projected_action_id": "a024",
+          "semantic_allocations_seconds": {
+            "n06": 0.34210829199582804
+          },
+          "source_node_id": "n24",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n06"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.36413774998800363,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n06"
+          ],
+          "observed_action_id": "item_31",
+          "projected_action_id": "a025",
+          "semantic_allocations_seconds": {
+            "n06": 0.36413774998800363
+          },
+          "source_node_id": "n25",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n06"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.38780883300933056,
+          "effective_disposition": "retain",
+          "effective_semantic_node_ids": [
+            "n07"
+          ],
+          "observed_action_id": "item_30",
+          "projected_action_id": "a026",
+          "semantic_allocations_seconds": {
+            "n07": 0.38780883300933056
+          },
+          "source_node_id": "n26",
+          "stage_a_disposition": "retain",
+          "stage_a_semantic_node_ids": [
+            "n07"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.3464330830029212,
+          "effective_disposition": "retain",
+          "effective_semantic_node_ids": [
+            "n08"
+          ],
+          "observed_action_id": "item_32",
+          "projected_action_id": "a027",
+          "semantic_allocations_seconds": {
+            "n08": 0.3464330830029212
+          },
+          "source_node_id": "n27",
+          "stage_a_disposition": "retain",
+          "stage_a_semantic_node_ids": [
+            "n08"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 1.3099320829933276,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n09"
+          ],
+          "observed_action_id": "item_34",
+          "projected_action_id": "a028",
+          "semantic_allocations_seconds": {
+            "n09": 1.3099320829933276
+          },
+          "source_node_id": "n28",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n09"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.3369144169992069,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n09"
+          ],
+          "observed_action_id": "item_36",
+          "projected_action_id": "a029",
+          "semantic_allocations_seconds": {
+            "n09": 0.3369144169992069
+          },
+          "source_node_id": "n29",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n09"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 10.399852916991222,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n09"
+          ],
+          "observed_action_id": "item_38",
+          "projected_action_id": "a030",
+          "semantic_allocations_seconds": {
+            "n09": 10.399852916991222
+          },
+          "source_node_id": "n30",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n09"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.383213084001909,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n09"
+          ],
+          "observed_action_id": "item_39",
+          "projected_action_id": "a031",
+          "semantic_allocations_seconds": {
+            "n09": 0.383213084001909
+          },
+          "source_node_id": "n31",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n09"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.32569250000233296,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n09"
+          ],
+          "observed_action_id": "item_41",
+          "projected_action_id": "a032",
+          "semantic_allocations_seconds": {
+            "n09": 0.32569250000233296
+          },
+          "source_node_id": "n32",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n09"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 1.22232799998892,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n09"
+          ],
+          "observed_action_id": "item_43",
+          "projected_action_id": "a033",
+          "semantic_allocations_seconds": {
+            "n09": 1.22232799998892
+          },
+          "source_node_id": "n33",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n09"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 4.886923832993489,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n09"
+          ],
+          "observed_action_id": "item_45",
+          "projected_action_id": "a034",
+          "semantic_allocations_seconds": {
+            "n09": 4.886923832993489
+          },
+          "source_node_id": "n34",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n09"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 1.2052931660000468,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n09"
+          ],
+          "observed_action_id": "item_47",
+          "projected_action_id": "a035",
+          "semantic_allocations_seconds": {
+            "n09": 1.2052931660000468
+          },
+          "source_node_id": "n35",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n09"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 4.479489666002337,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n09"
+          ],
+          "observed_action_id": "item_49",
+          "projected_action_id": "a036",
+          "semantic_allocations_seconds": {
+            "n09": 4.479489666002337
+          },
+          "source_node_id": "n36",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n09"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 1.218771542000468,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n09"
+          ],
+          "observed_action_id": "item_51",
+          "projected_action_id": "a037",
+          "semantic_allocations_seconds": {
+            "n09": 1.218771542000468
+          },
+          "source_node_id": "n37",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n09"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 4.663400958001148,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n09"
+          ],
+          "observed_action_id": "item_52",
+          "projected_action_id": "a038",
+          "semantic_allocations_seconds": {
+            "n09": 4.663400958001148
+          },
+          "source_node_id": "n38",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n09"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 8.785220958001446,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n09"
+          ],
+          "observed_action_id": "item_54",
+          "projected_action_id": "a039",
+          "semantic_allocations_seconds": {
+            "n09": 8.785220958001446
+          },
+          "source_node_id": "n39",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n09"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "system_envelope",
+          "duration_seconds": 0.3600719159876462,
+          "effective_disposition": "move_to_system_envelope",
+          "effective_semantic_node_ids": [],
+          "observed_action_id": "item_56",
+          "projected_action_id": "a040",
+          "semantic_allocations_seconds": {},
+          "source_node_id": "n40",
+          "stage_a_disposition": "move_to_system_envelope",
+          "stage_a_semantic_node_ids": [],
+          "system_envelope_id": "stage_a_preclassified_system_envelope"
+        },
+        {
+          "duration_partition_category": "system_envelope",
+          "duration_seconds": 0.6146166669932427,
+          "effective_disposition": "move_to_system_envelope",
+          "effective_semantic_node_ids": [],
+          "observed_action_id": "item_57",
+          "projected_action_id": "a041",
+          "semantic_allocations_seconds": {},
+          "source_node_id": "n41",
+          "stage_a_disposition": "move_to_system_envelope",
+          "stage_a_semantic_node_ids": [],
+          "system_envelope_id": "stage_a_preclassified_system_envelope"
+        }
+      ],
+      "stage_a_annotation_sha256": "d8e3c701eae5ba312f9d3866133ffd041be1f993d0545c15625c8991edd16af3",
+      "stage_a_mapping_sha256": "b43c9666747853d27787c6c1bb26855f4392035cd61b5fe89a4718103ccd1bd6",
+      "status": "pass",
+      "system_envelope_by_id_seconds": {
+        "stage_a_preclassified_system_envelope": 0.9746885829808889
+      },
+      "uncovered_duration_seconds": 0.0
+    },
+    {
+      "active_effective_semantic_node_ids": [
+        "n_anchor_search",
+        "n_audit",
+        "n_behavior_read",
+        "n_convention_read",
+        "n_inventory",
+        "n_patch",
+        "n_primary_search",
+        "n_refined_search",
+        "n_regression_read",
+        "n_requirement",
+        "n_validation"
+      ],
+      "all_action_seconds": 16.291495209021377,
+      "case_id": "swebench_verified_django_django-15467",
+      "conservation_delta_seconds": 0.0,
+      "duration_partition_seconds": {
+        "effective_semantic_work": 16.291495209021377,
+        "redundant_exploration": 0.0,
+        "system_envelope": 0,
+        "tool_noise": 0.0
+      },
+      "effective_action_overlay_sha256": "812511a48380ea811585bd46e436ba3df0712ec53241a0ff9622ee5d576d897f",
+      "effective_reference_dag_sha256": "71c4abf16603c0676a1b3500f7b88c36f37509b0960102d2d86ded054ab48ac8",
+      "imputed_duration_seconds": 0.0,
+      "inactive_effective_semantic_node_ids": [],
+      "mapping_claim_layers": {
+        "effective_mapping": "outcome_adjudicated_not_duration_blind",
+        "stage_a_mapping": "duration_outcome_result_blind_immutable"
+      },
+      "rows": [
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.49094108400458936,
+          "effective_disposition": "retain",
+          "effective_semantic_node_ids": [
+            "n_requirement"
+          ],
+          "observed_action_id": "item_2",
+          "projected_action_id": "a001",
+          "semantic_allocations_seconds": {
+            "n_requirement": 0.49094108400458936
+          },
+          "source_node_id": "n1",
+          "stage_a_disposition": "retain",
+          "stage_a_semantic_node_ids": [
+            "n_requirement"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.8200993329955963,
+          "effective_disposition": "retain",
+          "effective_semantic_node_ids": [
+            "n_inventory"
+          ],
+          "observed_action_id": "item_1",
+          "projected_action_id": "a002",
+          "semantic_allocations_seconds": {
+            "n_inventory": 0.8200993329955963
+          },
+          "source_node_id": "n2",
+          "stage_a_disposition": "retain",
+          "stage_a_semantic_node_ids": [
+            "n_inventory"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.8102104169956874,
+          "effective_disposition": "retain",
+          "effective_semantic_node_ids": [
+            "n_primary_search"
+          ],
+          "observed_action_id": "item_3",
+          "projected_action_id": "a003",
+          "semantic_allocations_seconds": {
+            "n_primary_search": 0.8102104169956874
+          },
+          "source_node_id": "n3",
+          "stage_a_disposition": "retain",
+          "stage_a_semantic_node_ids": [
+            "n_primary_search"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.4411721659998875,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n_behavior_read"
+          ],
+          "observed_action_id": "item_5",
+          "projected_action_id": "a004",
+          "semantic_allocations_seconds": {
+            "n_behavior_read": 0.4411721659998875
+          },
+          "source_node_id": "n4",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n_behavior_read"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.42202325000835117,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n_behavior_read"
+          ],
+          "observed_action_id": "item_6",
+          "projected_action_id": "a005",
+          "semantic_allocations_seconds": {
+            "n_behavior_read": 0.42202325000835117
+          },
+          "source_node_id": "n5",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n_behavior_read"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.3922434999985853,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n_convention_read"
+          ],
+          "observed_action_id": "item_8",
+          "projected_action_id": "a006",
+          "semantic_allocations_seconds": {
+            "n_convention_read": 0.3922434999985853
+          },
+          "source_node_id": "n6",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n_convention_read"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.41006550000747666,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n_convention_read"
+          ],
+          "observed_action_id": "item_7",
+          "projected_action_id": "a007",
+          "semantic_allocations_seconds": {
+            "n_convention_read": 0.41006550000747666
+          },
+          "source_node_id": "n7",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n_convention_read"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.3492064159945585,
+          "effective_disposition": "retain",
+          "effective_semantic_node_ids": [
+            "n_anchor_search"
+          ],
+          "observed_action_id": "item_10",
+          "projected_action_id": "a008",
+          "semantic_allocations_seconds": {
+            "n_anchor_search": 0.3492064159945585
+          },
+          "source_node_id": "n8",
+          "stage_a_disposition": "retain",
+          "stage_a_semantic_node_ids": [
+            "n_anchor_search"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.3492089999926975,
+          "effective_disposition": "retain",
+          "effective_semantic_node_ids": [
+            "n_refined_search"
+          ],
+          "observed_action_id": "item_11",
+          "projected_action_id": "a009",
+          "semantic_allocations_seconds": {
+            "n_refined_search": 0.3492089999926975
+          },
+          "source_node_id": "n9",
+          "stage_a_disposition": "retain",
+          "stage_a_semantic_node_ids": [
+            "n_refined_search"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.33711104199755937,
+          "effective_disposition": "retain",
+          "effective_semantic_node_ids": [
+            "n_regression_read"
+          ],
+          "observed_action_id": "item_12",
+          "projected_action_id": "a010",
+          "semantic_allocations_seconds": {
+            "n_regression_read": 0.33711104199755937
+          },
+          "source_node_id": "n10",
+          "stage_a_disposition": "retain",
+          "stage_a_semantic_node_ids": [
+            "n_regression_read"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 2.340392084006453,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n_patch"
+          ],
+          "observed_action_id": "item_14",
+          "projected_action_id": "a011",
+          "semantic_allocations_seconds": {
+            "n_patch": 2.340392084006453
+          },
+          "source_node_id": "n11",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n_patch"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 1.1511502080102218,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n_patch"
+          ],
+          "observed_action_id": "item_16",
+          "projected_action_id": "a012",
+          "semantic_allocations_seconds": {
+            "n_patch": 1.1511502080102218
+          },
+          "source_node_id": "n12",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n_patch"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.29097216700029094,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n_validation"
+          ],
+          "observed_action_id": "item_18",
+          "projected_action_id": "a013",
+          "semantic_allocations_seconds": {
+            "n_validation": 0.29097216700029094
+          },
+          "source_node_id": "n13",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n_validation"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.3729434170090826,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n_validation"
+          ],
+          "observed_action_id": "item_22",
+          "projected_action_id": "a014",
+          "semantic_allocations_seconds": {
+            "n_validation": 0.3729434170090826
+          },
+          "source_node_id": "n14",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n_validation"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.4764428750058869,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n_audit"
+          ],
+          "observed_action_id": "item_21",
+          "projected_action_id": "a015",
+          "semantic_allocations_seconds": {
+            "n_audit": 0.4764428750058869
+          },
+          "source_node_id": "n15",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n_audit"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.7659589169925312,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n_audit"
+          ],
+          "observed_action_id": "item_20",
+          "projected_action_id": "a016",
+          "semantic_allocations_seconds": {
+            "n_audit": 0.7659589169925312
+          },
+          "source_node_id": "n16",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n_audit"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 6.071353833001922,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n_validation"
+          ],
+          "observed_action_id": "item_24",
+          "projected_action_id": "a017",
+          "semantic_allocations_seconds": {
+            "n_validation": 6.071353833001922
+          },
+          "source_node_id": "n17",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n_validation"
+          ],
+          "system_envelope_id": null
+        }
+      ],
+      "stage_a_annotation_sha256": "d2148f081ed864630aece22518f974a74b77ab3bd9395b490da8137eba271853",
+      "stage_a_mapping_sha256": "6eed05b9efe43d984080e92a9153cb6fcd75900a468f1c228208b40b937fd596",
+      "status": "pass",
+      "system_envelope_by_id_seconds": {},
+      "uncovered_duration_seconds": 0.0
+    },
+    {
+      "active_effective_semantic_node_ids": [
+        "n_followup_evidence_reads",
+        "n_followup_implementation_update",
+        "n_followup_search",
+        "n_initial_behavior_validation",
+        "n_initial_patch_candidate",
+        "n_primary_evidence_reads",
+        "n_project_inventory",
+        "n_scope_search"
+      ],
+      "all_action_seconds": 19.145828457985772,
+      "case_id": "swebench_verified_matplotlib_matplotlib-25287",
+      "conservation_delta_seconds": 0.0,
+      "duration_partition_seconds": {
+        "effective_semantic_work": 13.685709623998264,
+        "redundant_exploration": 0.0,
+        "system_envelope": 5.460118833987508,
+        "tool_noise": 0.0
+      },
+      "effective_action_overlay_sha256": "fec9b3220d2abf2ee77d612ba2956b7bbb4aeda4d0a69e7fe088b7fba87fdaff",
+      "effective_reference_dag_sha256": "416a21cb2858f7880c10ee4ec6432b223c6553180914c15c3734365a6bcdd5ac",
+      "imputed_duration_seconds": 0.0,
+      "inactive_effective_semantic_node_ids": [],
+      "mapping_claim_layers": {
+        "effective_mapping": "outcome_adjudicated_not_duration_blind",
+        "stage_a_mapping": "duration_outcome_result_blind_immutable"
+      },
+      "rows": [
+        {
+          "duration_partition_category": "system_envelope",
+          "duration_seconds": 0.6147518749930896,
+          "effective_disposition": "move_to_system_envelope",
+          "effective_semantic_node_ids": [],
+          "observed_action_id": "item_3",
+          "projected_action_id": "a001",
+          "semantic_allocations_seconds": {},
+          "source_node_id": "n1",
+          "stage_a_disposition": "move_to_system_envelope",
+          "stage_a_semantic_node_ids": [],
+          "system_envelope_id": "stage_a_preclassified_system_envelope"
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.8402397909958381,
+          "effective_disposition": "retain",
+          "effective_semantic_node_ids": [
+            "n_scope_search"
+          ],
+          "observed_action_id": "item_1",
+          "projected_action_id": "a002",
+          "semantic_allocations_seconds": {
+            "n_scope_search": 0.8402397909958381
+          },
+          "source_node_id": "n2",
+          "stage_a_disposition": "retain",
+          "stage_a_semantic_node_ids": [
+            "n_scope_search"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.841358958001365,
+          "effective_disposition": "retain",
+          "effective_semantic_node_ids": [
+            "n_project_inventory"
+          ],
+          "observed_action_id": "item_2",
+          "projected_action_id": "a003",
+          "semantic_allocations_seconds": {
+            "n_project_inventory": 0.841358958001365
+          },
+          "source_node_id": "n3",
+          "stage_a_disposition": "retain",
+          "stage_a_semantic_node_ids": [
+            "n_project_inventory"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.5273910420073662,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n_primary_evidence_reads"
+          ],
+          "observed_action_id": "item_6",
+          "projected_action_id": "a004",
+          "semantic_allocations_seconds": {
+            "n_primary_evidence_reads": 0.5273910420073662
+          },
+          "source_node_id": "n4",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n_primary_evidence_reads"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.5275809579907218,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n_primary_evidence_reads"
+          ],
+          "observed_action_id": "item_5",
+          "projected_action_id": "a005",
+          "semantic_allocations_seconds": {
+            "n_primary_evidence_reads": 0.5275809579907218
+          },
+          "source_node_id": "n5",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n_primary_evidence_reads"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.5064629160042387,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n_primary_evidence_reads"
+          ],
+          "observed_action_id": "item_7",
+          "projected_action_id": "a006",
+          "semantic_allocations_seconds": {
+            "n_primary_evidence_reads": 0.5064629160042387
+          },
+          "source_node_id": "n6",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n_primary_evidence_reads"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.5029891669983044,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n_primary_evidence_reads"
+          ],
+          "observed_action_id": "item_8",
+          "projected_action_id": "a007",
+          "semantic_allocations_seconds": {
+            "n_primary_evidence_reads": 0.5029891669983044
+          },
+          "source_node_id": "n7",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n_primary_evidence_reads"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.4690223330107983,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n_primary_evidence_reads"
+          ],
+          "observed_action_id": "item_9",
+          "projected_action_id": "a008",
+          "semantic_allocations_seconds": {
+            "n_primary_evidence_reads": 0.4690223330107983
+          },
+          "source_node_id": "n8",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n_primary_evidence_reads"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.3608803329989314,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n_primary_evidence_reads"
+          ],
+          "observed_action_id": "item_11",
+          "projected_action_id": "a009",
+          "semantic_allocations_seconds": {
+            "n_primary_evidence_reads": 0.3608803329989314
+          },
+          "source_node_id": "n9",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n_primary_evidence_reads"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.33844274999864865,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n_primary_evidence_reads"
+          ],
+          "observed_action_id": "item_12",
+          "projected_action_id": "a010",
+          "semantic_allocations_seconds": {
+            "n_primary_evidence_reads": 0.33844274999864865
+          },
+          "source_node_id": "n10",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n_primary_evidence_reads"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.3326999999990221,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n_primary_evidence_reads"
+          ],
+          "observed_action_id": "item_13",
+          "projected_action_id": "a011",
+          "semantic_allocations_seconds": {
+            "n_primary_evidence_reads": 0.3326999999990221
+          },
+          "source_node_id": "n11",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n_primary_evidence_reads"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.36491187500359956,
+          "effective_disposition": "retain",
+          "effective_semantic_node_ids": [
+            "n_followup_search"
+          ],
+          "observed_action_id": "item_14",
+          "projected_action_id": "a012",
+          "semantic_allocations_seconds": {
+            "n_followup_search": 0.36491187500359956
+          },
+          "source_node_id": "n12",
+          "stage_a_disposition": "retain",
+          "stage_a_semantic_node_ids": [
+            "n_followup_search"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.33244808300514705,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n_followup_evidence_reads"
+          ],
+          "observed_action_id": "item_15",
+          "projected_action_id": "a013",
+          "semantic_allocations_seconds": {
+            "n_followup_evidence_reads": 0.33244808300514705
+          },
+          "source_node_id": "n13",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n_followup_evidence_reads"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.3324289169977419,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n_followup_evidence_reads"
+          ],
+          "observed_action_id": "item_16",
+          "projected_action_id": "a014",
+          "semantic_allocations_seconds": {
+            "n_followup_evidence_reads": 0.3324289169977419
+          },
+          "source_node_id": "n14",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n_followup_evidence_reads"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 1.180400874989573,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n_initial_patch_candidate"
+          ],
+          "observed_action_id": "item_18",
+          "projected_action_id": "a015",
+          "semantic_allocations_seconds": {
+            "n_initial_patch_candidate": 1.180400874989573
+          },
+          "source_node_id": "n15",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n_initial_patch_candidate"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 1.2491011670063017,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n_initial_patch_candidate"
+          ],
+          "observed_action_id": "item_20",
+          "projected_action_id": "a016",
+          "semantic_allocations_seconds": {
+            "n_initial_patch_candidate": 1.2491011670063017
+          },
+          "source_node_id": "n16",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n_initial_patch_candidate"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 3.7890237090032315,
+          "effective_disposition": "retain",
+          "effective_semantic_node_ids": [
+            "n_initial_behavior_validation"
+          ],
+          "observed_action_id": "item_22",
+          "projected_action_id": "a017",
+          "semantic_allocations_seconds": {
+            "n_initial_behavior_validation": 3.7890237090032315
+          },
+          "source_node_id": "n17",
+          "stage_a_disposition": "retain",
+          "stage_a_semantic_node_ids": [
+            "n_initial_behavior_validation"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "system_envelope",
+          "duration_seconds": 0.4248057499935385,
+          "effective_disposition": "move_to_system_envelope",
+          "effective_semantic_node_ids": [],
+          "observed_action_id": "item_25",
+          "projected_action_id": "a018",
+          "semantic_allocations_seconds": {},
+          "source_node_id": "n18",
+          "stage_a_disposition": "move_to_system_envelope",
+          "stage_a_semantic_node_ids": [],
+          "system_envelope_id": "stage_a_preclassified_system_envelope"
+        },
+        {
+          "duration_partition_category": "system_envelope",
+          "duration_seconds": 0.4003677920118207,
+          "effective_disposition": "move_to_system_envelope",
+          "effective_semantic_node_ids": [],
+          "observed_action_id": "item_26",
+          "projected_action_id": "a019",
+          "semantic_allocations_seconds": {},
+          "source_node_id": "n19",
+          "stage_a_disposition": "move_to_system_envelope",
+          "stage_a_semantic_node_ids": [],
+          "system_envelope_id": "stage_a_preclassified_system_envelope"
+        },
+        {
+          "duration_partition_category": "system_envelope",
+          "duration_seconds": 1.2661730830004672,
+          "effective_disposition": "move_to_system_envelope",
+          "effective_semantic_node_ids": [],
+          "observed_action_id": "item_24",
+          "projected_action_id": "a020",
+          "semantic_allocations_seconds": {},
+          "source_node_id": "n20",
+          "stage_a_disposition": "move_to_system_envelope",
+          "stage_a_semantic_node_ids": [],
+          "system_envelope_id": "stage_a_preclassified_system_envelope"
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 1.1903267499874346,
+          "effective_disposition": "retain",
+          "effective_semantic_node_ids": [
+            "n_followup_implementation_update"
+          ],
+          "observed_action_id": "item_28",
+          "projected_action_id": "a021",
+          "semantic_allocations_seconds": {
+            "n_followup_implementation_update": 1.1903267499874346
+          },
+          "source_node_id": "n21",
+          "stage_a_disposition": "retain",
+          "stage_a_semantic_node_ids": [
+            "n_followup_implementation_update"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "system_envelope",
+          "duration_seconds": 0.5114098750054836,
+          "effective_disposition": "move_to_system_envelope",
+          "effective_semantic_node_ids": [],
+          "observed_action_id": "item_31",
+          "projected_action_id": "a022",
+          "semantic_allocations_seconds": {},
+          "source_node_id": "n22",
+          "stage_a_disposition": "move_to_system_envelope",
+          "stage_a_semantic_node_ids": [],
+          "system_envelope_id": "stage_a_preclassified_system_envelope"
+        },
+        {
+          "duration_partition_category": "system_envelope",
+          "duration_seconds": 0.49536691699177027,
+          "effective_disposition": "move_to_system_envelope",
+          "effective_semantic_node_ids": [],
+          "observed_action_id": "item_32",
+          "projected_action_id": "a023",
+          "semantic_allocations_seconds": {},
+          "source_node_id": "n23",
+          "stage_a_disposition": "move_to_system_envelope",
+          "stage_a_semantic_node_ids": [],
+          "system_envelope_id": "stage_a_preclassified_system_envelope"
+        },
+        {
+          "duration_partition_category": "system_envelope",
+          "duration_seconds": 1.359626624995144,
+          "effective_disposition": "move_to_system_envelope",
+          "effective_semantic_node_ids": [],
+          "observed_action_id": "item_30",
+          "projected_action_id": "a024",
+          "semantic_allocations_seconds": {},
+          "source_node_id": "n24",
+          "stage_a_disposition": "move_to_system_envelope",
+          "stage_a_semantic_node_ids": [],
+          "system_envelope_id": "stage_a_preclassified_system_envelope"
+        },
+        {
+          "duration_partition_category": "system_envelope",
+          "duration_seconds": 0.38761691699619405,
+          "effective_disposition": "move_to_system_envelope",
+          "effective_semantic_node_ids": [],
+          "observed_action_id": "item_33",
+          "projected_action_id": "a025",
+          "semantic_allocations_seconds": {},
+          "source_node_id": "n25",
+          "stage_a_disposition": "move_to_system_envelope",
+          "stage_a_semantic_node_ids": [],
+          "system_envelope_id": "stage_a_preclassified_system_envelope"
+        }
+      ],
+      "stage_a_annotation_sha256": "4a7979d0a362b4dedb55dba5ec64b9b7f59d04d12bfc9e3de6f8cf0953ce0015",
+      "stage_a_mapping_sha256": "e85830cace1f3b747e30e348bfab87e739e6e1f7d7b862c93df2b16a31fe38d7",
+      "status": "pass",
+      "system_envelope_by_id_seconds": {
+        "stage_a_preclassified_system_envelope": 5.460118833987508
+      },
+      "uncovered_duration_seconds": 0.0
+    },
+    {
+      "active_effective_semantic_node_ids": [
+        "n01_discover_swap_logic",
+        "n02_inspect_swap_logic",
+        "n03_discover_regression_context",
+        "n04_inspect_regression_context",
+        "n05_materialize_fix",
+        "n06_validate_nonmutation"
+      ],
+      "all_action_seconds": 63.9319914169464,
+      "case_id": "swebench_verified_pydata_xarray-6938",
+      "conservation_delta_seconds": 0.0,
+      "duration_partition_seconds": {
+        "effective_semantic_work": 62.699392875962076,
+        "redundant_exploration": 0.0,
+        "system_envelope": 1.232598540984327,
+        "tool_noise": 0.0
+      },
+      "effective_action_overlay_sha256": "567684823fd039bdb536b696a45d030178e8ea2c989aab8a0994979b04d17ba3",
+      "effective_reference_dag_sha256": "c714c4e7c7a5b4225828faf8dcd6fb33a5a7d2dbd953cd959131a89f2c1fb1aa",
+      "imputed_duration_seconds": 0.0,
+      "inactive_effective_semantic_node_ids": [],
+      "mapping_claim_layers": {
+        "effective_mapping": "outcome_adjudicated_not_duration_blind",
+        "stage_a_mapping": "duration_outcome_result_blind_immutable"
+      },
+      "rows": [
+        {
+          "duration_partition_category": "system_envelope",
+          "duration_seconds": 0.4188026249903487,
+          "effective_disposition": "move_to_system_envelope",
+          "effective_semantic_node_ids": [],
+          "observed_action_id": "item_2",
+          "projected_action_id": "a001",
+          "semantic_allocations_seconds": {},
+          "source_node_id": "n1",
+          "stage_a_disposition": "move_to_system_envelope",
+          "stage_a_semantic_node_ids": [],
+          "system_envelope_id": "stage_a_preclassified_system_envelope"
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.6720855839957949,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n01_discover_swap_logic"
+          ],
+          "observed_action_id": "item_1",
+          "projected_action_id": "a002",
+          "semantic_allocations_seconds": {
+            "n01_discover_swap_logic": 0.6720855839957949
+          },
+          "source_node_id": "n2",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n01_discover_swap_logic"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.6720387499954086,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n01_discover_swap_logic"
+          ],
+          "observed_action_id": "item_3",
+          "projected_action_id": "a003",
+          "semantic_allocations_seconds": {
+            "n01_discover_swap_logic": 0.6720387499954086
+          },
+          "source_node_id": "n3",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n01_discover_swap_logic"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.6084887920005713,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n02_inspect_swap_logic"
+          ],
+          "observed_action_id": "item_5",
+          "projected_action_id": "a004",
+          "semantic_allocations_seconds": {
+            "n02_inspect_swap_logic": 0.6084887920005713
+          },
+          "source_node_id": "n4",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n02_inspect_swap_logic"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.5886284589942079,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n02_inspect_swap_logic"
+          ],
+          "observed_action_id": "item_6",
+          "projected_action_id": "a005",
+          "semantic_allocations_seconds": {
+            "n02_inspect_swap_logic": 0.5886284589942079
+          },
+          "source_node_id": "n5",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n02_inspect_swap_logic"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.5506277499953285,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n02_inspect_swap_logic"
+          ],
+          "observed_action_id": "item_8",
+          "projected_action_id": "a006",
+          "semantic_allocations_seconds": {
+            "n02_inspect_swap_logic": 0.5506277499953285
+          },
+          "source_node_id": "n6",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n02_inspect_swap_logic"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.5711105419904925,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n02_inspect_swap_logic"
+          ],
+          "observed_action_id": "item_7",
+          "projected_action_id": "a007",
+          "semantic_allocations_seconds": {
+            "n02_inspect_swap_logic": 0.5711105419904925
+          },
+          "source_node_id": "n7",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n02_inspect_swap_logic"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.5755239579884801,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n02_inspect_swap_logic"
+          ],
+          "observed_action_id": "item_11",
+          "projected_action_id": "a008",
+          "semantic_allocations_seconds": {
+            "n02_inspect_swap_logic": 0.5755239579884801
+          },
+          "source_node_id": "n8",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n02_inspect_swap_logic"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.5755263329920126,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n02_inspect_swap_logic"
+          ],
+          "observed_action_id": "item_12",
+          "projected_action_id": "a009",
+          "semantic_allocations_seconds": {
+            "n02_inspect_swap_logic": 0.5755263329920126
+          },
+          "source_node_id": "n9",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n02_inspect_swap_logic"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.7973474580066977,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n03_discover_regression_context"
+          ],
+          "observed_action_id": "item_13",
+          "projected_action_id": "a010",
+          "semantic_allocations_seconds": {
+            "n03_discover_regression_context": 0.7973474580066977
+          },
+          "source_node_id": "n10",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n03_discover_regression_context"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.8033704170084093,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n03_discover_regression_context"
+          ],
+          "observed_action_id": "item_10",
+          "projected_action_id": "a011",
+          "semantic_allocations_seconds": {
+            "n03_discover_regression_context": 0.8033704170084093
+          },
+          "source_node_id": "n11",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n03_discover_regression_context"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.5229638330056332,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n04_inspect_regression_context"
+          ],
+          "observed_action_id": "item_15",
+          "projected_action_id": "a012",
+          "semantic_allocations_seconds": {
+            "n04_inspect_regression_context": 0.5229638330056332
+          },
+          "source_node_id": "n12",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n04_inspect_regression_context"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.44043570800567977,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n04_inspect_regression_context"
+          ],
+          "observed_action_id": "item_17",
+          "projected_action_id": "a013",
+          "semantic_allocations_seconds": {
+            "n04_inspect_regression_context": 0.44043570800567977
+          },
+          "source_node_id": "n13",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n04_inspect_regression_context"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.44996591699600685,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n04_inspect_regression_context"
+          ],
+          "observed_action_id": "item_16",
+          "projected_action_id": "a014",
+          "semantic_allocations_seconds": {
+            "n04_inspect_regression_context": 0.44996591699600685
+          },
+          "source_node_id": "n14",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n04_inspect_regression_context"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.31063083399203606,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n04_inspect_regression_context"
+          ],
+          "observed_action_id": "item_19",
+          "projected_action_id": "a015",
+          "semantic_allocations_seconds": {
+            "n04_inspect_regression_context": 0.31063083399203606
+          },
+          "source_node_id": "n15",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n04_inspect_regression_context"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.3020776659977855,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n02_inspect_swap_logic"
+          ],
+          "observed_action_id": "item_20",
+          "projected_action_id": "a016",
+          "semantic_allocations_seconds": {
+            "n02_inspect_swap_logic": 0.3020776659977855
+          },
+          "source_node_id": "n16",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n02_inspect_swap_logic"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 1.418126750009833,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n05_materialize_fix"
+          ],
+          "observed_action_id": "item_22",
+          "projected_action_id": "a017",
+          "semantic_allocations_seconds": {
+            "n05_materialize_fix": 1.418126750009833
+          },
+          "source_node_id": "n17",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n05_materialize_fix"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 1.2200665419950383,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n05_materialize_fix"
+          ],
+          "observed_action_id": "item_24",
+          "projected_action_id": "a018",
+          "semantic_allocations_seconds": {
+            "n05_materialize_fix": 1.2200665419950383
+          },
+          "source_node_id": "n18",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n05_materialize_fix"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 29.27146512499894,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n06_validate_nonmutation"
+          ],
+          "observed_action_id": "item_26",
+          "projected_action_id": "a019",
+          "semantic_allocations_seconds": {
+            "n06_validate_nonmutation": 29.27146512499894
+          },
+          "source_node_id": "n19",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n06_validate_nonmutation"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 22.34891245799372,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n06_validate_nonmutation"
+          ],
+          "observed_action_id": "item_28",
+          "projected_action_id": "a020",
+          "semantic_allocations_seconds": {
+            "n06_validate_nonmutation": 22.34891245799372
+          },
+          "source_node_id": "n20",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n06_validate_nonmutation"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "system_envelope",
+          "duration_seconds": 0.40681512499577366,
+          "effective_disposition": "move_to_system_envelope",
+          "effective_semantic_node_ids": [],
+          "observed_action_id": "item_31",
+          "projected_action_id": "a021",
+          "semantic_allocations_seconds": {},
+          "source_node_id": "n21",
+          "stage_a_disposition": "move_to_system_envelope",
+          "stage_a_semantic_node_ids": [],
+          "system_envelope_id": "stage_a_preclassified_system_envelope"
+        },
+        {
+          "duration_partition_category": "system_envelope",
+          "duration_seconds": 0.4069807909982046,
+          "effective_disposition": "move_to_system_envelope",
+          "effective_semantic_node_ids": [],
+          "observed_action_id": "item_30",
+          "projected_action_id": "a022",
+          "semantic_allocations_seconds": {},
+          "source_node_id": "n22",
+          "stage_a_disposition": "move_to_system_envelope",
+          "stage_a_semantic_node_ids": [],
+          "system_envelope_id": "stage_a_preclassified_system_envelope"
+        }
+      ],
+      "stage_a_annotation_sha256": "75d76e546ac67a57638245d003c90555a26e26e71f2e2030b2b368ae8becd6c4",
+      "stage_a_mapping_sha256": "919d0cbcf532b37a8c9e1617a697cd7ee89fefaf18576ad9b0cb32cd027f8828",
+      "status": "pass",
+      "system_envelope_by_id_seconds": {
+        "stage_a_preclassified_system_envelope": 1.232598540984327
+      },
+      "uncovered_duration_seconds": 0.0
+    },
+    {
+      "active_effective_semantic_node_ids": [
+        "n01_resource_inventory",
+        "n02_workspace_baseline",
+        "n03_requirement_and_code_evidence",
+        "n04_initial_implementation",
+        "n05_initial_static_validation",
+        "n06_initial_behavior_validation",
+        "n07_followup_evidence_search",
+        "n08_refined_implementation",
+        "n09_refined_behavior_validation",
+        "n10_refined_static_validation",
+        "n11_final_implementation_adjustment",
+        "n12_final_behavior_validation",
+        "n13_final_workspace_review"
+      ],
+      "all_action_seconds": 118.92025395506062,
+      "case_id": "swebench_verified_pylint-dev_pylint-6528",
+      "conservation_delta_seconds": 0.0,
+      "duration_partition_seconds": {
+        "effective_semantic_work": 118.92025395506062,
+        "redundant_exploration": 0.0,
+        "system_envelope": 0,
+        "tool_noise": 0.0
+      },
+      "effective_action_overlay_sha256": "1e543af87cb86d8f38939e107c51cecc5b989a109a97bcbd16c4a0d99d28cfa8",
+      "effective_reference_dag_sha256": "4ef9126cfb516fff46c778cffab352be19a664e7c7ca009d15a0f27a97735362",
+      "imputed_duration_seconds": 0.0,
+      "inactive_effective_semantic_node_ids": [],
+      "mapping_claim_layers": {
+        "effective_mapping": "outcome_adjudicated_not_duration_blind",
+        "stage_a_mapping": "duration_outcome_result_blind_immutable"
+      },
+      "rows": [
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.5798535000067204,
+          "effective_disposition": "retain",
+          "effective_semantic_node_ids": [
+            "n01_resource_inventory"
+          ],
+          "observed_action_id": "item_2",
+          "projected_action_id": "a001",
+          "semantic_allocations_seconds": {
+            "n01_resource_inventory": 0.5798535000067204
+          },
+          "source_node_id": "n1",
+          "stage_a_disposition": "retain",
+          "stage_a_semantic_node_ids": [
+            "n01_resource_inventory"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.6490471249999246,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n03_requirement_and_code_evidence"
+          ],
+          "observed_action_id": "item_1",
+          "projected_action_id": "a002",
+          "semantic_allocations_seconds": {
+            "n03_requirement_and_code_evidence": 0.6490471249999246
+          },
+          "source_node_id": "n2",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n03_requirement_and_code_evidence"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.5262729579990264,
+          "effective_disposition": "retain",
+          "effective_semantic_node_ids": [
+            "n02_workspace_baseline"
+          ],
+          "observed_action_id": "item_3",
+          "projected_action_id": "a003",
+          "semantic_allocations_seconds": {
+            "n02_workspace_baseline": 0.5262729579990264
+          },
+          "source_node_id": "n3",
+          "stage_a_disposition": "retain",
+          "stage_a_semantic_node_ids": [
+            "n02_workspace_baseline"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.3620372910081642,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n03_requirement_and_code_evidence"
+          ],
+          "observed_action_id": "item_5",
+          "projected_action_id": "a004",
+          "semantic_allocations_seconds": {
+            "n03_requirement_and_code_evidence": 0.3620372910081642
+          },
+          "source_node_id": "n4",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n03_requirement_and_code_evidence"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.4131688750057947,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n03_requirement_and_code_evidence"
+          ],
+          "observed_action_id": "item_6",
+          "projected_action_id": "a005",
+          "semantic_allocations_seconds": {
+            "n03_requirement_and_code_evidence": 0.4131688750057947
+          },
+          "source_node_id": "n5",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n03_requirement_and_code_evidence"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.4921947499969974,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n03_requirement_and_code_evidence"
+          ],
+          "observed_action_id": "item_7",
+          "projected_action_id": "a006",
+          "semantic_allocations_seconds": {
+            "n03_requirement_and_code_evidence": 0.4921947499969974
+          },
+          "source_node_id": "n6",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n03_requirement_and_code_evidence"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.41573037501075305,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n03_requirement_and_code_evidence"
+          ],
+          "observed_action_id": "item_8",
+          "projected_action_id": "a007",
+          "semantic_allocations_seconds": {
+            "n03_requirement_and_code_evidence": 0.41573037501075305
+          },
+          "source_node_id": "n7",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n03_requirement_and_code_evidence"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.35033383399422746,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n03_requirement_and_code_evidence"
+          ],
+          "observed_action_id": "item_11",
+          "projected_action_id": "a008",
+          "semantic_allocations_seconds": {
+            "n03_requirement_and_code_evidence": 0.35033383399422746
+          },
+          "source_node_id": "n8",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n03_requirement_and_code_evidence"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.36225725000258535,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n03_requirement_and_code_evidence"
+          ],
+          "observed_action_id": "item_12",
+          "projected_action_id": "a009",
+          "semantic_allocations_seconds": {
+            "n03_requirement_and_code_evidence": 0.36225725000258535
+          },
+          "source_node_id": "n9",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n03_requirement_and_code_evidence"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.44759250000061,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n03_requirement_and_code_evidence"
+          ],
+          "observed_action_id": "item_10",
+          "projected_action_id": "a010",
+          "semantic_allocations_seconds": {
+            "n03_requirement_and_code_evidence": 0.44759250000061
+          },
+          "source_node_id": "n10",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n03_requirement_and_code_evidence"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.3583361250057351,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n03_requirement_and_code_evidence"
+          ],
+          "observed_action_id": "item_14",
+          "projected_action_id": "a011",
+          "semantic_allocations_seconds": {
+            "n03_requirement_and_code_evidence": 0.3583361250057351
+          },
+          "source_node_id": "n11",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n03_requirement_and_code_evidence"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.3488041669916129,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n03_requirement_and_code_evidence"
+          ],
+          "observed_action_id": "item_15",
+          "projected_action_id": "a012",
+          "semantic_allocations_seconds": {
+            "n03_requirement_and_code_evidence": 0.3488041669916129
+          },
+          "source_node_id": "n12",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n03_requirement_and_code_evidence"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.45579562499187887,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n03_requirement_and_code_evidence"
+          ],
+          "observed_action_id": "item_16",
+          "projected_action_id": "a013",
+          "semantic_allocations_seconds": {
+            "n03_requirement_and_code_evidence": 0.45579562499187887
+          },
+          "source_node_id": "n13",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n03_requirement_and_code_evidence"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.5610915410070447,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n03_requirement_and_code_evidence"
+          ],
+          "observed_action_id": "item_18",
+          "projected_action_id": "a014",
+          "semantic_allocations_seconds": {
+            "n03_requirement_and_code_evidence": 0.5610915410070447
+          },
+          "source_node_id": "n14",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n03_requirement_and_code_evidence"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.34619491700141225,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n03_requirement_and_code_evidence"
+          ],
+          "observed_action_id": "item_20",
+          "projected_action_id": "a015",
+          "semantic_allocations_seconds": {
+            "n03_requirement_and_code_evidence": 0.34619491700141225
+          },
+          "source_node_id": "n15",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n03_requirement_and_code_evidence"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 1.2899495419987943,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n04_initial_implementation"
+          ],
+          "observed_action_id": "item_22",
+          "projected_action_id": "a016",
+          "semantic_allocations_seconds": {
+            "n04_initial_implementation": 1.2899495419987943
+          },
+          "source_node_id": "n16",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n04_initial_implementation"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 1.1778564160049427,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n04_initial_implementation"
+          ],
+          "observed_action_id": "item_24",
+          "projected_action_id": "a017",
+          "semantic_allocations_seconds": {
+            "n04_initial_implementation": 1.1778564160049427
+          },
+          "source_node_id": "n17",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n04_initial_implementation"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.3406906250020256,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n05_initial_static_validation"
+          ],
+          "observed_action_id": "item_27",
+          "projected_action_id": "a018",
+          "semantic_allocations_seconds": {
+            "n05_initial_static_validation": 0.3406906250020256
+          },
+          "source_node_id": "n18",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n05_initial_static_validation"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 31.810995167004876,
+          "effective_disposition": "retain",
+          "effective_semantic_node_ids": [
+            "n06_initial_behavior_validation"
+          ],
+          "observed_action_id": "item_26",
+          "projected_action_id": "a019",
+          "semantic_allocations_seconds": {
+            "n06_initial_behavior_validation": 31.810995167004876
+          },
+          "source_node_id": "n19",
+          "stage_a_disposition": "retain",
+          "stage_a_semantic_node_ids": [
+            "n06_initial_behavior_validation"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 3.5583793749974575,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n05_initial_static_validation"
+          ],
+          "observed_action_id": "item_30",
+          "projected_action_id": "a020",
+          "semantic_allocations_seconds": {
+            "n05_initial_static_validation": 3.5583793749974575
+          },
+          "source_node_id": "n20",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n05_initial_static_validation"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 4.317919916007668,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n05_initial_static_validation"
+          ],
+          "observed_action_id": "item_31",
+          "projected_action_id": "a021",
+          "semantic_allocations_seconds": {
+            "n05_initial_static_validation": 4.317919916007668
+          },
+          "source_node_id": "n21",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n05_initial_static_validation"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 4.2916419170069275,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n05_initial_static_validation"
+          ],
+          "observed_action_id": "item_32",
+          "projected_action_id": "a022",
+          "semantic_allocations_seconds": {
+            "n05_initial_static_validation": 4.2916419170069275
+          },
+          "source_node_id": "n22",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n05_initial_static_validation"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 4.270567125000525,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n05_initial_static_validation"
+          ],
+          "observed_action_id": "item_33",
+          "projected_action_id": "a023",
+          "semantic_allocations_seconds": {
+            "n05_initial_static_validation": 4.270567125000525
+          },
+          "source_node_id": "n23",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n05_initial_static_validation"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.5866787910053972,
+          "effective_disposition": "retain",
+          "effective_semantic_node_ids": [
+            "n07_followup_evidence_search"
+          ],
+          "observed_action_id": "item_34",
+          "projected_action_id": "a024",
+          "semantic_allocations_seconds": {
+            "n07_followup_evidence_search": 0.5866787910053972
+          },
+          "source_node_id": "n24",
+          "stage_a_disposition": "retain",
+          "stage_a_semantic_node_ids": [
+            "n07_followup_evidence_search"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 1.2233262920053676,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n08_refined_implementation"
+          ],
+          "observed_action_id": "item_36",
+          "projected_action_id": "a025",
+          "semantic_allocations_seconds": {
+            "n08_refined_implementation": 1.2233262920053676
+          },
+          "source_node_id": "n25",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n08_refined_implementation"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 1.1702442079986213,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n08_refined_implementation"
+          ],
+          "observed_action_id": "item_38",
+          "projected_action_id": "a026",
+          "semantic_allocations_seconds": {
+            "n08_refined_implementation": 1.1702442079986213
+          },
+          "source_node_id": "n26",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n08_refined_implementation"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.39796745900821406,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n08_refined_implementation"
+          ],
+          "observed_action_id": "item_41",
+          "projected_action_id": "a027",
+          "semantic_allocations_seconds": {
+            "n08_refined_implementation": 0.39796745900821406
+          },
+          "source_node_id": "n27",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n08_refined_implementation"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 28.10916270800226,
+          "effective_disposition": "retain",
+          "effective_semantic_node_ids": [
+            "n09_refined_behavior_validation"
+          ],
+          "observed_action_id": "item_40",
+          "projected_action_id": "a028",
+          "semantic_allocations_seconds": {
+            "n09_refined_behavior_validation": 28.10916270800226
+          },
+          "source_node_id": "n28",
+          "stage_a_disposition": "retain",
+          "stage_a_semantic_node_ids": [
+            "n09_refined_behavior_validation"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.581472958001541,
+          "effective_disposition": "retain",
+          "effective_semantic_node_ids": [
+            "n10_refined_static_validation"
+          ],
+          "observed_action_id": "item_43",
+          "projected_action_id": "a029",
+          "semantic_allocations_seconds": {
+            "n10_refined_static_validation": 0.581472958001541
+          },
+          "source_node_id": "n29",
+          "stage_a_disposition": "retain",
+          "stage_a_semantic_node_ids": [
+            "n10_refined_static_validation"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.5742027919914108,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n11_final_implementation_adjustment"
+          ],
+          "observed_action_id": "item_44",
+          "projected_action_id": "a030",
+          "semantic_allocations_seconds": {
+            "n11_final_implementation_adjustment": 0.5742027919914108
+          },
+          "source_node_id": "n30",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n11_final_implementation_adjustment"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 1.1695146660058526,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n11_final_implementation_adjustment"
+          ],
+          "observed_action_id": "item_46",
+          "projected_action_id": "a031",
+          "semantic_allocations_seconds": {
+            "n11_final_implementation_adjustment": 1.1695146660058526
+          },
+          "source_node_id": "n31",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n11_final_implementation_adjustment"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.3355510410037823,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n11_final_implementation_adjustment"
+          ],
+          "observed_action_id": "item_49",
+          "projected_action_id": "a032",
+          "semantic_allocations_seconds": {
+            "n11_final_implementation_adjustment": 0.3355510410037823
+          },
+          "source_node_id": "n32",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n11_final_implementation_adjustment"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 26.199941665996448,
+          "effective_disposition": "retain",
+          "effective_semantic_node_ids": [
+            "n12_final_behavior_validation"
+          ],
+          "observed_action_id": "item_48",
+          "projected_action_id": "a033",
+          "semantic_allocations_seconds": {
+            "n12_final_behavior_validation": 26.199941665996448
+          },
+          "source_node_id": "n33",
+          "stage_a_disposition": "retain",
+          "stage_a_semantic_node_ids": [
+            "n12_final_behavior_validation"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.42376020799565595,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n13_final_workspace_review"
+          ],
+          "observed_action_id": "item_51",
+          "projected_action_id": "a034",
+          "semantic_allocations_seconds": {
+            "n13_final_workspace_review": 0.42376020799565595
+          },
+          "source_node_id": "n34",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n13_final_workspace_review"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.4217202500003623,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n13_final_workspace_review"
+          ],
+          "observed_action_id": "item_52",
+          "projected_action_id": "a035",
+          "semantic_allocations_seconds": {
+            "n13_final_workspace_review": 0.4217202500003623
+          },
+          "source_node_id": "n35",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n13_final_workspace_review"
+          ],
+          "system_envelope_id": null
+        }
+      ],
+      "stage_a_annotation_sha256": "a4567c0c60545f64012d4de79c5a6310587d55bf575fbc85b8c8c8df5d4b329d",
+      "stage_a_mapping_sha256": "d333c2e19f67f1450cfeeab5ff3a994f56c2ca8a83b272842e7fff0a8c544148",
+      "status": "pass",
+      "system_envelope_by_id_seconds": {},
+      "uncovered_duration_seconds": 0.0
+    },
+    {
+      "active_effective_semantic_node_ids": [
+        "n_final_patch",
+        "n_final_validation",
+        "n_followup_evidence",
+        "n_followup_search",
+        "n_followup_validation",
+        "n_implementation_diagnosis",
+        "n_initial_patch_candidate",
+        "n_initial_validation",
+        "n_late_evidence",
+        "n_patch_review",
+        "n_problem_scope_search",
+        "n_project_guidance",
+        "n_project_inventory"
+      ],
+      "all_action_seconds": 17.40029058199434,
+      "case_id": "swebench_verified_pytest-dev_pytest-5809",
+      "conservation_delta_seconds": 0.0,
+      "duration_partition_seconds": {
+        "effective_semantic_work": 16.714570332987932,
+        "redundant_exploration": 0.0,
+        "system_envelope": 0.6857202490064083,
+        "tool_noise": 0.0
+      },
+      "effective_action_overlay_sha256": "dccb9c2588b6959335c3d7c9c149c0a191ba1dd09922176ce51304e22c16b855",
+      "effective_reference_dag_sha256": "f7473b086abb976bbfe87535d7b4a6c8fdf9e956c104d8cdc57b65041af8aed6",
+      "imputed_duration_seconds": 0.0,
+      "inactive_effective_semantic_node_ids": [],
+      "mapping_claim_layers": {
+        "effective_mapping": "outcome_adjudicated_not_duration_blind",
+        "stage_a_mapping": "duration_outcome_result_blind_immutable"
+      },
+      "rows": [
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.8938840830087429,
+          "effective_disposition": "retain",
+          "effective_semantic_node_ids": [
+            "n_problem_scope_search"
+          ],
+          "observed_action_id": "item_2",
+          "projected_action_id": "a001",
+          "semantic_allocations_seconds": {
+            "n_problem_scope_search": 0.8938840830087429
+          },
+          "source_node_id": "n1",
+          "stage_a_disposition": "retain",
+          "stage_a_semantic_node_ids": [
+            "n_problem_scope_search"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.8942485000006855,
+          "effective_disposition": "retain",
+          "effective_semantic_node_ids": [
+            "n_project_inventory"
+          ],
+          "observed_action_id": "item_1",
+          "projected_action_id": "a002",
+          "semantic_allocations_seconds": {
+            "n_project_inventory": 0.8942485000006855
+          },
+          "source_node_id": "n2",
+          "stage_a_disposition": "retain",
+          "stage_a_semantic_node_ids": [
+            "n_project_inventory"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.5109758750040783,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n_implementation_diagnosis"
+          ],
+          "observed_action_id": "item_4",
+          "projected_action_id": "a003",
+          "semantic_allocations_seconds": {
+            "n_implementation_diagnosis": 0.5109758750040783
+          },
+          "source_node_id": "n3",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n_implementation_diagnosis"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.4979987909900956,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n_implementation_diagnosis"
+          ],
+          "observed_action_id": "item_5",
+          "projected_action_id": "a004",
+          "semantic_allocations_seconds": {
+            "n_implementation_diagnosis": 0.4979987909900956
+          },
+          "source_node_id": "n4",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n_implementation_diagnosis"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.4778395840112353,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n_implementation_diagnosis"
+          ],
+          "observed_action_id": "item_6",
+          "projected_action_id": "a005",
+          "semantic_allocations_seconds": {
+            "n_implementation_diagnosis": 0.4778395840112353
+          },
+          "source_node_id": "n5",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n_implementation_diagnosis"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 2.318842541993945,
+          "effective_disposition": "retain",
+          "effective_semantic_node_ids": [
+            "n_initial_patch_candidate"
+          ],
+          "observed_action_id": "item_8",
+          "projected_action_id": "a006",
+          "semantic_allocations_seconds": {
+            "n_initial_patch_candidate": 2.318842541993945
+          },
+          "source_node_id": "n6",
+          "stage_a_disposition": "retain",
+          "stage_a_semantic_node_ids": [
+            "n_initial_patch_candidate"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.3576379579899367,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n_project_guidance"
+          ],
+          "observed_action_id": "item_11",
+          "projected_action_id": "a007",
+          "semantic_allocations_seconds": {
+            "n_project_guidance": 0.3576379579899367
+          },
+          "source_node_id": "n7",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n_project_guidance"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.35778495800332166,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n_project_guidance"
+          ],
+          "observed_action_id": "item_10",
+          "projected_action_id": "a008",
+          "semantic_allocations_seconds": {
+            "n_project_guidance": 0.35778495800332166
+          },
+          "source_node_id": "n8",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n_project_guidance"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.35269899999548215,
+          "effective_disposition": "retain",
+          "effective_semantic_node_ids": [
+            "n_patch_review"
+          ],
+          "observed_action_id": "item_12",
+          "projected_action_id": "a009",
+          "semantic_allocations_seconds": {
+            "n_patch_review": 0.35269899999548215
+          },
+          "source_node_id": "n9",
+          "stage_a_disposition": "retain",
+          "stage_a_semantic_node_ids": [
+            "n_patch_review"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 1.1323924579919549,
+          "effective_disposition": "retain",
+          "effective_semantic_node_ids": [
+            "n_final_patch"
+          ],
+          "observed_action_id": "item_14",
+          "projected_action_id": "a010",
+          "semantic_allocations_seconds": {
+            "n_final_patch": 1.1323924579919549
+          },
+          "source_node_id": "n10",
+          "stage_a_disposition": "retain",
+          "stage_a_semantic_node_ids": [
+            "n_final_patch"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 2.147676708002109,
+          "effective_disposition": "retain",
+          "effective_semantic_node_ids": [
+            "n_initial_validation"
+          ],
+          "observed_action_id": "item_16",
+          "projected_action_id": "a011",
+          "semantic_allocations_seconds": {
+            "n_initial_validation": 2.147676708002109
+          },
+          "source_node_id": "n11",
+          "stage_a_disposition": "retain",
+          "stage_a_semantic_node_ids": [
+            "n_initial_validation"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.3660565839963965,
+          "effective_disposition": "retain",
+          "effective_semantic_node_ids": [
+            "n_followup_search"
+          ],
+          "observed_action_id": "item_18",
+          "projected_action_id": "a012",
+          "semantic_allocations_seconds": {
+            "n_followup_search": 0.3660565839963965
+          },
+          "source_node_id": "n12",
+          "stage_a_disposition": "retain",
+          "stage_a_semantic_node_ids": [
+            "n_followup_search"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.33180099999299273,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n_followup_evidence"
+          ],
+          "observed_action_id": "item_19",
+          "projected_action_id": "a013",
+          "semantic_allocations_seconds": {
+            "n_followup_evidence": 0.33180099999299273
+          },
+          "source_node_id": "n13",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n_followup_evidence"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.3337745000026189,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n_followup_evidence"
+          ],
+          "observed_action_id": "item_20",
+          "projected_action_id": "a014",
+          "semantic_allocations_seconds": {
+            "n_followup_evidence": 0.3337745000026189
+          },
+          "source_node_id": "n14",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n_followup_evidence"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 1.5076545420015464,
+          "effective_disposition": "retain",
+          "effective_semantic_node_ids": [
+            "n_followup_validation"
+          ],
+          "observed_action_id": "item_22",
+          "projected_action_id": "a015",
+          "semantic_allocations_seconds": {
+            "n_followup_validation": 1.5076545420015464
+          },
+          "source_node_id": "n15",
+          "stage_a_disposition": "retain",
+          "stage_a_semantic_node_ids": [
+            "n_followup_validation"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.4330163749982603,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n_late_evidence"
+          ],
+          "observed_action_id": "item_24",
+          "projected_action_id": "a016",
+          "semantic_allocations_seconds": {
+            "n_late_evidence": 0.4330163749982603
+          },
+          "source_node_id": "n16",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n_late_evidence"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.4350112079991959,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n_late_evidence"
+          ],
+          "observed_action_id": "item_25",
+          "projected_action_id": "a017",
+          "semantic_allocations_seconds": {
+            "n_late_evidence": 0.4350112079991959
+          },
+          "source_node_id": "n17",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n_late_evidence"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.5185467090050224,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n_late_evidence"
+          ],
+          "observed_action_id": "item_26",
+          "projected_action_id": "a018",
+          "semantic_allocations_seconds": {
+            "n_late_evidence": 0.5185467090050224
+          },
+          "source_node_id": "n18",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n_late_evidence"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 2.8467289580003126,
+          "effective_disposition": "retain",
+          "effective_semantic_node_ids": [
+            "n_final_validation"
+          ],
+          "observed_action_id": "item_28",
+          "projected_action_id": "a019",
+          "semantic_allocations_seconds": {
+            "n_final_validation": 2.8467289580003126
+          },
+          "source_node_id": "n19",
+          "stage_a_disposition": "retain",
+          "stage_a_semantic_node_ids": [
+            "n_final_validation"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "system_envelope",
+          "duration_seconds": 0.3333157910092268,
+          "effective_disposition": "move_to_system_envelope",
+          "effective_semantic_node_ids": [],
+          "observed_action_id": "item_30",
+          "projected_action_id": "a020",
+          "semantic_allocations_seconds": {},
+          "source_node_id": "n20",
+          "stage_a_disposition": "move_to_system_envelope",
+          "stage_a_semantic_node_ids": [],
+          "system_envelope_id": "stage_a_preclassified_system_envelope"
+        },
+        {
+          "duration_partition_category": "system_envelope",
+          "duration_seconds": 0.35240445799718145,
+          "effective_disposition": "move_to_system_envelope",
+          "effective_semantic_node_ids": [],
+          "observed_action_id": "item_31",
+          "projected_action_id": "a021",
+          "semantic_allocations_seconds": {},
+          "source_node_id": "n21",
+          "stage_a_disposition": "move_to_system_envelope",
+          "stage_a_semantic_node_ids": [],
+          "system_envelope_id": "stage_a_preclassified_system_envelope"
+        }
+      ],
+      "stage_a_annotation_sha256": "d12ccaa0b90417557c4047112717fd848b25052bffcc737b55afa75f03ede162",
+      "stage_a_mapping_sha256": "1b11fb1e0ca5a79d1f4eee6c255bba6783e5f208dd8d86a1ff1903f89c145efa",
+      "status": "pass",
+      "system_envelope_by_id_seconds": {
+        "stage_a_preclassified_system_envelope": 0.6857202490064083
+      },
+      "uncovered_duration_seconds": 0.0
+    },
+    {
+      "active_effective_semantic_node_ids": [
+        "n01_resource_discovery",
+        "n02_defect_evidence_review",
+        "n03_prechange_behavior_check",
+        "n04_initial_patch_candidate",
+        "n05_candidate_context_review",
+        "n06_revision_one",
+        "n07_revision_one_check",
+        "n08_revision_two",
+        "n09_revision_two_check",
+        "n10_revision_three",
+        "n11_revision_three_check",
+        "n12_revision_four",
+        "n13_revision_four_check",
+        "n14_consolidated_candidate",
+        "n15_candidate_validation_set",
+        "n16_followup_evidence_search",
+        "n17_followup_behavior_check",
+        "n18_final_implementation_adjustment"
+      ],
+      "all_action_seconds": 44.533712002041284,
+      "case_id": "swebench_verified_pytest-dev_pytest-6202",
+      "conservation_delta_seconds": 0.0,
+      "duration_partition_seconds": {
+        "effective_semantic_work": 42.895787960034795,
+        "redundant_exploration": 0.0,
+        "system_envelope": 1.637924042006489,
+        "tool_noise": 0.0
+      },
+      "effective_action_overlay_sha256": "8358c9a250de1f3ac82f5ddb5a68ad98e010a2e2c4127b237a3d2a4693d0f746",
+      "effective_reference_dag_sha256": "6b68adaca8aab16af319e4449e6c9100d39b19513e1119ca907d047bd5e50771",
+      "imputed_duration_seconds": 0.0,
+      "inactive_effective_semantic_node_ids": [],
+      "mapping_claim_layers": {
+        "effective_mapping": "outcome_adjudicated_not_duration_blind",
+        "stage_a_mapping": "duration_outcome_result_blind_immutable"
+      },
+      "rows": [
+        {
+          "duration_partition_category": "system_envelope",
+          "duration_seconds": 0.5407738749927375,
+          "effective_disposition": "move_to_system_envelope",
+          "effective_semantic_node_ids": [],
+          "observed_action_id": "item_3",
+          "projected_action_id": "a001",
+          "semantic_allocations_seconds": {},
+          "source_node_id": "n1",
+          "stage_a_disposition": "move_to_system_envelope",
+          "stage_a_semantic_node_ids": [],
+          "system_envelope_id": "stage_a_preclassified_system_envelope"
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.9133239579969086,
+          "effective_disposition": "retain",
+          "effective_semantic_node_ids": [
+            "n01_resource_discovery"
+          ],
+          "observed_action_id": "item_2",
+          "projected_action_id": "a002",
+          "semantic_allocations_seconds": {
+            "n01_resource_discovery": 0.9133239579969086
+          },
+          "source_node_id": "n2",
+          "stage_a_disposition": "retain",
+          "stage_a_semantic_node_ids": [
+            "n01_resource_discovery"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.917034332989715,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n02_defect_evidence_review"
+          ],
+          "observed_action_id": "item_1",
+          "projected_action_id": "a003",
+          "semantic_allocations_seconds": {
+            "n02_defect_evidence_review": 0.917034332989715
+          },
+          "source_node_id": "n3",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n02_defect_evidence_review"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.500333584001055,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n02_defect_evidence_review"
+          ],
+          "observed_action_id": "item_6",
+          "projected_action_id": "a004",
+          "semantic_allocations_seconds": {
+            "n02_defect_evidence_review": 0.500333584001055
+          },
+          "source_node_id": "n4",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n02_defect_evidence_review"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.5005377500056056,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n02_defect_evidence_review"
+          ],
+          "observed_action_id": "item_5",
+          "projected_action_id": "a005",
+          "semantic_allocations_seconds": {
+            "n02_defect_evidence_review": 0.5005377500056056
+          },
+          "source_node_id": "n5",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n02_defect_evidence_review"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.4951260830130195,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n02_defect_evidence_review"
+          ],
+          "observed_action_id": "item_7",
+          "projected_action_id": "a006",
+          "semantic_allocations_seconds": {
+            "n02_defect_evidence_review": 0.4951260830130195
+          },
+          "source_node_id": "n6",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n02_defect_evidence_review"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.479121791999205,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n02_defect_evidence_review"
+          ],
+          "observed_action_id": "item_8",
+          "projected_action_id": "a007",
+          "semantic_allocations_seconds": {
+            "n02_defect_evidence_review": 0.479121791999205
+          },
+          "source_node_id": "n7",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n02_defect_evidence_review"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.4377743330114754,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n02_defect_evidence_review"
+          ],
+          "observed_action_id": "item_10",
+          "projected_action_id": "a008",
+          "semantic_allocations_seconds": {
+            "n02_defect_evidence_review": 0.4377743330114754
+          },
+          "source_node_id": "n8",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n02_defect_evidence_review"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.4153424999967683,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n02_defect_evidence_review"
+          ],
+          "observed_action_id": "item_12",
+          "projected_action_id": "a009",
+          "semantic_allocations_seconds": {
+            "n02_defect_evidence_review": 0.4153424999967683
+          },
+          "source_node_id": "n9",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n02_defect_evidence_review"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.4395075420034118,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n02_defect_evidence_review"
+          ],
+          "observed_action_id": "item_11",
+          "projected_action_id": "a010",
+          "semantic_allocations_seconds": {
+            "n02_defect_evidence_review": 0.4395075420034118
+          },
+          "source_node_id": "n10",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n02_defect_evidence_review"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.8697832080069929,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n02_defect_evidence_review"
+          ],
+          "observed_action_id": "item_14",
+          "projected_action_id": "a011",
+          "semantic_allocations_seconds": {
+            "n02_defect_evidence_review": 0.8697832080069929
+          },
+          "source_node_id": "n11",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n02_defect_evidence_review"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.3345665000088047,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n02_defect_evidence_review"
+          ],
+          "observed_action_id": "item_16",
+          "projected_action_id": "a012",
+          "semantic_allocations_seconds": {
+            "n02_defect_evidence_review": 0.3345665000088047
+          },
+          "source_node_id": "n12",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n02_defect_evidence_review"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.4042330419906648,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n02_defect_evidence_review"
+          ],
+          "observed_action_id": "item_17",
+          "projected_action_id": "a013",
+          "semantic_allocations_seconds": {
+            "n02_defect_evidence_review": 0.4042330419906648
+          },
+          "source_node_id": "n13",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n02_defect_evidence_review"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.3408769170055166,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n02_defect_evidence_review"
+          ],
+          "observed_action_id": "item_18",
+          "projected_action_id": "a014",
+          "semantic_allocations_seconds": {
+            "n02_defect_evidence_review": 0.3408769170055166
+          },
+          "source_node_id": "n14",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n02_defect_evidence_review"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.5140487080061575,
+          "effective_disposition": "retain",
+          "effective_semantic_node_ids": [
+            "n03_prechange_behavior_check"
+          ],
+          "observed_action_id": "item_20",
+          "projected_action_id": "a015",
+          "semantic_allocations_seconds": {
+            "n03_prechange_behavior_check": 0.5140487080061575
+          },
+          "source_node_id": "n15",
+          "stage_a_disposition": "retain",
+          "stage_a_semantic_node_ids": [
+            "n03_prechange_behavior_check"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 2.30038370800321,
+          "effective_disposition": "retain",
+          "effective_semantic_node_ids": [
+            "n04_initial_patch_candidate"
+          ],
+          "observed_action_id": "item_22",
+          "projected_action_id": "a016",
+          "semantic_allocations_seconds": {
+            "n04_initial_patch_candidate": 2.30038370800321
+          },
+          "source_node_id": "n16",
+          "stage_a_disposition": "retain",
+          "stage_a_semantic_node_ids": [
+            "n04_initial_patch_candidate"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.3903921250021085,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n05_candidate_context_review"
+          ],
+          "observed_action_id": "item_24",
+          "projected_action_id": "a017",
+          "semantic_allocations_seconds": {
+            "n05_candidate_context_review": 0.3903921250021085
+          },
+          "source_node_id": "n17",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n05_candidate_context_review"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.39506529200298246,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n05_candidate_context_review"
+          ],
+          "observed_action_id": "item_25",
+          "projected_action_id": "a018",
+          "semantic_allocations_seconds": {
+            "n05_candidate_context_review": 0.39506529200298246
+          },
+          "source_node_id": "n18",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n05_candidate_context_review"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.5828765829937765,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n05_candidate_context_review"
+          ],
+          "observed_action_id": "item_26",
+          "projected_action_id": "a019",
+          "semantic_allocations_seconds": {
+            "n05_candidate_context_review": 0.5828765829937765
+          },
+          "source_node_id": "n19",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n05_candidate_context_review"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "system_envelope",
+          "duration_seconds": 0.38906720900558867,
+          "effective_disposition": "move_to_system_envelope",
+          "effective_semantic_node_ids": [],
+          "observed_action_id": "item_27",
+          "projected_action_id": "a020",
+          "semantic_allocations_seconds": {},
+          "source_node_id": "n20",
+          "stage_a_disposition": "move_to_system_envelope",
+          "stage_a_semantic_node_ids": [],
+          "system_envelope_id": "stage_a_preclassified_system_envelope"
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 4.534855916994275,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n05_candidate_context_review"
+          ],
+          "observed_action_id": "item_29",
+          "projected_action_id": "a021",
+          "semantic_allocations_seconds": {
+            "n05_candidate_context_review": 4.534855916994275
+          },
+          "source_node_id": "n21",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n05_candidate_context_review"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 1.2412295829999493,
+          "effective_disposition": "retain",
+          "effective_semantic_node_ids": [
+            "n06_revision_one"
+          ],
+          "observed_action_id": "item_31",
+          "projected_action_id": "a022",
+          "semantic_allocations_seconds": {
+            "n06_revision_one": 1.2412295829999493
+          },
+          "source_node_id": "n22",
+          "stage_a_disposition": "retain",
+          "stage_a_semantic_node_ids": [
+            "n06_revision_one"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 1.8979966249899007,
+          "effective_disposition": "retain",
+          "effective_semantic_node_ids": [
+            "n07_revision_one_check"
+          ],
+          "observed_action_id": "item_33",
+          "projected_action_id": "a023",
+          "semantic_allocations_seconds": {
+            "n07_revision_one_check": 1.8979966249899007
+          },
+          "source_node_id": "n23",
+          "stage_a_disposition": "retain",
+          "stage_a_semantic_node_ids": [
+            "n07_revision_one_check"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 1.1185245420056162,
+          "effective_disposition": "retain",
+          "effective_semantic_node_ids": [
+            "n08_revision_two"
+          ],
+          "observed_action_id": "item_35",
+          "projected_action_id": "a024",
+          "semantic_allocations_seconds": {
+            "n08_revision_two": 1.1185245420056162
+          },
+          "source_node_id": "n24",
+          "stage_a_disposition": "retain",
+          "stage_a_semantic_node_ids": [
+            "n08_revision_two"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 2.772263582999585,
+          "effective_disposition": "retain",
+          "effective_semantic_node_ids": [
+            "n09_revision_two_check"
+          ],
+          "observed_action_id": "item_36",
+          "projected_action_id": "a025",
+          "semantic_allocations_seconds": {
+            "n09_revision_two_check": 2.772263582999585
+          },
+          "source_node_id": "n25",
+          "stage_a_disposition": "retain",
+          "stage_a_semantic_node_ids": [
+            "n09_revision_two_check"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 1.1477424170006998,
+          "effective_disposition": "retain",
+          "effective_semantic_node_ids": [
+            "n10_revision_three"
+          ],
+          "observed_action_id": "item_38",
+          "projected_action_id": "a026",
+          "semantic_allocations_seconds": {
+            "n10_revision_three": 1.1477424170006998
+          },
+          "source_node_id": "n26",
+          "stage_a_disposition": "retain",
+          "stage_a_semantic_node_ids": [
+            "n10_revision_three"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 2.469135000006645,
+          "effective_disposition": "retain",
+          "effective_semantic_node_ids": [
+            "n11_revision_three_check"
+          ],
+          "observed_action_id": "item_39",
+          "projected_action_id": "a027",
+          "semantic_allocations_seconds": {
+            "n11_revision_three_check": 2.469135000006645
+          },
+          "source_node_id": "n27",
+          "stage_a_disposition": "retain",
+          "stage_a_semantic_node_ids": [
+            "n11_revision_three_check"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 1.135285041993484,
+          "effective_disposition": "retain",
+          "effective_semantic_node_ids": [
+            "n12_revision_four"
+          ],
+          "observed_action_id": "item_41",
+          "projected_action_id": "a028",
+          "semantic_allocations_seconds": {
+            "n12_revision_four": 1.135285041993484
+          },
+          "source_node_id": "n28",
+          "stage_a_disposition": "retain",
+          "stage_a_semantic_node_ids": [
+            "n12_revision_four"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 2.431928041987703,
+          "effective_disposition": "retain",
+          "effective_semantic_node_ids": [
+            "n13_revision_four_check"
+          ],
+          "observed_action_id": "item_42",
+          "projected_action_id": "a029",
+          "semantic_allocations_seconds": {
+            "n13_revision_four_check": 2.431928041987703
+          },
+          "source_node_id": "n29",
+          "stage_a_disposition": "retain",
+          "stage_a_semantic_node_ids": [
+            "n13_revision_four_check"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 1.1487875000020722,
+          "effective_disposition": "retain",
+          "effective_semantic_node_ids": [
+            "n14_consolidated_candidate"
+          ],
+          "observed_action_id": "item_44",
+          "projected_action_id": "a030",
+          "semantic_allocations_seconds": {
+            "n14_consolidated_candidate": 1.1487875000020722
+          },
+          "source_node_id": "n30",
+          "stage_a_disposition": "retain",
+          "stage_a_semantic_node_ids": [
+            "n14_consolidated_candidate"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 2.2977602909959387,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n15_candidate_validation_set"
+          ],
+          "observed_action_id": "item_46",
+          "projected_action_id": "a031",
+          "semantic_allocations_seconds": {
+            "n15_candidate_validation_set": 2.2977602909959387
+          },
+          "source_node_id": "n31",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n15_candidate_validation_set"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 2.609356375003699,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n15_candidate_validation_set"
+          ],
+          "observed_action_id": "item_48",
+          "projected_action_id": "a032",
+          "semantic_allocations_seconds": {
+            "n15_candidate_validation_set": 2.609356375003699
+          },
+          "source_node_id": "n32",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n15_candidate_validation_set"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 2.465483749998384,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n15_candidate_validation_set"
+          ],
+          "observed_action_id": "item_50",
+          "projected_action_id": "a033",
+          "semantic_allocations_seconds": {
+            "n15_candidate_validation_set": 2.465483749998384
+          },
+          "source_node_id": "n33",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n15_candidate_validation_set"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.3289562090067193,
+          "effective_disposition": "retain",
+          "effective_semantic_node_ids": [
+            "n16_followup_evidence_search"
+          ],
+          "observed_action_id": "item_52",
+          "projected_action_id": "a034",
+          "semantic_allocations_seconds": {
+            "n16_followup_evidence_search": 0.3289562090067193
+          },
+          "source_node_id": "n34",
+          "stage_a_disposition": "retain",
+          "stage_a_semantic_node_ids": [
+            "n16_followup_evidence_search"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 2.549138792004669,
+          "effective_disposition": "retain",
+          "effective_semantic_node_ids": [
+            "n17_followup_behavior_check"
+          ],
+          "observed_action_id": "item_53",
+          "projected_action_id": "a035",
+          "semantic_allocations_seconds": {
+            "n17_followup_behavior_check": 2.549138792004669
+          },
+          "source_node_id": "n35",
+          "stage_a_disposition": "retain",
+          "stage_a_semantic_node_ids": [
+            "n17_followup_behavior_check"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 1.5170163340080762,
+          "effective_disposition": "retain",
+          "effective_semantic_node_ids": [
+            "n18_final_implementation_adjustment"
+          ],
+          "observed_action_id": "item_55",
+          "projected_action_id": "a036",
+          "semantic_allocations_seconds": {
+            "n18_final_implementation_adjustment": 1.5170163340080762
+          },
+          "source_node_id": "n36",
+          "stage_a_disposition": "retain",
+          "stage_a_semantic_node_ids": [
+            "n18_final_implementation_adjustment"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "system_envelope",
+          "duration_seconds": 0.3427409580035601,
+          "effective_disposition": "move_to_system_envelope",
+          "effective_semantic_node_ids": [],
+          "observed_action_id": "item_58",
+          "projected_action_id": "a037",
+          "semantic_allocations_seconds": {},
+          "source_node_id": "n37",
+          "stage_a_disposition": "move_to_system_envelope",
+          "stage_a_semantic_node_ids": [],
+          "system_envelope_id": "stage_a_preclassified_system_envelope"
+        },
+        {
+          "duration_partition_category": "system_envelope",
+          "duration_seconds": 0.3653420000046026,
+          "effective_disposition": "move_to_system_envelope",
+          "effective_semantic_node_ids": [],
+          "observed_action_id": "item_57",
+          "projected_action_id": "a038",
+          "semantic_allocations_seconds": {},
+          "source_node_id": "n38",
+          "stage_a_disposition": "move_to_system_envelope",
+          "stage_a_semantic_node_ids": [],
+          "system_envelope_id": "stage_a_preclassified_system_envelope"
+        }
+      ],
+      "stage_a_annotation_sha256": "e0ff4e2e6a27382645b0a8242240bd259145a260c600247fcf4c08f8e92e432c",
+      "stage_a_mapping_sha256": "2c9aaa5e6c8d49b9565c09655f64c2c8dda4f8b895c3aa888925913390e981f1",
+      "status": "pass",
+      "system_envelope_by_id_seconds": {
+        "stage_a_preclassified_system_envelope": 1.637924042006489
+      },
+      "uncovered_duration_seconds": 0.0
+    },
+    {
+      "active_effective_semantic_node_ids": [
+        "n_discover",
+        "n_followup_edit",
+        "n_initial_edit",
+        "n_inspect_core",
+        "n_integration_evidence",
+        "n_refinement",
+        "n_targeted_validation",
+        "n_validation_evidence"
+      ],
+      "all_action_seconds": 16.147035209985916,
+      "case_id": "swebench_verified_scikit-learn_scikit-learn-12682",
+      "conservation_delta_seconds": 0.0,
+      "duration_partition_seconds": {
+        "effective_semantic_work": 12.90785337498528,
+        "redundant_exploration": 0.0,
+        "system_envelope": 3.239181835000636,
+        "tool_noise": 0.0
+      },
+      "effective_action_overlay_sha256": "dff0bfe099881bad1ef0a3d10d1a335e179044c8bec623854526e608e635e345",
+      "effective_reference_dag_sha256": "638ceacdaca8c7a5c7d0ce59e6ae059f7f076e9c4d79a452577081d9021d458c",
+      "imputed_duration_seconds": 0.0,
+      "inactive_effective_semantic_node_ids": [],
+      "mapping_claim_layers": {
+        "effective_mapping": "outcome_adjudicated_not_duration_blind",
+        "stage_a_mapping": "duration_outcome_result_blind_immutable"
+      },
+      "rows": [
+        {
+          "duration_partition_category": "system_envelope",
+          "duration_seconds": 0.3869104170007631,
+          "effective_disposition": "move_to_system_envelope",
+          "effective_semantic_node_ids": [],
+          "observed_action_id": "item_1",
+          "projected_action_id": "a001",
+          "semantic_allocations_seconds": {},
+          "source_node_id": "n1",
+          "stage_a_disposition": "move_to_system_envelope",
+          "stage_a_semantic_node_ids": [],
+          "system_envelope_id": "stage_a_preclassified_system_envelope"
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.5978758330020355,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n_discover"
+          ],
+          "observed_action_id": "item_2",
+          "projected_action_id": "a002",
+          "semantic_allocations_seconds": {
+            "n_discover": 0.5978758330020355
+          },
+          "source_node_id": "n2",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n_discover"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.60234075000335,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n_discover"
+          ],
+          "observed_action_id": "item_3",
+          "projected_action_id": "a003",
+          "semantic_allocations_seconds": {
+            "n_discover": 0.60234075000335
+          },
+          "source_node_id": "n3",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n_discover"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.40784816700033844,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n_inspect_core"
+          ],
+          "observed_action_id": "item_5",
+          "projected_action_id": "a004",
+          "semantic_allocations_seconds": {
+            "n_inspect_core": 0.40784816700033844
+          },
+          "source_node_id": "n4",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n_inspect_core"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.4078540000045905,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n_inspect_core"
+          ],
+          "observed_action_id": "item_7",
+          "projected_action_id": "a005",
+          "semantic_allocations_seconds": {
+            "n_inspect_core": 0.4078540000045905
+          },
+          "source_node_id": "n5",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n_inspect_core"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.4079782499902649,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n_inspect_core"
+          ],
+          "observed_action_id": "item_6",
+          "projected_action_id": "a006",
+          "semantic_allocations_seconds": {
+            "n_inspect_core": 0.4079782499902649
+          },
+          "source_node_id": "n6",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n_inspect_core"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.3109252499998547,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n_inspect_core"
+          ],
+          "observed_action_id": "item_9",
+          "projected_action_id": "a007",
+          "semantic_allocations_seconds": {
+            "n_inspect_core": 0.3109252499998547
+          },
+          "source_node_id": "n7",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n_inspect_core"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.36359074999927543,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n_inspect_core"
+          ],
+          "observed_action_id": "item_10",
+          "projected_action_id": "a008",
+          "semantic_allocations_seconds": {
+            "n_inspect_core": 0.36359074999927543
+          },
+          "source_node_id": "n8",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n_inspect_core"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.31146799999987707,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n_inspect_core"
+          ],
+          "observed_action_id": "item_11",
+          "projected_action_id": "a009",
+          "semantic_allocations_seconds": {
+            "n_inspect_core": 0.31146799999987707
+          },
+          "source_node_id": "n9",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n_inspect_core"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.29735708300722763,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n_inspect_core"
+          ],
+          "observed_action_id": "item_12",
+          "projected_action_id": "a010",
+          "semantic_allocations_seconds": {
+            "n_inspect_core": 0.29735708300722763
+          },
+          "source_node_id": "n10",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n_inspect_core"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.3150052080018213,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n_inspect_core"
+          ],
+          "observed_action_id": "item_14",
+          "projected_action_id": "a011",
+          "semantic_allocations_seconds": {
+            "n_inspect_core": 0.3150052080018213
+          },
+          "source_node_id": "n11",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n_inspect_core"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.34712391599896364,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n_inspect_core"
+          ],
+          "observed_action_id": "item_16",
+          "projected_action_id": "a012",
+          "semantic_allocations_seconds": {
+            "n_inspect_core": 0.34712391599896364
+          },
+          "source_node_id": "n12",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n_inspect_core"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 1.235553999998956,
+          "effective_disposition": "retain",
+          "effective_semantic_node_ids": [
+            "n_initial_edit"
+          ],
+          "observed_action_id": "item_18",
+          "projected_action_id": "a013",
+          "semantic_allocations_seconds": {
+            "n_initial_edit": 1.235553999998956
+          },
+          "source_node_id": "n13",
+          "stage_a_disposition": "retain",
+          "stage_a_semantic_node_ids": [
+            "n_initial_edit"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.3700422499969136,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n_integration_evidence"
+          ],
+          "observed_action_id": "item_20",
+          "projected_action_id": "a014",
+          "semantic_allocations_seconds": {
+            "n_integration_evidence": 0.3700422499969136
+          },
+          "source_node_id": "n14",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n_integration_evidence"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.3647519590012962,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n_integration_evidence"
+          ],
+          "observed_action_id": "item_21",
+          "projected_action_id": "a015",
+          "semantic_allocations_seconds": {
+            "n_integration_evidence": 0.3647519590012962
+          },
+          "source_node_id": "n15",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n_integration_evidence"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "system_envelope",
+          "duration_seconds": 0.6507632919965545,
+          "effective_disposition": "move_to_system_envelope",
+          "effective_semantic_node_ids": [],
+          "observed_action_id": "item_22",
+          "projected_action_id": "a016",
+          "semantic_allocations_seconds": {},
+          "source_node_id": "n16",
+          "stage_a_disposition": "move_to_system_envelope",
+          "stage_a_semantic_node_ids": [],
+          "system_envelope_id": "stage_a_preclassified_system_envelope"
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 1.1424108749924926,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n_refinement"
+          ],
+          "observed_action_id": "item_24",
+          "projected_action_id": "a017",
+          "semantic_allocations_seconds": {
+            "n_refinement": 1.1424108749924926
+          },
+          "source_node_id": "n17",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n_refinement"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 1.137037042004522,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n_refinement"
+          ],
+          "observed_action_id": "item_26",
+          "projected_action_id": "a018",
+          "semantic_allocations_seconds": {
+            "n_refinement": 1.137037042004522
+          },
+          "source_node_id": "n18",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n_refinement"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.32940687499649357,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n_validation_evidence"
+          ],
+          "observed_action_id": "item_27",
+          "projected_action_id": "a019",
+          "semantic_allocations_seconds": {
+            "n_validation_evidence": 0.32940687499649357
+          },
+          "source_node_id": "n19",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n_validation_evidence"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "system_envelope",
+          "duration_seconds": 0.3589532089972636,
+          "effective_disposition": "move_to_system_envelope",
+          "effective_semantic_node_ids": [],
+          "observed_action_id": "item_29",
+          "projected_action_id": "a020",
+          "semantic_allocations_seconds": {},
+          "source_node_id": "n20",
+          "stage_a_disposition": "move_to_system_envelope",
+          "stage_a_semantic_node_ids": [],
+          "system_envelope_id": "stage_a_preclassified_system_envelope"
+        },
+        {
+          "duration_partition_category": "system_envelope",
+          "duration_seconds": 0.560654250002699,
+          "effective_disposition": "move_to_system_envelope",
+          "effective_semantic_node_ids": [],
+          "observed_action_id": "item_28",
+          "projected_action_id": "a021",
+          "semantic_allocations_seconds": {},
+          "source_node_id": "n21",
+          "stage_a_disposition": "move_to_system_envelope",
+          "stage_a_semantic_node_ids": [],
+          "system_envelope_id": "stage_a_preclassified_system_envelope"
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.305968832995859,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n_validation_evidence"
+          ],
+          "observed_action_id": "item_31",
+          "projected_action_id": "a022",
+          "semantic_allocations_seconds": {
+            "n_validation_evidence": 0.305968832995859
+          },
+          "source_node_id": "n22",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n_validation_evidence"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.2941095830028644,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n_validation_evidence"
+          ],
+          "observed_action_id": "item_33",
+          "projected_action_id": "a023",
+          "semantic_allocations_seconds": {
+            "n_validation_evidence": 0.2941095830028644
+          },
+          "source_node_id": "n23",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n_validation_evidence"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.3009893340058625,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n_validation_evidence"
+          ],
+          "observed_action_id": "item_34",
+          "projected_action_id": "a024",
+          "semantic_allocations_seconds": {
+            "n_validation_evidence": 0.3009893340058625
+          },
+          "source_node_id": "n24",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n_validation_evidence"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 1.8728222919889959,
+          "effective_disposition": "retain",
+          "effective_semantic_node_ids": [
+            "n_targeted_validation"
+          ],
+          "observed_action_id": "item_36",
+          "projected_action_id": "a025",
+          "semantic_allocations_seconds": {
+            "n_targeted_validation": 1.8728222919889959
+          },
+          "source_node_id": "n25",
+          "stage_a_disposition": "retain",
+          "stage_a_semantic_node_ids": [
+            "n_targeted_validation"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 1.1853931249934249,
+          "effective_disposition": "retain",
+          "effective_semantic_node_ids": [
+            "n_followup_edit"
+          ],
+          "observed_action_id": "item_38",
+          "projected_action_id": "a026",
+          "semantic_allocations_seconds": {
+            "n_followup_edit": 1.1853931249934249
+          },
+          "source_node_id": "n26",
+          "stage_a_disposition": "retain",
+          "stage_a_semantic_node_ids": [
+            "n_followup_edit"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "system_envelope",
+          "duration_seconds": 0.34803862500120886,
+          "effective_disposition": "move_to_system_envelope",
+          "effective_semantic_node_ids": [],
+          "observed_action_id": "item_41",
+          "projected_action_id": "a027",
+          "semantic_allocations_seconds": {},
+          "source_node_id": "n27",
+          "stage_a_disposition": "move_to_system_envelope",
+          "stage_a_semantic_node_ids": [],
+          "system_envelope_id": "stage_a_preclassified_system_envelope"
+        },
+        {
+          "duration_partition_category": "system_envelope",
+          "duration_seconds": 0.5790029170020716,
+          "effective_disposition": "move_to_system_envelope",
+          "effective_semantic_node_ids": [],
+          "observed_action_id": "item_40",
+          "projected_action_id": "a028",
+          "semantic_allocations_seconds": {},
+          "source_node_id": "n28",
+          "stage_a_disposition": "move_to_system_envelope",
+          "stage_a_semantic_node_ids": [],
+          "system_envelope_id": "stage_a_preclassified_system_envelope"
+        },
+        {
+          "duration_partition_category": "system_envelope",
+          "duration_seconds": 0.35485912500007544,
+          "effective_disposition": "move_to_system_envelope",
+          "effective_semantic_node_ids": [],
+          "observed_action_id": "item_42",
+          "projected_action_id": "a029",
+          "semantic_allocations_seconds": {},
+          "source_node_id": "n29",
+          "stage_a_disposition": "move_to_system_envelope",
+          "stage_a_semantic_node_ids": [],
+          "system_envelope_id": "stage_a_preclassified_system_envelope"
+        }
+      ],
+      "stage_a_annotation_sha256": "f6cb528afedcde073cc916dd44f80de9f47ff3c52532744134ccc0ebbe89a759",
+      "stage_a_mapping_sha256": "e6fe698260a51b5a0cda5606257c96e357494ee2fbb5197804e4b51710bed299",
+      "status": "pass",
+      "system_envelope_by_id_seconds": {
+        "stage_a_preclassified_system_envelope": 3.239181835000636
+      },
+      "uncovered_duration_seconds": 0.0
+    },
+    {
+      "active_effective_semantic_node_ids": [
+        "n_behavior_validation",
+        "n_documentation_review",
+        "n_patch_candidate",
+        "n_primary_context",
+        "n_project_inventory",
+        "n_secondary_context",
+        "n_secondary_search",
+        "n_target_search"
+      ],
+      "all_action_seconds": 523.2405563330249,
+      "case_id": "swebench_verified_scikit-learn_scikit-learn-25973",
+      "conservation_delta_seconds": 0.0,
+      "duration_partition_seconds": {
+        "effective_semantic_work": 10.09510700001556,
+        "redundant_exploration": 0.0,
+        "system_envelope": 513.1454493330093,
+        "tool_noise": 0.0
+      },
+      "effective_action_overlay_sha256": "ab81c5ba0d9ae5add59d24a28ef9c1fdb555093879b3ae5fbd482b775c29d65e",
+      "effective_reference_dag_sha256": "7fbf4a167e4fa53ce30f9e09e431de5d6fd6b9628bffd6387eaa7a621bf9c8b6",
+      "imputed_duration_seconds": 0.0,
+      "inactive_effective_semantic_node_ids": [],
+      "mapping_claim_layers": {
+        "effective_mapping": "outcome_adjudicated_not_duration_blind",
+        "stage_a_mapping": "duration_outcome_result_blind_immutable"
+      },
+      "rows": [
+        {
+          "duration_partition_category": "system_envelope",
+          "duration_seconds": 0.5526018340024166,
+          "effective_disposition": "move_to_system_envelope",
+          "effective_semantic_node_ids": [],
+          "observed_action_id": "item_3",
+          "projected_action_id": "a001",
+          "semantic_allocations_seconds": {},
+          "source_node_id": "n1",
+          "stage_a_disposition": "move_to_system_envelope",
+          "stage_a_semantic_node_ids": [],
+          "system_envelope_id": "stage_a_preclassified_system_envelope"
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.7472148340020794,
+          "effective_disposition": "retain",
+          "effective_semantic_node_ids": [
+            "n_target_search"
+          ],
+          "observed_action_id": "item_2",
+          "projected_action_id": "a002",
+          "semantic_allocations_seconds": {
+            "n_target_search": 0.7472148340020794
+          },
+          "source_node_id": "n2",
+          "stage_a_disposition": "retain",
+          "stage_a_semantic_node_ids": [
+            "n_target_search"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.7478002910065698,
+          "effective_disposition": "retain",
+          "effective_semantic_node_ids": [
+            "n_project_inventory"
+          ],
+          "observed_action_id": "item_1",
+          "projected_action_id": "a003",
+          "semantic_allocations_seconds": {
+            "n_project_inventory": 0.7478002910065698
+          },
+          "source_node_id": "n3",
+          "stage_a_disposition": "retain",
+          "stage_a_semantic_node_ids": [
+            "n_project_inventory"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.498010167008033,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n_primary_context"
+          ],
+          "observed_action_id": "item_5",
+          "projected_action_id": "a004",
+          "semantic_allocations_seconds": {
+            "n_primary_context": 0.498010167008033
+          },
+          "source_node_id": "n4",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n_primary_context"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.4722575830091955,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n_primary_context"
+          ],
+          "observed_action_id": "item_6",
+          "projected_action_id": "a005",
+          "semantic_allocations_seconds": {
+            "n_primary_context": 0.4722575830091955
+          },
+          "source_node_id": "n5",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n_primary_context"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.4657132080028532,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n_primary_context"
+          ],
+          "observed_action_id": "item_7",
+          "projected_action_id": "a006",
+          "semantic_allocations_seconds": {
+            "n_primary_context": 0.4657132080028532
+          },
+          "source_node_id": "n6",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n_primary_context"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.46182966699416284,
+          "effective_disposition": "retain",
+          "effective_semantic_node_ids": [
+            "n_secondary_search"
+          ],
+          "observed_action_id": "item_8",
+          "projected_action_id": "a007",
+          "semantic_allocations_seconds": {
+            "n_secondary_search": 0.46182966699416284
+          },
+          "source_node_id": "n7",
+          "stage_a_disposition": "retain",
+          "stage_a_semantic_node_ids": [
+            "n_secondary_search"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.4050356250081677,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n_secondary_context"
+          ],
+          "observed_action_id": "item_9",
+          "projected_action_id": "a008",
+          "semantic_allocations_seconds": {
+            "n_secondary_context": 0.4050356250081677
+          },
+          "source_node_id": "n8",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n_secondary_context"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.35689812499913387,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n_secondary_context"
+          ],
+          "observed_action_id": "item_10",
+          "projected_action_id": "a009",
+          "semantic_allocations_seconds": {
+            "n_secondary_context": 0.35689812499913387
+          },
+          "source_node_id": "n9",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n_secondary_context"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.34259341699362267,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n_secondary_context"
+          ],
+          "observed_action_id": "item_11",
+          "projected_action_id": "a010",
+          "semantic_allocations_seconds": {
+            "n_secondary_context": 0.34259341699362267
+          },
+          "source_node_id": "n10",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n_secondary_context"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.30327391700120643,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n_secondary_context"
+          ],
+          "observed_action_id": "item_13",
+          "projected_action_id": "a011",
+          "semantic_allocations_seconds": {
+            "n_secondary_context": 0.30327391700120643
+          },
+          "source_node_id": "n11",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n_secondary_context"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 1.1655259580002166,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n_patch_candidate"
+          ],
+          "observed_action_id": "item_15",
+          "projected_action_id": "a012",
+          "semantic_allocations_seconds": {
+            "n_patch_candidate": 1.1655259580002166
+          },
+          "source_node_id": "n12",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n_patch_candidate"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 1.1887644170055864,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n_patch_candidate"
+          ],
+          "observed_action_id": "item_17",
+          "projected_action_id": "a013",
+          "semantic_allocations_seconds": {
+            "n_patch_candidate": 1.1887644170055864
+          },
+          "source_node_id": "n13",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n_patch_candidate"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 1.6282025419932324,
+          "effective_disposition": "retain",
+          "effective_semantic_node_ids": [
+            "n_behavior_validation"
+          ],
+          "observed_action_id": "item_19",
+          "projected_action_id": "a014",
+          "semantic_allocations_seconds": {
+            "n_behavior_validation": 1.6282025419932324
+          },
+          "source_node_id": "n14",
+          "stage_a_disposition": "retain",
+          "stage_a_semantic_node_ids": [
+            "n_behavior_validation"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "system_envelope",
+          "duration_seconds": 0.4542355830053566,
+          "effective_disposition": "move_to_system_envelope",
+          "effective_semantic_node_ids": [],
+          "observed_action_id": "item_22",
+          "projected_action_id": "a015",
+          "semantic_allocations_seconds": {},
+          "source_node_id": "n15",
+          "stage_a_disposition": "move_to_system_envelope",
+          "stage_a_semantic_node_ids": [],
+          "system_envelope_id": "stage_a_preclassified_system_envelope"
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.4711361249937909,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n_documentation_review"
+          ],
+          "observed_action_id": "item_21",
+          "projected_action_id": "a016",
+          "semantic_allocations_seconds": {
+            "n_documentation_review": 0.4711361249937909
+          },
+          "source_node_id": "n16",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n_documentation_review"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "system_envelope",
+          "duration_seconds": 0.4300147079920862,
+          "effective_disposition": "move_to_system_envelope",
+          "effective_semantic_node_ids": [],
+          "observed_action_id": "item_23",
+          "projected_action_id": "a017",
+          "semantic_allocations_seconds": {},
+          "source_node_id": "n17",
+          "stage_a_disposition": "move_to_system_envelope",
+          "stage_a_semantic_node_ids": [],
+          "system_envelope_id": "stage_a_preclassified_system_envelope"
+        },
+        {
+          "duration_partition_category": "system_envelope",
+          "duration_seconds": 509.0949230410042,
+          "effective_disposition": "move_to_system_envelope",
+          "effective_semantic_node_ids": [],
+          "observed_action_id": "item_25",
+          "projected_action_id": "a018",
+          "semantic_allocations_seconds": {},
+          "source_node_id": "n18",
+          "stage_a_disposition": "move_to_system_envelope",
+          "stage_a_semantic_node_ids": [],
+          "system_envelope_id": "stage_a_preclassified_system_envelope"
+        },
+        {
+          "duration_partition_category": "system_envelope",
+          "duration_seconds": 0.4486722080036998,
+          "effective_disposition": "move_to_system_envelope",
+          "effective_semantic_node_ids": [],
+          "observed_action_id": "item_39",
+          "projected_action_id": "a019",
+          "semantic_allocations_seconds": {},
+          "source_node_id": "n19",
+          "stage_a_disposition": "move_to_system_envelope",
+          "stage_a_semantic_node_ids": [],
+          "system_envelope_id": "stage_a_preclassified_system_envelope"
+        },
+        {
+          "duration_partition_category": "system_envelope",
+          "duration_seconds": 0.5499489590001758,
+          "effective_disposition": "move_to_system_envelope",
+          "effective_semantic_node_ids": [],
+          "observed_action_id": "item_38",
+          "projected_action_id": "a020",
+          "semantic_allocations_seconds": {},
+          "source_node_id": "n20",
+          "stage_a_disposition": "move_to_system_envelope",
+          "stage_a_semantic_node_ids": [],
+          "system_envelope_id": "stage_a_preclassified_system_envelope"
+        },
+        {
+          "duration_partition_category": "system_envelope",
+          "duration_seconds": 0.8840205419983249,
+          "effective_disposition": "move_to_system_envelope",
+          "effective_semantic_node_ids": [],
+          "observed_action_id": "item_37",
+          "projected_action_id": "a021",
+          "semantic_allocations_seconds": {},
+          "source_node_id": "n21",
+          "stage_a_disposition": "move_to_system_envelope",
+          "stage_a_semantic_node_ids": [],
+          "system_envelope_id": "stage_a_preclassified_system_envelope"
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.4132429160090396,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n_documentation_review"
+          ],
+          "observed_action_id": "item_42",
+          "projected_action_id": "a022",
+          "semantic_allocations_seconds": {
+            "n_documentation_review": 0.4132429160090396
+          },
+          "source_node_id": "n22",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n_documentation_review"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "effective_semantic_work",
+          "duration_seconds": 0.42760820798866916,
+          "effective_disposition": "merge_into_semantic_node",
+          "effective_semantic_node_ids": [
+            "n_documentation_review"
+          ],
+          "observed_action_id": "item_41",
+          "projected_action_id": "a023",
+          "semantic_allocations_seconds": {
+            "n_documentation_review": 0.42760820798866916
+          },
+          "source_node_id": "n23",
+          "stage_a_disposition": "merge_into_semantic_node",
+          "stage_a_semantic_node_ids": [
+            "n_documentation_review"
+          ],
+          "system_envelope_id": null
+        },
+        {
+          "duration_partition_category": "system_envelope",
+          "duration_seconds": 0.39521133300149813,
+          "effective_disposition": "move_to_system_envelope",
+          "effective_semantic_node_ids": [],
+          "observed_action_id": "item_43",
+          "projected_action_id": "a024",
+          "semantic_allocations_seconds": {},
+          "source_node_id": "n24",
+          "stage_a_disposition": "move_to_system_envelope",
+          "stage_a_semantic_node_ids": [],
+          "system_envelope_id": "stage_a_preclassified_system_envelope"
+        },
+        {
+          "duration_partition_category": "system_envelope",
+          "duration_seconds": 0.33582112500153016,
+          "effective_disposition": "move_to_system_envelope",
+          "effective_semantic_node_ids": [],
+          "observed_action_id": "item_45",
+          "projected_action_id": "a025",
+          "semantic_allocations_seconds": {},
+          "source_node_id": "n25",
+          "stage_a_disposition": "move_to_system_envelope",
+          "stage_a_semantic_node_ids": [],
+          "system_envelope_id": "stage_a_preclassified_system_envelope"
+        }
+      ],
+      "stage_a_annotation_sha256": "004dabaf4088417f56511dc4f70086a9ff192b2eba1c6d29e591b5fd7ea99156",
+      "stage_a_mapping_sha256": "f473c6294dec6a6585e3e2dd7e49cde7dc14e005e232a18571871331d63458f5",
+      "status": "pass",
+      "system_envelope_by_id_seconds": {
+        "stage_a_preclassified_system_envelope": 513.1454493330093
+      },
+      "uncovered_duration_seconds": 0.0
+    }
+  ],
+  "duration_partition_categories": [
+    "effective_semantic_work",
+    "system_envelope",
+    "redundant_exploration",
+    "tool_noise"
+  ],
+  "joined_case_count": 9,
+  "mixed_split_rule": "blocked_mixed_semantic_envelope_split",
+  "preregistered_primary": false,
+  "schema_version": "sge-p30-effective-action-duration-ledger-v2",
+  "scientific_result": false,
+  "status": "post_collection_contract_extension"
+}

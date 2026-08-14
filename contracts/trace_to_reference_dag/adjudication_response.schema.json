@@ -1,0 +1,261 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Trace-to-reference-DAG Stage-B adjudication response",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "case_id",
+    "raw_candidate_sha256",
+    "adjudication_status",
+    "node_decisions",
+    "edge_decisions",
+    "contraction_edges",
+    "branch_decisions",
+    "uncertainties",
+    "blocked_reasons"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "trace-reference-dag-adjudication-v2"
+    },
+    "case_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "raw_candidate_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "adjudication_status": {
+      "type": "string",
+      "enum": [
+        "ready_for_deterministic_materialization",
+        "blocked"
+      ]
+    },
+    "node_decisions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/nodeDecision"
+      }
+    },
+    "edge_decisions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/edgeDecision"
+      }
+    },
+    "contraction_edges": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/contractionEdge"
+      }
+    },
+    "branch_decisions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/branchDecision"
+      }
+    },
+    "uncertainties": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "blocked_reasons": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "$defs": {
+    "nodeDecision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "node_id",
+        "decision",
+        "envelope_id",
+        "rationale"
+      ],
+      "properties": {
+        "node_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z][A-Za-z0-9_-]{0,63}$"
+        },
+        "decision": {
+          "type": "string",
+          "enum": [
+            "retain",
+            "move_to_system_envelope"
+          ]
+        },
+        "envelope_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "rationale": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "edgeDecision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "edge_id",
+        "decision",
+        "rationale"
+      ],
+      "properties": {
+        "edge_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z][A-Za-z0-9_-]{0,63}$"
+        },
+        "decision": {
+          "type": "string",
+          "enum": [
+            "retain",
+            "move_to_system_envelope"
+          ]
+        },
+        "rationale": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "contractionEdge": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "src",
+        "dst",
+        "rationale"
+      ],
+      "properties": {
+        "src": {
+          "type": "string",
+          "minLength": 1
+        },
+        "dst": {
+          "type": "string",
+          "minLength": 1
+        },
+        "rationale": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "outcomeRouting": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "runner_environment_failure",
+        "pass",
+        "task_quality_failure",
+        "unknown_or_ambiguous"
+      ],
+      "properties": {
+        "runner_environment_failure": {
+          "type": "string",
+          "enum": [
+            "activate_branch",
+            "skip_branch",
+            "fail_closed"
+          ]
+        },
+        "pass": {
+          "type": "string",
+          "enum": [
+            "activate_branch",
+            "skip_branch",
+            "fail_closed"
+          ]
+        },
+        "task_quality_failure": {
+          "type": "string",
+          "enum": [
+            "activate_branch",
+            "skip_branch",
+            "fail_closed"
+          ]
+        },
+        "unknown_or_ambiguous": {
+          "type": "string",
+          "enum": [
+            "activate_branch",
+            "skip_branch",
+            "fail_closed"
+          ]
+        }
+      }
+    },
+    "branchDecision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "raw_branch_id",
+        "decision",
+        "trigger_node_id",
+        "activated_node_ids",
+        "terminal_destination",
+        "attempt_budget",
+        "outcome_routing",
+        "rationale"
+      ],
+      "properties": {
+        "raw_branch_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z][A-Za-z0-9_-]{0,63}$"
+        },
+        "decision": {
+          "type": "string",
+          "enum": [
+            "retain",
+            "revise",
+            "move_to_system_envelope"
+          ]
+        },
+        "trigger_node_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "activated_node_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "terminal_destination": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "attempt_budget": {
+          "type": "integer"
+        },
+        "outcome_routing": {
+          "$ref": "#/$defs/outcomeRouting"
+        },
+        "rationale": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,378 @@
+{
+  "checks": [
+    {
+      "check": "artifact_hash",
+      "path": "outputs/figures/task_layer_map_and_envelope.pdf",
+      "sha256": "c405a8dee8c23c17a179d910ab61f52bbcce30456a91db88f7d61a56dbd4adbd"
+    },
+    {
+      "check": "pdf_geometry",
+      "height_pt": 188.64,
+      "pages": 1,
+      "path": "<LOCAL_HOME>/Github/Speculative-Graph-Execution-reviewer-artifact-20260814/artifacts/mlforsys_2026_reviewer/outputs/figures/task_layer_map_and_envelope.pdf",
+      "width_pt": 396.0
+    },
+    {
+      "check": "pdf_min_font",
+      "observed_effective_pt": 6.4999999999999964,
+      "path": "<LOCAL_HOME>/Github/Speculative-Graph-Execution-reviewer-artifact-20260814/artifacts/mlforsys_2026_reviewer/outputs/figures/task_layer_map_and_envelope.pdf",
+      "required_pt": 6.3
+    },
+    {
+      "all_embedded": true,
+      "check": "embedded_fonts",
+      "font_count": 2,
+      "path": "<LOCAL_HOME>/Github/Speculative-Graph-Execution-reviewer-artifact-20260814/artifacts/mlforsys_2026_reviewer/outputs/figures/task_layer_map_and_envelope.pdf"
+    },
+    {
+      "check": "vector_pdf",
+      "path": "<LOCAL_HOME>/Github/Speculative-Graph-Execution-reviewer-artifact-20260814/artifacts/mlforsys_2026_reviewer/outputs/figures/task_layer_map_and_envelope.pdf",
+      "raster_image_count": 0
+    },
+    {
+      "check": "artifact_hash",
+      "path": "outputs/figures/task_layer_map_and_envelope.png",
+      "sha256": "4e6bfb93866dfdadc2c97c331414cfdcc5f915ff1a13bcb1a7dd49cde1eeeb5e"
+    },
+    {
+      "check": "png_resolution",
+      "dpi": 299.9994,
+      "path": "<LOCAL_HOME>/Github/Speculative-Graph-Execution-reviewer-artifact-20260814/artifacts/mlforsys_2026_reviewer/outputs/figures/task_layer_map_and_envelope.png",
+      "pixels": [
+        1650,
+        786
+      ],
+      "required_dpi": 300.0
+    },
+    {
+      "check": "accessibility_preview",
+      "path": "outputs/visual_checks/task_layer_map_and_envelope_grayscale.png",
+      "profile": "grayscale",
+      "sha256": "a0362bce08fb270faab0d938088ab32998d1a671bfb60249e72171a63b8b65bd"
+    },
+    {
+      "check": "accessibility_preview",
+      "path": "outputs/visual_checks/task_layer_map_and_envelope_protanopia.png",
+      "profile": "protanopia",
+      "sha256": "668f4ba5a5db7d500977affdfd4d289d1c864293aff4a36bf9aa274eef125921"
+    },
+    {
+      "check": "accessibility_preview",
+      "path": "outputs/visual_checks/task_layer_map_and_envelope_deuteranopia.png",
+      "profile": "deuteranopia",
+      "sha256": "7169afb6259e004b1ecabfa852e4fe69705f88b50e1d7413d5ef7990a3cb986c"
+    },
+    {
+      "check": "accessibility_preview",
+      "path": "outputs/visual_checks/task_layer_map_and_envelope_tritanopia.png",
+      "profile": "tritanopia",
+      "sha256": "eaf8fc77897b3ebaaaf7294694b81b291d5fe9a680c03c5829423a15891e4242"
+    },
+    {
+      "check": "artifact_hash",
+      "path": "outputs/figures/workgraph_case_ceiling.pdf",
+      "sha256": "73d9a7d9a16ab0e065a094bdc57263804093c424e60831bcda32c7e2253caf51"
+    },
+    {
+      "check": "pdf_geometry",
+      "height_pt": 216.0,
+      "pages": 1,
+      "path": "<LOCAL_HOME>/Github/Speculative-Graph-Execution-reviewer-artifact-20260814/artifacts/mlforsys_2026_reviewer/outputs/figures/workgraph_case_ceiling.pdf",
+      "width_pt": 396.0
+    },
+    {
+      "check": "pdf_min_font",
+      "observed_effective_pt": 6.5,
+      "path": "<LOCAL_HOME>/Github/Speculative-Graph-Execution-reviewer-artifact-20260814/artifacts/mlforsys_2026_reviewer/outputs/figures/workgraph_case_ceiling.pdf",
+      "required_pt": 6.3
+    },
+    {
+      "all_embedded": true,
+      "check": "embedded_fonts",
+      "font_count": 4,
+      "path": "<LOCAL_HOME>/Github/Speculative-Graph-Execution-reviewer-artifact-20260814/artifacts/mlforsys_2026_reviewer/outputs/figures/workgraph_case_ceiling.pdf"
+    },
+    {
+      "check": "vector_pdf",
+      "path": "<LOCAL_HOME>/Github/Speculative-Graph-Execution-reviewer-artifact-20260814/artifacts/mlforsys_2026_reviewer/outputs/figures/workgraph_case_ceiling.pdf",
+      "raster_image_count": 0
+    },
+    {
+      "check": "artifact_hash",
+      "path": "outputs/figures/workgraph_case_ceiling.png",
+      "sha256": "1631cc05fdf74461e92da73c3bff78783f6660db5a07686c8e71cc9a96796bbe"
+    },
+    {
+      "check": "png_resolution",
+      "dpi": 299.9994,
+      "path": "<LOCAL_HOME>/Github/Speculative-Graph-Execution-reviewer-artifact-20260814/artifacts/mlforsys_2026_reviewer/outputs/figures/workgraph_case_ceiling.png",
+      "pixels": [
+        1650,
+        900
+      ],
+      "required_dpi": 300.0
+    },
+    {
+      "check": "accessibility_preview",
+      "path": "outputs/visual_checks/workgraph_case_ceiling_grayscale.png",
+      "profile": "grayscale",
+      "sha256": "ca81f3bac2b56be59b0208071413d64fb9375e66d02bf24cabd37cf923d2f357"
+    },
+    {
+      "check": "accessibility_preview",
+      "path": "outputs/visual_checks/workgraph_case_ceiling_protanopia.png",
+      "profile": "protanopia",
+      "sha256": "30a979fc6e8b3dc8ccc4a69a1189e4c4765d207632af9aeb0e96e98a0b32186b"
+    },
+    {
+      "check": "accessibility_preview",
+      "path": "outputs/visual_checks/workgraph_case_ceiling_deuteranopia.png",
+      "profile": "deuteranopia",
+      "sha256": "f470489a399b7c7ab917abb592d08a2067e98da4d0fda4c56ce55dbec2f3e1fb"
+    },
+    {
+      "check": "accessibility_preview",
+      "path": "outputs/visual_checks/workgraph_case_ceiling_tritanopia.png",
+      "profile": "tritanopia",
+      "sha256": "1d8b721d7fe00eaba0199b5970552bf7110c794633a86d87bc31f47a1d5d5789"
+    },
+    {
+      "check": "artifact_hash",
+      "path": "outputs/figures/rolling_evidence_atlas.pdf",
+      "sha256": "35541ea8cae4e49f112235af2ef6923111f5ee01fa0251280a37822a0c07db3d"
+    },
+    {
+      "check": "pdf_geometry",
+      "height_pt": 259.2,
+      "pages": 1,
+      "path": "<LOCAL_HOME>/Github/Speculative-Graph-Execution-reviewer-artifact-20260814/artifacts/mlforsys_2026_reviewer/outputs/figures/rolling_evidence_atlas.pdf",
+      "width_pt": 396.0
+    },
+    {
+      "check": "pdf_min_font",
+      "observed_effective_pt": 6.299999999999983,
+      "path": "<LOCAL_HOME>/Github/Speculative-Graph-Execution-reviewer-artifact-20260814/artifacts/mlforsys_2026_reviewer/outputs/figures/rolling_evidence_atlas.pdf",
+      "required_pt": 6.3
+    },
+    {
+      "all_embedded": true,
+      "check": "embedded_fonts",
+      "font_count": 4,
+      "path": "<LOCAL_HOME>/Github/Speculative-Graph-Execution-reviewer-artifact-20260814/artifacts/mlforsys_2026_reviewer/outputs/figures/rolling_evidence_atlas.pdf"
+    },
+    {
+      "check": "vector_pdf",
+      "path": "<LOCAL_HOME>/Github/Speculative-Graph-Execution-reviewer-artifact-20260814/artifacts/mlforsys_2026_reviewer/outputs/figures/rolling_evidence_atlas.pdf",
+      "raster_image_count": 0
+    },
+    {
+      "check": "artifact_hash",
+      "path": "outputs/figures/rolling_evidence_atlas.png",
+      "sha256": "e31a39b0f4ca5720ebaae117795eea641b01e80bd87501459797147cb273b663"
+    },
+    {
+      "check": "png_resolution",
+      "dpi": 299.9994,
+      "path": "<LOCAL_HOME>/Github/Speculative-Graph-Execution-reviewer-artifact-20260814/artifacts/mlforsys_2026_reviewer/outputs/figures/rolling_evidence_atlas.png",
+      "pixels": [
+        1650,
+        1080
+      ],
+      "required_dpi": 300.0
+    },
+    {
+      "check": "accessibility_preview",
+      "path": "outputs/visual_checks/rolling_evidence_atlas_grayscale.png",
+      "profile": "grayscale",
+      "sha256": "be3c35fc8707da7ba9ccb8888a7392e87b98760ff2da88cd0def68e1ebe7f563"
+    },
+    {
+      "check": "accessibility_preview",
+      "path": "outputs/visual_checks/rolling_evidence_atlas_protanopia.png",
+      "profile": "protanopia",
+      "sha256": "e3505e476a6f39c65e8c227a646e7b2926eb38ba75e2d66be2e78e0506ed366b"
+    },
+    {
+      "check": "accessibility_preview",
+      "path": "outputs/visual_checks/rolling_evidence_atlas_deuteranopia.png",
+      "profile": "deuteranopia",
+      "sha256": "26602ae45532a8fc6e0f6fe463b4536437d6e95781663029a1b949624783d0c0"
+    },
+    {
+      "check": "accessibility_preview",
+      "path": "outputs/visual_checks/rolling_evidence_atlas_tritanopia.png",
+      "profile": "tritanopia",
+      "sha256": "12798131810537e559b354a74f227941250e6b2fd2b5fb1ecf323875dc0efbb2"
+    },
+    {
+      "check": "artifact_hash",
+      "path": "outputs/figures/admission_calibration_nontrivial.pdf",
+      "sha256": "7bac779318270bd4161d5ccfd1a0f4a4045e7c0b6826193de08b7509e0cdeb0d"
+    },
+    {
+      "check": "pdf_geometry",
+      "height_pt": 216.0,
+      "pages": 1,
+      "path": "<LOCAL_HOME>/Github/Speculative-Graph-Execution-reviewer-artifact-20260814/artifacts/mlforsys_2026_reviewer/outputs/figures/admission_calibration_nontrivial.pdf",
+      "width_pt": 396.0
+    },
+    {
+      "check": "pdf_min_font",
+      "observed_effective_pt": 6.4999999999999964,
+      "path": "<LOCAL_HOME>/Github/Speculative-Graph-Execution-reviewer-artifact-20260814/artifacts/mlforsys_2026_reviewer/outputs/figures/admission_calibration_nontrivial.pdf",
+      "required_pt": 6.3
+    },
+    {
+      "all_embedded": true,
+      "check": "embedded_fonts",
+      "font_count": 4,
+      "path": "<LOCAL_HOME>/Github/Speculative-Graph-Execution-reviewer-artifact-20260814/artifacts/mlforsys_2026_reviewer/outputs/figures/admission_calibration_nontrivial.pdf"
+    },
+    {
+      "check": "vector_pdf",
+      "path": "<LOCAL_HOME>/Github/Speculative-Graph-Execution-reviewer-artifact-20260814/artifacts/mlforsys_2026_reviewer/outputs/figures/admission_calibration_nontrivial.pdf",
+      "raster_image_count": 0
+    },
+    {
+      "check": "artifact_hash",
+      "path": "outputs/figures/admission_calibration_nontrivial.png",
+      "sha256": "90eeeed4c01be695e13fa67519dabaeda561b78d98bd145d0bdaf412b1f0f025"
+    },
+    {
+      "check": "png_resolution",
+      "dpi": 299.9994,
+      "path": "<LOCAL_HOME>/Github/Speculative-Graph-Execution-reviewer-artifact-20260814/artifacts/mlforsys_2026_reviewer/outputs/figures/admission_calibration_nontrivial.png",
+      "pixels": [
+        1650,
+        900
+      ],
+      "required_dpi": 300.0
+    },
+    {
+      "check": "accessibility_preview",
+      "path": "outputs/visual_checks/admission_calibration_nontrivial_grayscale.png",
+      "profile": "grayscale",
+      "sha256": "c79de325b5c5d60b5eeb03db35a9f7f7dbf3e1dc359f2aa756c40456ab8328bb"
+    },
+    {
+      "check": "accessibility_preview",
+      "path": "outputs/visual_checks/admission_calibration_nontrivial_protanopia.png",
+      "profile": "protanopia",
+      "sha256": "c98500ca6e22c31f8740fe10961a6d37c304a4f192ab6a140483267bd62d625f"
+    },
+    {
+      "check": "accessibility_preview",
+      "path": "outputs/visual_checks/admission_calibration_nontrivial_deuteranopia.png",
+      "profile": "deuteranopia",
+      "sha256": "9d689e39162d03188b1e4647c632c3c10f6444c2d3840d717d90e0208c221ade"
+    },
+    {
+      "check": "accessibility_preview",
+      "path": "outputs/visual_checks/admission_calibration_nontrivial_tritanopia.png",
+      "profile": "tritanopia",
+      "sha256": "05e33422850e9370153b549f9f0504f955361c1c51680309ba7650af36e8c5d8"
+    },
+    {
+      "check": "artifact_hash",
+      "path": "outputs/figures/evidence_maturity_boundary.pdf",
+      "sha256": "0aa88087294bef190a3176ec4b4cce1c4361926e562fbfbcb2a2a2e4d62d4c90"
+    },
+    {
+      "check": "pdf_geometry",
+      "height_pt": 123.84,
+      "pages": 1,
+      "path": "<LOCAL_HOME>/Github/Speculative-Graph-Execution-reviewer-artifact-20260814/artifacts/mlforsys_2026_reviewer/outputs/figures/evidence_maturity_boundary.pdf",
+      "width_pt": 396.0
+    },
+    {
+      "check": "pdf_min_font",
+      "observed_effective_pt": 6.5,
+      "path": "<LOCAL_HOME>/Github/Speculative-Graph-Execution-reviewer-artifact-20260814/artifacts/mlforsys_2026_reviewer/outputs/figures/evidence_maturity_boundary.pdf",
+      "required_pt": 6.3
+    },
+    {
+      "all_embedded": true,
+      "check": "embedded_fonts",
+      "font_count": 4,
+      "path": "<LOCAL_HOME>/Github/Speculative-Graph-Execution-reviewer-artifact-20260814/artifacts/mlforsys_2026_reviewer/outputs/figures/evidence_maturity_boundary.pdf"
+    },
+    {
+      "check": "vector_pdf",
+      "path": "<LOCAL_HOME>/Github/Speculative-Graph-Execution-reviewer-artifact-20260814/artifacts/mlforsys_2026_reviewer/outputs/figures/evidence_maturity_boundary.pdf",
+      "raster_image_count": 0
+    },
+    {
+      "check": "artifact_hash",
+      "path": "outputs/figures/evidence_maturity_boundary.png",
+      "sha256": "8d4d47866139eeb86585779b54f5d4ed6bd5a968a758f3fbea0690f8d1319a03"
+    },
+    {
+      "check": "png_resolution",
+      "dpi": 299.9994,
+      "path": "<LOCAL_HOME>/Github/Speculative-Graph-Execution-reviewer-artifact-20260814/artifacts/mlforsys_2026_reviewer/outputs/figures/evidence_maturity_boundary.png",
+      "pixels": [
+        1650,
+        516
+      ],
+      "required_dpi": 300.0
+    },
+    {
+      "check": "accessibility_preview",
+      "path": "outputs/visual_checks/evidence_maturity_boundary_grayscale.png",
+      "profile": "grayscale",
+      "sha256": "82f1efbde1d646f3e3b7c755ce6a9ac3206f6db4e6d0a0184e95f5ea3854366a"
+    },
+    {
+      "check": "accessibility_preview",
+      "path": "outputs/visual_checks/evidence_maturity_boundary_protanopia.png",
+      "profile": "protanopia",
+      "sha256": "1ac83f0bca27f1c1c649761b3b63d0fa44ac6ae9c9f9432ab13782af4b348424"
+    },
+    {
+      "check": "accessibility_preview",
+      "path": "outputs/visual_checks/evidence_maturity_boundary_deuteranopia.png",
+      "profile": "deuteranopia",
+      "sha256": "74348d0b9fe547fbf2c1333346c137ca3906e12ed83549cdaac9dbbc556b775e"
+    },
+    {
+      "check": "accessibility_preview",
+      "path": "outputs/visual_checks/evidence_maturity_boundary_tritanopia.png",
+      "profile": "tritanopia",
+      "sha256": "7553bc03d4a7c9826c81f3444022829d4800737da225b8ed53f6e263a5202394"
+    }
+  ],
+  "contract": "<LOCAL_HOME>/Github/Speculative-Graph-Execution-reviewer-artifact-20260814/artifacts/mlforsys_2026_reviewer/evidence/figure_contract.json",
+  "contract_validation": {
+    "contract": "<LOCAL_HOME>/Github/Speculative-Graph-Execution-reviewer-artifact-20260814/artifacts/mlforsys_2026_reviewer/evidence/figure_contract.json",
+    "figure_count": 5,
+    "issues": [],
+    "root": "<LOCAL_HOME>/Github/Speculative-Graph-Execution-reviewer-artifact-20260814/artifacts/mlforsys_2026_reviewer",
+    "source_artifact_count": 9,
+    "status": "pass"
+  },
+  "generated_accessibility": [
+    "outputs/visual_checks/admission_calibration_nontrivial_deuteranopia.png",
+    "outputs/visual_checks/admission_calibration_nontrivial_grayscale.png",
+    "outputs/visual_checks/admission_calibration_nontrivial_protanopia.png",
+    "outputs/visual_checks/admission_calibration_nontrivial_tritanopia.png",
+    "outputs/visual_checks/evidence_maturity_boundary_deuteranopia.png",
+    "outputs/visual_checks/evidence_maturity_boundary_grayscale.png",
+    "outputs/visual_checks/evidence_maturity_boundary_protanopia.png",
+    "outputs/visual_checks/evidence_maturity_boundary_tritanopia.png",
+    "outputs/visual_checks/rolling_evidence_atlas_deuteranopia.png",
+    "outputs/visual_checks/rolling_evidence_atlas_grayscale.png",
+    "outputs/visual_checks/rolling_evidence_atlas_protanopia.png",
+    "outputs/visual_checks/rolling_evidence_atlas_tritanopia.png",
+    "outputs/visual_checks/task_layer_map_and_envelope_deuteranopia.png",
+    "outputs/visual_checks/task_layer_map_and_envelope_grayscale.png",
+    "outputs/visual_checks/task_layer_map_and_envelope_protanopia.png",
+    "outputs/visual_checks/task_layer_map_and_envelope_tritanopia.png",
+    "outputs/visual_checks/workgraph_case_ceiling_deuteranopia.png",
+    "outputs/visual_checks/workgraph_case_ceiling_grayscale.png",
+    "outputs/visual_checks/workgraph_case_ceiling_protanopia.png",
+    "outputs/visual_checks/workgraph_case_ceiling_tritanopia.png"
+  ],
+  "issues": [],
+  "root": "<LOCAL_HOME>/Github/Speculative-Graph-Execution-reviewer-artifact-20260814/artifacts/mlforsys_2026_reviewer",
+  "status": "pass"
+}

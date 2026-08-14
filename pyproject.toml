@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sge-coding-agents"
+version = "0.1.0"
+description = "Reviewer-safe WorkGraph analysis and offline evidence for Speculative Graph Execution"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+authors = [{name = "SGE Project Contributors"}]
+keywords = ["coding-agents", "dag-scheduling", "speculative-execution", "workgraph"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: Apache Software License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[project.optional-dependencies]
+artifact = ["matplotlib==3.9.4", "Pillow==11.3.0"]
+dev = ["pytest==8.4.2"]
+
+[project.scripts]
+sge = "sge.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/decentralizedblack-maker/sge-coding-agents"
+Repository = "https://github.com/decentralizedblack-maker/sge-coding-agents"
+Issues = "https://github.com/decentralizedblack-maker/sge-coding-agents/issues"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+pythonpath = ["src"]
+testpaths = ["tests", "artifact/reviewer_snapshot/tests"]

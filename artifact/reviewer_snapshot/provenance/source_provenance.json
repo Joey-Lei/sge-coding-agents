@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "artifact_identity": "mlforsys_2026_sge_reviewer_artifact",
+  "assembly_date": "2026-08-14",
+  "base_repository_commit": "8f4aeb9749ba9eab07bfc7b0e96da62c3f23283a",
+  "sources": [
+    {
+      "id": "p30_overlay",
+      "repository": "Speculative-Graph-Execution",
+      "source_snapshot": "9a82137d10cc4c1fa3c4514bc6c02e7ce5354489",
+      "paths": {
+        "results/sge_p30_ac_overlay_v2_20260728/extension_report.json": "3342925290bd4fc3002135fe8a26841e83f0246a0b6d4d601ab301fa82306632",
+        "results/sge_p30_ac_overlay_v2_20260728/case_rows.json": "011e85cfc2ad94a61db233dd61165a1f34a45c29f00cb2872c3795457e855270",
+        "results/sge_p30_ac_overlay_v2_20260728/c_candidate_rows.json": "2f20df86ce6a69237c874e4bf7ba1a8f99981fbe5aa3e28df731a4461cc699ed",
+        "results/sge_p30_ac_overlay_v2_20260728/action_duration_ledger.json": "db9aa1195b69585eb359863e9390461cc72520108eea67fac27c199f9c746d57"
+      }
+    },
+    {
+      "id": "c1_structural_validation",
+      "repository": "Speculative-Graph-Execution",
+      "source_snapshot": "1add28e6990b894b71dea829c1d19490d2c0669a",
+      "paths": {
+        "results/sge_c1_structural_validation_20260729/structural_validation_report.json": "5e2467ae2e04bfca9fd40e6a7713a28d17dfbd417744e5823c9da18eedef9cc0",
+        "results/sge_c1_structural_validation_20260729/window_rows.json": "cea8da41fb778932e06fc9260d37de552ecf6f84eb6296ccab9c3e9ef40916f5",
+        "results/sge_c1_structural_validation_20260729/attrition_ledger.json": "1844165dcc78f8bdf9f4944b57969bc7e3b5ac4996086a2e029aef9413ec409c"
+      }
+    },
+    {
+      "id": "strict_pair_audits",
+      "repository": "Speculative-Graph-Execution",
+      "source_snapshot": "1dd75657edc344d97303c0dfb7baae538ba1a3a4",
+      "path_prefix": "results/sge_p30_paired_scale_audit_20260728"
+    },
+    {
+      "id": "core_code_and_contracts",
+      "repository": "Speculative-Graph-Execution",
+      "source_snapshot": "1add28e6990b894b71dea829c1d19490d2c0669a",
+      "last_shared_code_contract_commit": "474c73a6e642a3917dc8c0ae609f2feaa8bdb511",
+      "path_prefixes": [
+        "scripts",
+        "experiments/perfect_speculation_speedup_bound/direct_pair/trace_to_reference_dag"
+      ]
+    },
+    {
+      "id": "historical_locality_predictor_executor",
+      "repository": "Speculative-Graph-Execution",
+      "source_snapshot": "caa0dd43c9016f2aa931ae42516d21917f505834",
+      "sealed_hashes": {
+        "verified_locality_csv": "38381a55f7a28b580e80fd0307d8592574680ec9efd0ae909c57917e3832b812",
+        "swe_pro_locality_csv": "fc42bbc0f1a6581b61387fbbc9664977fa2b1cb1941e7f799ffabe5b04768397",
+        "predictor_summary_csv": "5ce5e93e0db03d40b6e9289dc559995c933dfec838b58b7648701f0c06fa73a3",
+        "executor_summary_json": "908d4eb803d501ef68dc8acbab2da155cef54254468479900f83bac014b49c62"
+      }
+    },
+    {
+      "id": "flex_functional_observation",
+      "repository": "Speculative-Graph-Execution",
+      "source_snapshot": "444259bebf3cd578945170d0a80b3690b85078f0",
+      "sealed_hashes": {
+        "metrics": "052c4f8116aad37abf7a23ca6ebe9eb67c18ddd21ab5d6ac5818899991a2c861",
+        "result_bundle": "c62d2601ddf72bc89eb1e7f93d15ef4916e6b237a6fb1386a47256f02421c5c1",
+        "evidence_integration": "59535a2116cab45569018b62c1ee18e7f718865bc92778b2d998c0e1e2b5387d",
+        "reference_dag": "5c71e22f6ecabdbe7cc2f4663e168ceffe73fd58d87770c4301aaabee583e7a1"
+      }
+    },
+    {
+      "id": "grid_functional_observation",
+      "repository": "Speculative-Graph-Execution",
+      "source_snapshot": "731f890feaea4cdc303b88c83c8ee6e2e7e1d682",
+      "sealed_hashes": {
+        "metrics": "0a6cf2dccc557ddda5cb83ae1da0f6b86eb573026b3efddf6e5474bc7d7b0de7",
+        "result_bundle": "77b892daaf3b066cd6b4eae580615244da245afa63db5da8049d870be32b5984",
+        "evidence_integration": "1fad9cf7577aff027a7afee5ba3b9877476c008ada3e7d4fdb7245e8f20d07a9",
+        "reference_dag": "dcad062b170a422a82b65ce04ed302380bfcc51787238a46a00f0e4dbd7fd9f5"
+      }
+    },
+    {
+      "id": "submission_figure_builder",
+      "repository": "Speculative-Graph-Execution",
+      "source_worktree_base_commit": "6780a9cf280f83e05b09ea74f1e547179baa5731",
+      "source_content_sha256": "354f98aa13844f71060abb13eed6267f58d417b89dd7e6be982f84e6eef01d25",
+      "note": "The source file was an untracked manuscript worktree artifact; its exact pre-package content hash is recorded. Package-only path and deterministic-render changes are auditable in Git."
+    }
+  ],
+  "sanitization": {
+    "report": "audit/sanitization_report.json",
+    "rule": "Source hashes above identify the sealed upstream content. For changed files, the sanitization report binds upstream hashes to reviewer-safe packaged hashes."
+  },
+  "package_hashes": "provenance/artifact_manifest.json"
+}

@@ -1,0 +1,24 @@
+{
+  "case_count": 10,
+  "local_dag_execution_success": 8,
+  "fallback_required": 2,
+  "deadlock": 0,
+  "accepted_local_artifacts": 49,
+  "mean_executor_wall_seconds": 373.3067,
+  "mean_speculative_overhead_wall_seconds": 399.2852,
+  "mean_target_serial_wall_seconds": 555.0874,
+  "mean_fallback_net_speedup": 0.6308,
+  "mean_time_to_local_artifact_speedup_diagnostic": 1.4902,
+  "mean_extra_token_ratio_if_fallback": 0.6291,
+  "node_status_counts": {
+    "completed": 49,
+    "skipped": 6,
+    "timeout": 5
+  },
+  "model": "gpt-5.5",
+  "reasoning_effort": "medium",
+  "node_timeout_seconds": 240.0,
+  "dataset_dir": "<LOCAL_HOME>/Github/Speculative-Graph-Execution/datasets/semantic_candidate_dag_eval_20260708",
+  "scoring_dir": "<LOCAL_HOME>/Github/Speculative-Graph-Execution/results/semantic_candidate_dag_eval_20260708/scoring",
+  "out_dir": "<LOCAL_HOME>/Github/Speculative-Graph-Execution/results/canonical_dag_executor_family_smoke_20260708"
+}

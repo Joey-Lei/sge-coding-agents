@@ -1,0 +1,30 @@
+{
+  "classification": "prompt_conditioned_gmin_functional_paired_pilot",
+  "dag_trace_audit_status": "pending_independent_audit",
+  "default_e2e_seconds": 279.825414542,
+  "default_usage": {
+    "cached_input_tokens": 467328,
+    "input_tokens": 525658,
+    "output_tokens": 6978,
+    "reasoning_output_tokens": 1458
+  },
+  "diagnostic_e2e_speedup": 1.6442058230663825,
+  "diagnostic_latency_reduction_ratio": 0.391803637980653,
+  "monetary_cost_default": null,
+  "monetary_cost_perfect_dag": null,
+  "monetary_extra_cost_ratio": null,
+  "perfect_dag_e2e_seconds": 170.18879912500006,
+  "perfect_dag_usage": {
+    "cached_input_tokens": 153984,
+    "input_tokens": 185038,
+    "output_tokens": 3855,
+    "reasoning_output_tokens": 961
+  },
+  "performance_claim_eligible": false,
+  "quality_equivalent": true,
+  "reported_noncached_token_extra_ratio": -0.4654713051999755,
+  "reported_noncached_token_ratio": 0.5345286948000245,
+  "reported_total_token_extra_ratio": -0.6453619357309682,
+  "reported_total_token_ratio": 0.35463806426903177,
+  "timing_claim_scope": "functional_only"
+}

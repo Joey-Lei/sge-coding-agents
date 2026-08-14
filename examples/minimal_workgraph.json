@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "description": "A minimal task-layer WorkGraph with independent inspection branches and a verified join.",
+  "nodes": [
+    {
+      "node_id": "inspect_source",
+      "kind": "read",
+      "label": "Inspect implementation",
+      "duration": 2.0
+    },
+    {
+      "node_id": "inspect_tests",
+      "kind": "read",
+      "label": "Inspect tests",
+      "duration": 3.0
+    },
+    {
+      "node_id": "inspect_config",
+      "kind": "read",
+      "label": "Inspect configuration",
+      "duration": 1.5
+    },
+    {
+      "node_id": "draft_patch",
+      "kind": "patch_candidate",
+      "label": "Draft isolated patch",
+      "duration": 4.0
+    },
+    {
+      "node_id": "verify_patch",
+      "kind": "targeted_test",
+      "label": "Run targeted verification",
+      "duration": 5.0
+    }
+  ],
+  "edges": [
+    {
+      "src": "inspect_source",
+      "dst": "draft_patch",
+      "edge_type": "dependency",
+      "reason": "patch depends on implementation context"
+    },
+    {
+      "src": "inspect_tests",
+      "dst": "draft_patch",
+      "edge_type": "dependency",
+      "reason": "patch depends on test contract"
+    },
+    {
+      "src": "inspect_config",
+      "dst": "verify_patch",
+      "edge_type": "dependency",
+      "reason": "verification depends on environment contract"
+    },
+    {
+      "src": "draft_patch",
+      "dst": "verify_patch",
+      "edge_type": "dependency",
+      "reason": "verification consumes the patch"
+    }
+  ],
+  "speculative_candidates": []
+}

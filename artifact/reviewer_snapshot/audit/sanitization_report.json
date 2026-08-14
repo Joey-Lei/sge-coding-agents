@@ -1,0 +1,82 @@
+{
+  "changed_file_count": 8,
+  "changed_files": [
+    {
+      "after_sha256": "07f1088c3c73a4277a66f57cbde25acf151343b3c8f449c7727a3f51efca4465",
+      "before_sha256": "908d4eb803d501ef68dc8acbab2da155cef54254468479900f83bac014b49c62",
+      "path": "results/canonical_dag_executor_family_smoke_20260708/summary.json",
+      "replacements": {
+        "local_home": 3
+      }
+    },
+    {
+      "after_sha256": "9e8a807affe4cf9f9288ba38fc2ced116e6601bd58f8480b44eb85fb38534d56",
+      "before_sha256": "1fad9cf7577aff027a7afee5ba3b9877476c008ada3e7d4fdb7245e8f20d07a9",
+      "path": "results/psb_gmin_historical_chain_revalidation_grid_20260719/audit/evidence_integration.json",
+      "replacements": {
+        "internal_agent": 1
+      }
+    },
+    {
+      "after_sha256": "d5abcee9906d4e9aa71a0b513d641881ec6976bf36b071f56defce3023eb057a",
+      "before_sha256": "77b892daaf3b066cd6b4eae580615244da245afa63db5da8049d870be32b5984",
+      "path": "results/psb_gmin_historical_chain_revalidation_grid_20260719/result_bundle.json",
+      "replacements": {
+        "private_tmp": 5
+      }
+    },
+    {
+      "after_sha256": "a77a12e904cd6450504c1d3452c6a6eaff971650eb0ec2dc9368656dc92d9fa9",
+      "before_sha256": "59535a2116cab45569018b62c1ee18e7f718865bc92778b2d998c0e1e2b5387d",
+      "path": "results/psb_paired_webbench_flex_gmin_revalidation_20260719/audit/evidence_integration.json",
+      "replacements": {
+        "internal_agent": 2,
+        "local_home": 3,
+        "runtime_session_evidence": 3
+      }
+    },
+    {
+      "after_sha256": "dbd197217ed5ae80cde28cb9f8755b79b438c6cb0b91d635bb24388695cf61b2",
+      "before_sha256": "c62d2601ddf72bc89eb1e7f93d15ef4916e6b237a6fb1386a47256f02421c5c1",
+      "path": "results/psb_paired_webbench_flex_gmin_revalidation_20260719/result_bundle.json",
+      "replacements": {
+        "private_tmp": 1
+      }
+    },
+    {
+      "after_sha256": "f77eca5e40ad2170474c5a98660ad2ab11ea3a13547410f9b15550e74a14665c",
+      "before_sha256": "011e85cfc2ad94a61db233dd61165a1f34a45c29f00cb2872c3795457e855270",
+      "path": "results/sge_p30_ac_overlay_v2_20260728/case_rows.json",
+      "replacements": {
+        "local_home": 75
+      }
+    },
+    {
+      "after_sha256": "12f84479a40a94d912ce1555b12a062836634c2f1f71c5a47d3544e05aa64d77",
+      "before_sha256": "3342925290bd4fc3002135fe8a26841e83f0246a0b6d4d601ab301fa82306632",
+      "path": "results/sge_p30_ac_overlay_v2_20260728/extension_report.json",
+      "replacements": {
+        "local_home": 5
+      }
+    },
+    {
+      "after_sha256": "f8c1507b64d121ce5b9d58f8737cb82e86ab9f6c962f42dec9b4f5ffba280f96",
+      "before_sha256": "f8ae01866d77617f844ac9c61dd8bfce55edf841551990150bd872d99db9bc60",
+      "path": "audit/figure_bundle_audit.json",
+      "replacements": {
+        "local_home": 29
+      }
+    }
+  ],
+  "policy": "machine-local paths, runtime-session locators, internal agent names, account names, and emails only; scientific numeric values are unchanged",
+  "replacement_totals": {
+    "account_name": 0,
+    "email": 0,
+    "internal_agent": 3,
+    "local_home": 115,
+    "private_tmp": 6,
+    "runtime_session_evidence": 3
+  },
+  "schema_version": 1,
+  "status": "applied"
+}

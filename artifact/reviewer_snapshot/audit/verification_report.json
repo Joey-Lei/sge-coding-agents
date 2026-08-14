@@ -1,0 +1,17 @@
+{
+  "checks": [
+    "required_files",
+    "supplement_manifest_schema",
+    "restricted_raw_family_exclusion",
+    "machine_path_and_credential_scan",
+    "invalid_pair_null_metric_preservation",
+    "figure_source_output_hashes_and_accessibility",
+    "figure_geometry_fonts_vector_audit"
+  ],
+  "model_calls": 0,
+  "network_calls": 0,
+  "official_evaluator_calls": 0,
+  "schema_version": 1,
+  "status": "pass",
+  "text_files_scanned": 75
+}

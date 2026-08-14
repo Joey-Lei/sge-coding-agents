@@ -1,0 +1,288 @@
+{
+  "schema_version": 2,
+  "paper_id": "sge-mlforsys-2026-reviewer",
+  "workflow_mode": "reconstruct",
+  "paper_context": {
+    "venue": "MLForSys 2026",
+    "column_width_pt": 396.0,
+    "page_width_pt": 396.0
+  },
+  "source_artifacts": [
+    {
+      "id": "p30-extension-report",
+      "artifact_type": "data",
+      "path": "results/sge_p30_ac_overlay_v2_20260728/extension_report.json",
+      "sha256": "12f84479a40a94d912ce1555b12a062836634c2f1f71c5a47d3544e05aa64d77",
+      "evidence_scope": {
+        "independent_unit": "audited action DAG or whole-task phase record, depending on panel",
+        "sample_basis": "9 exact-duration eligible DAGs and 23 descriptive phase records",
+        "aggregation": "case-weighted distributions and phase fractions",
+        "estimand": "action-layer P=4 structural ceiling and descriptive whole-task phase composition"
+      }
+    },
+    {
+      "id": "p30-case-rows",
+      "artifact_type": "data",
+      "path": "results/sge_p30_ac_overlay_v2_20260728/case_rows.json",
+      "sha256": "f77eca5e40ad2170474c5a98660ad2ab11ea3a13547410f9b15550e74a14665c",
+      "evidence_scope": {
+        "independent_unit": "audited action DAG",
+        "sample_basis": "9 exact-duration eligible cases across 6 repositories from 30 intended cases",
+        "aggregation": "case-weighted mean, median, maximum, and one named case anatomy",
+        "estimand": "finite-worker action-layer structural ceiling"
+      }
+    },
+    {
+      "id": "p30-candidate-windows",
+      "artifact_type": "data",
+      "path": "results/sge_p30_ac_overlay_v2_20260728/c_candidate_rows.json",
+      "sha256": "2f20df86ce6a69237c874e4bf7ba1a8f99981fbe5aa3e28df731a4461cc699ed",
+      "evidence_scope": {
+        "independent_unit": "unique topology window nested within case and repository",
+        "sample_basis": "188 joined duration-blind windows from 7 cases and 4 held-out repositories",
+        "aggregation": "pooled calibration plus visible joint-unit and nontrivial partitions",
+        "estimand": "type-weighted P=4 ceiling versus observed-duration structural reference"
+      }
+    },
+    {
+      "id": "p30-action-duration-ledger",
+      "artifact_type": "ledger",
+      "path": "results/sge_p30_ac_overlay_v2_20260728/action_duration_ledger.json",
+      "sha256": "db9aa1195b69585eb359863e9390461cc72520108eea67fac27c199f9c746d57",
+      "evidence_scope": {
+        "independent_unit": "mapped action interval",
+        "sample_basis": "exact mapped durations for eligible audited cases",
+        "aggregation": "semantic-node duration sum",
+        "estimand": "observed action-layer work and critical-path span"
+      }
+    },
+    {
+      "id": "sklearn-effective-workgraph",
+      "artifact_type": "data",
+      "path": "results/sge_p30_trace_reference_dag_20260728/stage_b/cases/swebench_verified_scikit-learn_scikit-learn-25973/adjudication/effective_reference_dag.json",
+      "sha256": "7fbf4a167e4fa53ce30f9e09e431de5d6fd6b9628bffd6387eaa7a621bf9c8b6",
+      "evidence_scope": {
+        "independent_unit": "one adjudicated semantic action DAG",
+        "sample_basis": "scikit-learn-25973 case selected as the strongest complete exact-duration case anatomy",
+        "aggregation": "none; node/edge anatomy",
+        "estimand": "semantic dependencies underlying the case structural ceiling"
+      }
+    },
+    {
+      "id": "verified-locality",
+      "artifact_type": "data",
+      "path": "results/local_rolling_dag_ablation_swe_verified_local_10_20260707/aggregate_by_k.csv",
+      "sha256": "38381a55f7a28b580e80fd0307d8592574680ec9efd0ae909c57917e3832b812",
+      "evidence_scope": {
+        "independent_unit": "trace-derived case",
+        "sample_basis": "10 SWE Verified traces with mixed/type-conditioned durations",
+        "aggregation": "case mean by local horizon depth k",
+        "estimand": "local-to-global retained four-worker structural opportunity"
+      }
+    },
+    {
+      "id": "swe-pro-locality",
+      "artifact_type": "data",
+      "path": "results/local_rolling_dag_ablation_swe_pro_campaign_clean_20260707/aggregate_by_k.csv",
+      "sha256": "fc42bbc0f1a6581b61387fbbc9664977fa2b1cb1941e7f799ffabe5b04768397",
+      "evidence_scope": {
+        "independent_unit": "trace-derived case",
+        "sample_basis": "5 clean SWE-Pro traces with mixed/type-conditioned durations",
+        "aggregation": "case mean by local horizon depth k",
+        "estimand": "local-to-global retained four-worker structural opportunity"
+      }
+    },
+    {
+      "id": "predictor-diagnostic",
+      "artifact_type": "data",
+      "path": "results/dag_prediction_gpt55_high_20260707/scoring/prediction_accuracy_summary.csv",
+      "sha256": "5ce5e93e0db03d40b6e9289dc559995c933dfec838b58b7648701f0c06fa73a3",
+      "evidence_scope": {
+        "independent_unit": "prediction call",
+        "sample_basis": "5 predictor-only full-graph cases",
+        "aggregation": "mean recall, retained work, time, and tokens",
+        "estimand": "future-DAG topology/work recovery diagnostic"
+      }
+    },
+    {
+      "id": "local-executor-summary",
+      "artifact_type": "data",
+      "path": "results/canonical_dag_executor_family_smoke_20260708/summary.json",
+      "sha256": "07f1088c3c73a4277a66f57cbde25acf151343b3c8f449c7727a3f51efca4465",
+      "evidence_scope": {
+        "independent_unit": "local executor window",
+        "sample_basis": "10 canonical local windows",
+        "aggregation": "counts of closures, fallbacks, artifacts, and deadlocks",
+        "estimand": "local structured-artifact closure, not target-level E2E performance"
+      }
+    }
+  ],
+  "central_claims": [
+    {
+      "id": "C-task-layer",
+      "statement": "SGE acts at semantic task release, while whole-task time contains substantial non-model phases.",
+      "visual_decision": "mapped",
+      "evidence_boundary": "retrospective-supporting"
+    },
+    {
+      "id": "C-case-ceiling",
+      "statement": "The audited scikit-learn case exposes a 1.530x four-worker action-layer structural ceiling.",
+      "visual_decision": "mapped",
+      "evidence_boundary": "structural-ceiling"
+    },
+    {
+      "id": "C-rolling-evidence",
+      "statement": "Predictor recovery, mixed-duration rolling locality, and exact-duration ceilings are distinct diagnostics with different denominators.",
+      "visual_decision": "mapped",
+      "evidence_boundary": "retrospective-supporting"
+    },
+    {
+      "id": "C-admission",
+      "statement": "The duration-blind screen separates most low-ceiling from high-ceiling windows, while the 58-window nontrivial sensitivity is materially weaker than the pooled correlation.",
+      "visual_decision": "mapped",
+      "evidence_boundary": "retrospective-supporting"
+    },
+    {
+      "id": "C-evidence-boundary",
+      "statement": "Current structural, retrospective, and local-closure evidence does not supply a valid prospective E2E SGE gain.",
+      "visual_decision": "mapped",
+      "evidence_boundary": "retrospective-supporting"
+    }
+  ],
+  "semantic_styles": [
+    {"id": "estimate-or-predictor", "color": "#0072B2", "marker": "circle", "line_style": "solid", "hatch": "//"},
+    {"id": "structural-ceiling-or-observed", "color": "#D55E00", "marker": "diamond", "line_style": "dashed", "hatch": "xx"},
+    {"id": "validated-or-local-closure", "color": "#009E73", "marker": "square", "line_style": "solid", "hatch": "++"},
+    {"id": "integration-or-finalization", "color": "#CC79A7", "marker": "none", "line_style": "solid", "hatch": "//"},
+    {"id": "boundary-or-missing", "color": "#5C5C5C", "marker": "none", "line_style": "dotted", "hatch": "xx"}
+  ],
+  "output_policy": {
+    "required_formats": ["pdf", "png"],
+    "require_embedded_fonts": true,
+    "require_vector_pdf": true,
+    "min_png_dpi": 300
+  },
+  "accessibility": {
+    "required": true,
+    "profiles": ["grayscale", "protanopia", "deuteranopia", "tritanopia"],
+    "non_color_encoding_required": true
+  },
+  "figures": [
+    {
+      "id": "F-task-layer-map",
+      "role": "orientation",
+      "evidence_class": "retrospective-supporting",
+      "renderer": "matplotlib",
+      "narrative_pattern": "layer-map-plus-composition",
+      "title_claim": "SGE operates at the task layer, and whole-task time is not synonymous with model-decision time.",
+      "caption_boundary": "The layer map is conceptual; phase shares are descriptive across 23 records and are not removable-time estimates.",
+      "output": "outputs/figures/task_layer_map_and_envelope.pdf",
+      "artifacts": [
+        {"format": "pdf", "path": "outputs/figures/task_layer_map_and_envelope.pdf", "sha256": "c405a8dee8c23c17a179d910ab61f52bbcce30456a91db88f7d61a56dbd4adbd"},
+        {"format": "png", "path": "outputs/figures/task_layer_map_and_envelope.png", "sha256": "4e6bfb93866dfdadc2c97c331414cfdcc5f915ff1a13bcb1a7dd49cde1eeeb5e"}
+      ],
+      "accessibility_outputs": [
+        {"profile": "grayscale", "path": "outputs/visual_checks/task_layer_map_and_envelope_grayscale.png"},
+        {"profile": "protanopia", "path": "outputs/visual_checks/task_layer_map_and_envelope_protanopia.png"},
+        {"profile": "deuteranopia", "path": "outputs/visual_checks/task_layer_map_and_envelope_deuteranopia.png"},
+        {"profile": "tritanopia", "path": "outputs/visual_checks/task_layer_map_and_envelope_tritanopia.png"}
+      ],
+      "claim_ids": ["C-task-layer"],
+      "data_sources": ["p30-extension-report"],
+      "final_size": {"source_width_pt": 396.0, "final_width_pt": 396.0, "min_source_font_pt": 6.3, "min_final_font_pt": 6.3, "min_source_stroke_pt": 0.55, "min_final_stroke_pt": 0.55}
+    },
+    {
+      "id": "F-workgraph-case",
+      "role": "case-anatomy",
+      "evidence_class": "structural-ceiling",
+      "renderer": "matplotlib",
+      "narrative_pattern": "case-anatomy",
+      "title_claim": "Observed action durations and semantic dependencies explain the strongest complete P=4 ceiling in the audited cohort.",
+      "caption_boundary": "The 1.530x value is a structural action-layer ceiling, not whole-task realized speedup.",
+      "output": "outputs/figures/workgraph_case_ceiling.pdf",
+      "artifacts": [
+        {"format": "pdf", "path": "outputs/figures/workgraph_case_ceiling.pdf", "sha256": "73d9a7d9a16ab0e065a094bdc57263804093c424e60831bcda32c7e2253caf51"},
+        {"format": "png", "path": "outputs/figures/workgraph_case_ceiling.png", "sha256": "1631cc05fdf74461e92da73c3bff78783f6660db5a07686c8e71cc9a96796bbe"}
+      ],
+      "accessibility_outputs": [
+        {"profile": "grayscale", "path": "outputs/visual_checks/workgraph_case_ceiling_grayscale.png"},
+        {"profile": "protanopia", "path": "outputs/visual_checks/workgraph_case_ceiling_protanopia.png"},
+        {"profile": "deuteranopia", "path": "outputs/visual_checks/workgraph_case_ceiling_deuteranopia.png"},
+        {"profile": "tritanopia", "path": "outputs/visual_checks/workgraph_case_ceiling_tritanopia.png"}
+      ],
+      "claim_ids": ["C-case-ceiling"],
+      "data_sources": ["p30-case-rows", "p30-action-duration-ledger", "sklearn-effective-workgraph"],
+      "final_size": {"source_width_pt": 396.0, "final_width_pt": 396.0, "min_source_font_pt": 6.3, "min_final_font_pt": 6.3, "min_source_stroke_pt": 0.55, "min_final_stroke_pt": 0.55}
+    },
+    {
+      "id": "F-rolling-atlas",
+      "role": "diagnostic",
+      "evidence_class": "retrospective-supporting",
+      "renderer": "matplotlib",
+      "narrative_pattern": "diagnostic-atlas",
+      "title_claim": "Prediction recovery, rolling structural retention, and exact-duration ceilings answer different questions and must remain visually separated.",
+      "caption_boundary": "The panels mix predictor-only, mixed-duration structural, and exact-duration structural diagnostics; none is prospective E2E performance.",
+      "output": "outputs/figures/rolling_evidence_atlas.pdf",
+      "artifacts": [
+        {"format": "pdf", "path": "outputs/figures/rolling_evidence_atlas.pdf", "sha256": "35541ea8cae4e49f112235af2ef6923111f5ee01fa0251280a37822a0c07db3d"},
+        {"format": "png", "path": "outputs/figures/rolling_evidence_atlas.png", "sha256": "e31a39b0f4ca5720ebaae117795eea641b01e80bd87501459797147cb273b663"}
+      ],
+      "accessibility_outputs": [
+        {"profile": "grayscale", "path": "outputs/visual_checks/rolling_evidence_atlas_grayscale.png"},
+        {"profile": "protanopia", "path": "outputs/visual_checks/rolling_evidence_atlas_protanopia.png"},
+        {"profile": "deuteranopia", "path": "outputs/visual_checks/rolling_evidence_atlas_deuteranopia.png"},
+        {"profile": "tritanopia", "path": "outputs/visual_checks/rolling_evidence_atlas_tritanopia.png"}
+      ],
+      "claim_ids": ["C-rolling-evidence"],
+      "data_sources": ["predictor-diagnostic", "verified-locality", "swe-pro-locality", "p30-case-rows"],
+      "final_size": {"source_width_pt": 396.0, "final_width_pt": 396.0, "min_source_font_pt": 6.3, "min_final_font_pt": 6.3, "min_source_stroke_pt": 0.55, "min_final_stroke_pt": 0.55}
+    },
+    {
+      "id": "F-admission",
+      "role": "main-result",
+      "evidence_class": "retrospective-supporting",
+      "renderer": "matplotlib",
+      "narrative_pattern": "calibration-plus-confusion-matrix",
+      "title_claim": "The fixed screen separates most low/high structural windows, but its nontrivial ranking is weaker than the pooled result.",
+      "caption_boundary": "Windows are nested in seven cases and four repositories; the observed reference is a structural ceiling, not realized utility.",
+      "output": "outputs/figures/admission_calibration_nontrivial.pdf",
+      "artifacts": [
+        {"format": "pdf", "path": "outputs/figures/admission_calibration_nontrivial.pdf", "sha256": "7bac779318270bd4161d5ccfd1a0f4a4045e7c0b6826193de08b7509e0cdeb0d"},
+        {"format": "png", "path": "outputs/figures/admission_calibration_nontrivial.png", "sha256": "90eeeed4c01be695e13fa67519dabaeda561b78d98bd145d0bdaf412b1f0f025"}
+      ],
+      "accessibility_outputs": [
+        {"profile": "grayscale", "path": "outputs/visual_checks/admission_calibration_nontrivial_grayscale.png"},
+        {"profile": "protanopia", "path": "outputs/visual_checks/admission_calibration_nontrivial_protanopia.png"},
+        {"profile": "deuteranopia", "path": "outputs/visual_checks/admission_calibration_nontrivial_deuteranopia.png"},
+        {"profile": "tritanopia", "path": "outputs/visual_checks/admission_calibration_nontrivial_tritanopia.png"}
+      ],
+      "claim_ids": ["C-admission"],
+      "data_sources": ["p30-candidate-windows"],
+      "final_size": {"source_width_pt": 396.0, "final_width_pt": 396.0, "min_source_font_pt": 6.3, "min_final_font_pt": 6.3, "min_source_stroke_pt": 0.55, "min_final_stroke_pt": 0.55}
+    },
+    {
+      "id": "F-evidence-boundary",
+      "role": "limitation",
+      "evidence_class": "retrospective-supporting",
+      "renderer": "matplotlib",
+      "narrative_pattern": "evidence-maturity-boundary",
+      "title_claim": "The current evidence ladder stops before a valid prospective end-to-end SGE gain.",
+      "caption_boundary": "Counts summarize existing structural and local evidence; the empty prospective box is a missing result, not a zero effect.",
+      "output": "outputs/figures/evidence_maturity_boundary.pdf",
+      "artifacts": [
+        {"format": "pdf", "path": "outputs/figures/evidence_maturity_boundary.pdf", "sha256": "0aa88087294bef190a3176ec4b4cce1c4361926e562fbfbcb2a2a2e4d62d4c90"},
+        {"format": "png", "path": "outputs/figures/evidence_maturity_boundary.png", "sha256": "8d4d47866139eeb86585779b54f5d4ed6bd5a968a758f3fbea0690f8d1319a03"}
+      ],
+      "accessibility_outputs": [
+        {"profile": "grayscale", "path": "outputs/visual_checks/evidence_maturity_boundary_grayscale.png"},
+        {"profile": "protanopia", "path": "outputs/visual_checks/evidence_maturity_boundary_protanopia.png"},
+        {"profile": "deuteranopia", "path": "outputs/visual_checks/evidence_maturity_boundary_deuteranopia.png"},
+        {"profile": "tritanopia", "path": "outputs/visual_checks/evidence_maturity_boundary_tritanopia.png"}
+      ],
+      "claim_ids": ["C-evidence-boundary"],
+      "data_sources": ["p30-extension-report", "local-executor-summary"],
+      "final_size": {"source_width_pt": 396.0, "final_width_pt": 396.0, "min_source_font_pt": 6.3, "min_final_font_pt": 6.3, "min_source_stroke_pt": 0.55, "min_final_stroke_pt": 0.55}
+    }
+  ],
+  "comparison_sets": []
+}

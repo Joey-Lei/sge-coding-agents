@@ -1,0 +1,450 @@
+{
+  "candidate_case_count": 9,
+  "candidate_window_count": 221,
+  "intention_case_count": 30,
+  "observed_duration_join_case_count": 9,
+  "paired_case_count": 7,
+  "paired_repository_count": 4,
+  "paired_window_count": 188,
+  "reason_counts": {
+    "blocked_active_effective_dag_predecessor_without_duration": 11,
+    "original_target_incomplete": 4,
+    "original_zero_dispatch_gitlink_failure": 1,
+    "semantic_or_overlay_contract_failure": 5
+  },
+  "rows": [
+    {
+      "audited_effective_dag_eligible": false,
+      "c1_candidate_case": false,
+      "c1_candidate_window_count": 0,
+      "c1_paired_case": false,
+      "c1_paired_window_count": 0,
+      "case_id": "swebench_verified_astropy_astropy-14995",
+      "in_frozen_held_out_repository_set": false,
+      "observed_duration_join_eligible": false,
+      "physical_repository": "astropy/astropy",
+      "position": 1,
+      "retained_attrition_reasons": [
+        "original_target_incomplete"
+      ]
+    },
+    {
+      "audited_effective_dag_eligible": false,
+      "c1_candidate_case": false,
+      "c1_candidate_window_count": 0,
+      "c1_paired_case": false,
+      "c1_paired_window_count": 0,
+      "case_id": "swebench_verified_django_django-16100",
+      "in_frozen_held_out_repository_set": true,
+      "observed_duration_join_eligible": false,
+      "physical_repository": "django/django",
+      "position": 2,
+      "retained_attrition_reasons": [
+        "original_target_incomplete"
+      ]
+    },
+    {
+      "audited_effective_dag_eligible": true,
+      "c1_candidate_case": false,
+      "c1_candidate_window_count": 0,
+      "c1_paired_case": false,
+      "c1_paired_window_count": 0,
+      "case_id": "swebench_verified_matplotlib_matplotlib-25287",
+      "in_frozen_held_out_repository_set": false,
+      "observed_duration_join_eligible": true,
+      "physical_repository": "matplotlib/matplotlib",
+      "position": 3,
+      "retained_attrition_reasons": []
+    },
+    {
+      "audited_effective_dag_eligible": false,
+      "c1_candidate_case": false,
+      "c1_candidate_window_count": 0,
+      "c1_paired_case": false,
+      "c1_paired_window_count": 0,
+      "case_id": "swebench_verified_psf_requests-5414",
+      "in_frozen_held_out_repository_set": false,
+      "observed_duration_join_eligible": false,
+      "physical_repository": "psf/requests",
+      "position": 4,
+      "retained_attrition_reasons": [
+        "original_target_incomplete"
+      ]
+    },
+    {
+      "audited_effective_dag_eligible": false,
+      "c1_candidate_case": false,
+      "c1_candidate_window_count": 0,
+      "c1_paired_case": false,
+      "c1_paired_window_count": 0,
+      "case_id": "swebench_verified_pydata_xarray-3993",
+      "in_frozen_held_out_repository_set": true,
+      "observed_duration_join_eligible": false,
+      "physical_repository": "pydata/xarray",
+      "position": 5,
+      "retained_attrition_reasons": [
+        "original_target_incomplete"
+      ]
+    },
+    {
+      "audited_effective_dag_eligible": true,
+      "c1_candidate_case": false,
+      "c1_candidate_window_count": 0,
+      "c1_paired_case": false,
+      "c1_paired_window_count": 0,
+      "case_id": "swebench_verified_pylint-dev_pylint-6903",
+      "in_frozen_held_out_repository_set": false,
+      "observed_duration_join_eligible": false,
+      "physical_repository": "pylint-dev/pylint",
+      "position": 6,
+      "retained_attrition_reasons": [
+        "blocked_active_effective_dag_predecessor_without_duration"
+      ]
+    },
+    {
+      "audited_effective_dag_eligible": true,
+      "c1_candidate_case": true,
+      "c1_candidate_window_count": 65,
+      "c1_paired_case": true,
+      "c1_paired_window_count": 65,
+      "case_id": "swebench_verified_pytest-dev_pytest-6202",
+      "in_frozen_held_out_repository_set": true,
+      "observed_duration_join_eligible": true,
+      "physical_repository": "pytest-dev/pytest",
+      "position": 7,
+      "retained_attrition_reasons": []
+    },
+    {
+      "audited_effective_dag_eligible": true,
+      "c1_candidate_case": true,
+      "c1_candidate_window_count": 19,
+      "c1_paired_case": true,
+      "c1_paired_window_count": 19,
+      "case_id": "swebench_verified_scikit-learn_scikit-learn-12682",
+      "in_frozen_held_out_repository_set": true,
+      "observed_duration_join_eligible": true,
+      "physical_repository": "scikit-learn/scikit-learn",
+      "position": 8,
+      "retained_attrition_reasons": []
+    },
+    {
+      "audited_effective_dag_eligible": true,
+      "c1_candidate_case": false,
+      "c1_candidate_window_count": 0,
+      "c1_paired_case": false,
+      "c1_paired_window_count": 0,
+      "case_id": "swebench_verified_sphinx-doc_sphinx-8269",
+      "in_frozen_held_out_repository_set": false,
+      "observed_duration_join_eligible": false,
+      "physical_repository": "sphinx-doc/sphinx",
+      "position": 9,
+      "retained_attrition_reasons": [
+        "blocked_active_effective_dag_predecessor_without_duration"
+      ]
+    },
+    {
+      "audited_effective_dag_eligible": false,
+      "c1_candidate_case": false,
+      "c1_candidate_window_count": 0,
+      "c1_paired_case": false,
+      "c1_paired_window_count": 0,
+      "case_id": "swebench_verified_sympy_sympy-22080",
+      "in_frozen_held_out_repository_set": false,
+      "observed_duration_join_eligible": false,
+      "physical_repository": "sympy/sympy",
+      "position": 10,
+      "retained_attrition_reasons": [
+        "semantic_or_overlay_contract_failure"
+      ]
+    },
+    {
+      "audited_effective_dag_eligible": false,
+      "c1_candidate_case": false,
+      "c1_candidate_window_count": 0,
+      "c1_paired_case": false,
+      "c1_paired_window_count": 0,
+      "case_id": "swebench_verified_astropy_astropy-7671",
+      "in_frozen_held_out_repository_set": false,
+      "observed_duration_join_eligible": false,
+      "physical_repository": "astropy/astropy",
+      "position": 11,
+      "retained_attrition_reasons": [
+        "original_zero_dispatch_gitlink_failure"
+      ]
+    },
+    {
+      "audited_effective_dag_eligible": true,
+      "c1_candidate_case": true,
+      "c1_candidate_window_count": 22,
+      "c1_paired_case": true,
+      "c1_paired_window_count": 22,
+      "case_id": "swebench_verified_django_django-15467",
+      "in_frozen_held_out_repository_set": true,
+      "observed_duration_join_eligible": true,
+      "physical_repository": "django/django",
+      "position": 12,
+      "retained_attrition_reasons": []
+    },
+    {
+      "audited_effective_dag_eligible": false,
+      "c1_candidate_case": false,
+      "c1_candidate_window_count": 0,
+      "c1_paired_case": false,
+      "c1_paired_window_count": 0,
+      "case_id": "swebench_verified_matplotlib_matplotlib-26342",
+      "in_frozen_held_out_repository_set": false,
+      "observed_duration_join_eligible": false,
+      "physical_repository": "matplotlib/matplotlib",
+      "position": 13,
+      "retained_attrition_reasons": [
+        "semantic_or_overlay_contract_failure"
+      ]
+    },
+    {
+      "audited_effective_dag_eligible": true,
+      "c1_candidate_case": false,
+      "c1_candidate_window_count": 0,
+      "c1_paired_case": false,
+      "c1_paired_window_count": 0,
+      "case_id": "swebench_verified_psf_requests-2317",
+      "in_frozen_held_out_repository_set": false,
+      "observed_duration_join_eligible": false,
+      "physical_repository": "psf/requests",
+      "position": 14,
+      "retained_attrition_reasons": [
+        "blocked_active_effective_dag_predecessor_without_duration"
+      ]
+    },
+    {
+      "audited_effective_dag_eligible": true,
+      "c1_candidate_case": true,
+      "c1_candidate_window_count": 13,
+      "c1_paired_case": true,
+      "c1_paired_window_count": 13,
+      "case_id": "swebench_verified_pydata_xarray-6938",
+      "in_frozen_held_out_repository_set": true,
+      "observed_duration_join_eligible": true,
+      "physical_repository": "pydata/xarray",
+      "position": 15,
+      "retained_attrition_reasons": []
+    },
+    {
+      "audited_effective_dag_eligible": true,
+      "c1_candidate_case": false,
+      "c1_candidate_window_count": 0,
+      "c1_paired_case": false,
+      "c1_paired_window_count": 0,
+      "case_id": "swebench_verified_pylint-dev_pylint-6528",
+      "in_frozen_held_out_repository_set": false,
+      "observed_duration_join_eligible": true,
+      "physical_repository": "pylint-dev/pylint",
+      "position": 16,
+      "retained_attrition_reasons": []
+    },
+    {
+      "audited_effective_dag_eligible": true,
+      "c1_candidate_case": true,
+      "c1_candidate_window_count": 15,
+      "c1_paired_case": false,
+      "c1_paired_window_count": 0,
+      "case_id": "swebench_verified_pytest-dev_pytest-7324",
+      "in_frozen_held_out_repository_set": true,
+      "observed_duration_join_eligible": false,
+      "physical_repository": "pytest-dev/pytest",
+      "position": 17,
+      "retained_attrition_reasons": [
+        "blocked_active_effective_dag_predecessor_without_duration"
+      ]
+    },
+    {
+      "audited_effective_dag_eligible": true,
+      "c1_candidate_case": true,
+      "c1_candidate_window_count": 16,
+      "c1_paired_case": true,
+      "c1_paired_window_count": 16,
+      "case_id": "swebench_verified_scikit-learn_scikit-learn-25973",
+      "in_frozen_held_out_repository_set": true,
+      "observed_duration_join_eligible": true,
+      "physical_repository": "scikit-learn/scikit-learn",
+      "position": 18,
+      "retained_attrition_reasons": []
+    },
+    {
+      "audited_effective_dag_eligible": true,
+      "c1_candidate_case": false,
+      "c1_candidate_window_count": 0,
+      "c1_paired_case": false,
+      "c1_paired_window_count": 0,
+      "case_id": "swebench_verified_sphinx-doc_sphinx-9320",
+      "in_frozen_held_out_repository_set": false,
+      "observed_duration_join_eligible": false,
+      "physical_repository": "sphinx-doc/sphinx",
+      "position": 19,
+      "retained_attrition_reasons": [
+        "blocked_active_effective_dag_predecessor_without_duration"
+      ]
+    },
+    {
+      "audited_effective_dag_eligible": true,
+      "c1_candidate_case": false,
+      "c1_candidate_window_count": 0,
+      "c1_paired_case": false,
+      "c1_paired_window_count": 0,
+      "case_id": "swebench_verified_sympy_sympy-21596",
+      "in_frozen_held_out_repository_set": false,
+      "observed_duration_join_eligible": false,
+      "physical_repository": "sympy/sympy",
+      "position": 20,
+      "retained_attrition_reasons": [
+        "blocked_active_effective_dag_predecessor_without_duration"
+      ]
+    },
+    {
+      "audited_effective_dag_eligible": false,
+      "c1_candidate_case": false,
+      "c1_candidate_window_count": 0,
+      "c1_paired_case": false,
+      "c1_paired_window_count": 0,
+      "case_id": "swebench_verified_astropy_astropy-14096",
+      "in_frozen_held_out_repository_set": false,
+      "observed_duration_join_eligible": false,
+      "physical_repository": "astropy/astropy",
+      "position": 21,
+      "retained_attrition_reasons": [
+        "semantic_or_overlay_contract_failure"
+      ]
+    },
+    {
+      "audited_effective_dag_eligible": true,
+      "c1_candidate_case": true,
+      "c1_candidate_window_count": 12,
+      "c1_paired_case": true,
+      "c1_paired_window_count": 12,
+      "case_id": "swebench_verified_django_django-14351",
+      "in_frozen_held_out_repository_set": true,
+      "observed_duration_join_eligible": true,
+      "physical_repository": "django/django",
+      "position": 22,
+      "retained_attrition_reasons": []
+    },
+    {
+      "audited_effective_dag_eligible": false,
+      "c1_candidate_case": false,
+      "c1_candidate_window_count": 0,
+      "c1_paired_case": false,
+      "c1_paired_window_count": 0,
+      "case_id": "swebench_verified_matplotlib_matplotlib-25960",
+      "in_frozen_held_out_repository_set": false,
+      "observed_duration_join_eligible": false,
+      "physical_repository": "matplotlib/matplotlib",
+      "position": 23,
+      "retained_attrition_reasons": [
+        "semantic_or_overlay_contract_failure"
+      ]
+    },
+    {
+      "audited_effective_dag_eligible": true,
+      "c1_candidate_case": false,
+      "c1_candidate_window_count": 0,
+      "c1_paired_case": false,
+      "c1_paired_window_count": 0,
+      "case_id": "swebench_verified_psf_requests-1142",
+      "in_frozen_held_out_repository_set": false,
+      "observed_duration_join_eligible": false,
+      "physical_repository": "psf/requests",
+      "position": 24,
+      "retained_attrition_reasons": [
+        "blocked_active_effective_dag_predecessor_without_duration"
+      ]
+    },
+    {
+      "audited_effective_dag_eligible": true,
+      "c1_candidate_case": true,
+      "c1_candidate_window_count": 18,
+      "c1_paired_case": false,
+      "c1_paired_window_count": 0,
+      "case_id": "swebench_verified_pydata_xarray-4966",
+      "in_frozen_held_out_repository_set": true,
+      "observed_duration_join_eligible": false,
+      "physical_repository": "pydata/xarray",
+      "position": 25,
+      "retained_attrition_reasons": [
+        "blocked_active_effective_dag_predecessor_without_duration"
+      ]
+    },
+    {
+      "audited_effective_dag_eligible": true,
+      "c1_candidate_case": false,
+      "c1_candidate_window_count": 0,
+      "c1_paired_case": false,
+      "c1_paired_window_count": 0,
+      "case_id": "swebench_verified_pylint-dev_pylint-4661",
+      "in_frozen_held_out_repository_set": false,
+      "observed_duration_join_eligible": false,
+      "physical_repository": "pylint-dev/pylint",
+      "position": 26,
+      "retained_attrition_reasons": [
+        "blocked_active_effective_dag_predecessor_without_duration"
+      ]
+    },
+    {
+      "audited_effective_dag_eligible": true,
+      "c1_candidate_case": true,
+      "c1_candidate_window_count": 41,
+      "c1_paired_case": true,
+      "c1_paired_window_count": 41,
+      "case_id": "swebench_verified_pytest-dev_pytest-5809",
+      "in_frozen_held_out_repository_set": true,
+      "observed_duration_join_eligible": true,
+      "physical_repository": "pytest-dev/pytest",
+      "position": 27,
+      "retained_attrition_reasons": []
+    },
+    {
+      "audited_effective_dag_eligible": false,
+      "c1_candidate_case": false,
+      "c1_candidate_window_count": 0,
+      "c1_paired_case": false,
+      "c1_paired_window_count": 0,
+      "case_id": "swebench_verified_scikit-learn_scikit-learn-12973",
+      "in_frozen_held_out_repository_set": true,
+      "observed_duration_join_eligible": false,
+      "physical_repository": "scikit-learn/scikit-learn",
+      "position": 28,
+      "retained_attrition_reasons": [
+        "semantic_or_overlay_contract_failure"
+      ]
+    },
+    {
+      "audited_effective_dag_eligible": true,
+      "c1_candidate_case": false,
+      "c1_candidate_window_count": 0,
+      "c1_paired_case": false,
+      "c1_paired_window_count": 0,
+      "case_id": "swebench_verified_sphinx-doc_sphinx-10435",
+      "in_frozen_held_out_repository_set": false,
+      "observed_duration_join_eligible": false,
+      "physical_repository": "sphinx-doc/sphinx",
+      "position": 29,
+      "retained_attrition_reasons": [
+        "blocked_active_effective_dag_predecessor_without_duration"
+      ]
+    },
+    {
+      "audited_effective_dag_eligible": true,
+      "c1_candidate_case": false,
+      "c1_candidate_window_count": 0,
+      "c1_paired_case": false,
+      "c1_paired_window_count": 0,
+      "case_id": "swebench_verified_sympy_sympy-19954",
+      "in_frozen_held_out_repository_set": false,
+      "observed_duration_join_eligible": false,
+      "physical_repository": "sympy/sympy",
+      "position": 30,
+      "retained_attrition_reasons": [
+        "blocked_active_effective_dag_predecessor_without_duration"
+      ]
+    }
+  ],
+  "schema_version": "sge-c1-structural-attrition-ledger-v1"
+}

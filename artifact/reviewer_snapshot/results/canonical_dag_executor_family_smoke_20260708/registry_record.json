@@ -1,0 +1,27 @@
+{
+  "experiment_id": "EXP-20260709-CANONICAL-DAG-EXECUTOR-FAMILY-SMOKE-ARTIFACT-CORRECTION",
+  "date": "2026-07-09",
+  "case": "10 canonical local windows",
+  "method_identity": "per-node dependency-ready-frontier local executor",
+  "evidence_class": "supporting_local_executor_observation",
+  "canonical_progress": false,
+  "terminal_status": "completed_supporting_only",
+  "stop_stage": "local structured artifacts; no target continuation or official evaluator",
+  "metrics": {
+    "windows": 10,
+    "local_closures": 8,
+    "fallback_required": 2,
+    "deadlocks": 0,
+    "completed_node_artifacts": 49,
+    "mean_ready_frontier_size": 2.6,
+    "mean_actual_max_concurrency": 2.6,
+    "actual_executor_wall_over_ideal_w4_wall": 1.0021
+  },
+  "source_commit": "caa0dd43c9016f2aa931ae42516d21917f505834",
+  "artifact_storage": "registry_summary_with_history_contract",
+  "artifacts": {
+    "historical_contract": "caa0dd43c9016f2aa931ae42516d21917f505834:experiments/perfect_speculation_speedup_bound/pilot",
+    "historical_implementation": "caa0dd43c9016f2aa931ae42516d21917f505834:scripts/run_canonical_dag_executor_family_smoke.py"
+  },
+  "local_disk_deletion_executed": false
+}

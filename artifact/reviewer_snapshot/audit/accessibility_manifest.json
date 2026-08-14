@@ -1,0 +1,154 @@
+{
+  "figures": [
+    {
+      "figure_id": "F-task-layer-map",
+      "outputs": [
+        {
+          "path": "outputs/visual_checks/task_layer_map_and_envelope_grayscale.png",
+          "profile": "grayscale",
+          "sha256": "a0362bce08fb270faab0d938088ab32998d1a671bfb60249e72171a63b8b65bd"
+        },
+        {
+          "path": "outputs/visual_checks/task_layer_map_and_envelope_protanopia.png",
+          "profile": "protanopia",
+          "sha256": "668f4ba5a5db7d500977affdfd4d289d1c864293aff4a36bf9aa274eef125921"
+        },
+        {
+          "path": "outputs/visual_checks/task_layer_map_and_envelope_deuteranopia.png",
+          "profile": "deuteranopia",
+          "sha256": "7169afb6259e004b1ecabfa852e4fe69705f88b50e1d7413d5ef7990a3cb986c"
+        },
+        {
+          "path": "outputs/visual_checks/task_layer_map_and_envelope_tritanopia.png",
+          "profile": "tritanopia",
+          "sha256": "eaf8fc77897b3ebaaaf7294694b81b291d5fe9a680c03c5829423a15891e4242"
+        }
+      ],
+      "source_path": "outputs/figures/task_layer_map_and_envelope.png",
+      "source_sha256": "4e6bfb93866dfdadc2c97c331414cfdcc5f915ff1a13bcb1a7dd49cde1eeeb5e"
+    },
+    {
+      "figure_id": "F-workgraph-case",
+      "outputs": [
+        {
+          "path": "outputs/visual_checks/workgraph_case_ceiling_grayscale.png",
+          "profile": "grayscale",
+          "sha256": "ca81f3bac2b56be59b0208071413d64fb9375e66d02bf24cabd37cf923d2f357"
+        },
+        {
+          "path": "outputs/visual_checks/workgraph_case_ceiling_protanopia.png",
+          "profile": "protanopia",
+          "sha256": "30a979fc6e8b3dc8ccc4a69a1189e4c4765d207632af9aeb0e96e98a0b32186b"
+        },
+        {
+          "path": "outputs/visual_checks/workgraph_case_ceiling_deuteranopia.png",
+          "profile": "deuteranopia",
+          "sha256": "f470489a399b7c7ab917abb592d08a2067e98da4d0fda4c56ce55dbec2f3e1fb"
+        },
+        {
+          "path": "outputs/visual_checks/workgraph_case_ceiling_tritanopia.png",
+          "profile": "tritanopia",
+          "sha256": "1d8b721d7fe00eaba0199b5970552bf7110c794633a86d87bc31f47a1d5d5789"
+        }
+      ],
+      "source_path": "outputs/figures/workgraph_case_ceiling.png",
+      "source_sha256": "1631cc05fdf74461e92da73c3bff78783f6660db5a07686c8e71cc9a96796bbe"
+    },
+    {
+      "figure_id": "F-rolling-atlas",
+      "outputs": [
+        {
+          "path": "outputs/visual_checks/rolling_evidence_atlas_grayscale.png",
+          "profile": "grayscale",
+          "sha256": "be3c35fc8707da7ba9ccb8888a7392e87b98760ff2da88cd0def68e1ebe7f563"
+        },
+        {
+          "path": "outputs/visual_checks/rolling_evidence_atlas_protanopia.png",
+          "profile": "protanopia",
+          "sha256": "e3505e476a6f39c65e8c227a646e7b2926eb38ba75e2d66be2e78e0506ed366b"
+        },
+        {
+          "path": "outputs/visual_checks/rolling_evidence_atlas_deuteranopia.png",
+          "profile": "deuteranopia",
+          "sha256": "26602ae45532a8fc6e0f6fe463b4536437d6e95781663029a1b949624783d0c0"
+        },
+        {
+          "path": "outputs/visual_checks/rolling_evidence_atlas_tritanopia.png",
+          "profile": "tritanopia",
+          "sha256": "12798131810537e559b354a74f227941250e6b2fd2b5fb1ecf323875dc0efbb2"
+        }
+      ],
+      "source_path": "outputs/figures/rolling_evidence_atlas.png",
+      "source_sha256": "e31a39b0f4ca5720ebaae117795eea641b01e80bd87501459797147cb273b663"
+    },
+    {
+      "figure_id": "F-admission",
+      "outputs": [
+        {
+          "path": "outputs/visual_checks/admission_calibration_nontrivial_grayscale.png",
+          "profile": "grayscale",
+          "sha256": "c79de325b5c5d60b5eeb03db35a9f7f7dbf3e1dc359f2aa756c40456ab8328bb"
+        },
+        {
+          "path": "outputs/visual_checks/admission_calibration_nontrivial_protanopia.png",
+          "profile": "protanopia",
+          "sha256": "c98500ca6e22c31f8740fe10961a6d37c304a4f192ab6a140483267bd62d625f"
+        },
+        {
+          "path": "outputs/visual_checks/admission_calibration_nontrivial_deuteranopia.png",
+          "profile": "deuteranopia",
+          "sha256": "9d689e39162d03188b1e4647c632c3c10f6444c2d3840d717d90e0208c221ade"
+        },
+        {
+          "path": "outputs/visual_checks/admission_calibration_nontrivial_tritanopia.png",
+          "profile": "tritanopia",
+          "sha256": "05e33422850e9370153b549f9f0504f955361c1c51680309ba7650af36e8c5d8"
+        }
+      ],
+      "source_path": "outputs/figures/admission_calibration_nontrivial.png",
+      "source_sha256": "90eeeed4c01be695e13fa67519dabaeda561b78d98bd145d0bdaf412b1f0f025"
+    },
+    {
+      "figure_id": "F-evidence-boundary",
+      "outputs": [
+        {
+          "path": "outputs/visual_checks/evidence_maturity_boundary_grayscale.png",
+          "profile": "grayscale",
+          "sha256": "82f1efbde1d646f3e3b7c755ce6a9ac3206f6db4e6d0a0184e95f5ea3854366a"
+        },
+        {
+          "path": "outputs/visual_checks/evidence_maturity_boundary_protanopia.png",
+          "profile": "protanopia",
+          "sha256": "1ac83f0bca27f1c1c649761b3b63d0fa44ac6ae9c9f9432ab13782af4b348424"
+        },
+        {
+          "path": "outputs/visual_checks/evidence_maturity_boundary_deuteranopia.png",
+          "profile": "deuteranopia",
+          "sha256": "74348d0b9fe547fbf2c1333346c137ca3906e12ed83549cdaac9dbbc556b775e"
+        },
+        {
+          "path": "outputs/visual_checks/evidence_maturity_boundary_tritanopia.png",
+          "profile": "tritanopia",
+          "sha256": "7553bc03d4a7c9826c81f3444022829d4800737da225b8ed53f6e263a5202394"
+        }
+      ],
+      "source_path": "outputs/figures/evidence_maturity_boundary.png",
+      "source_sha256": "8d4d47866139eeb86585779b54f5d4ed6bd5a968a758f3fbea0690f8d1319a03"
+    }
+  ],
+  "non_color_encodings": [
+    "marker",
+    "line_style",
+    "hatch",
+    "direct_label",
+    "panel_position"
+  ],
+  "profiles": [
+    "grayscale",
+    "protanopia",
+    "deuteranopia",
+    "tritanopia"
+  ],
+  "schema_version": 1,
+  "status": "pass"
+}

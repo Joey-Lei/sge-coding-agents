@@ -1,0 +1,149 @@
+{
+  "schema_version": "psb-gmin-flex-revalidation-evidence-integration-v1",
+  "experiment_id": "EXP-20260716-PSB-WEBBENCH-FLEX-GMIN-DIRECT-PAIRED",
+  "integration_id": "FLEX-GMIN-EXACT-REVALIDATION-INTEGRATION-20260719-01",
+  "integrated_at": "2026-07-19T22:36:24+08:00",
+  "case_restoration": {
+    "evidence_type": "codex_session_jsonl_plus_history",
+    "session_evidence_paths": [
+      "<REDACTED_RUNTIME_EVIDENCE>",
+      "<REDACTED_RUNTIME_EVIDENCE>",
+      "<REDACTED_RUNTIME_EVIDENCE>"
+    ],
+    "original_core_case_id": "web_bench_flex_task1_5",
+    "original_contract": "whole_target_direct_pair_gmin",
+    "original_producer_commit": "a91007f3ddc485cc96a2cd1870121b2670ca7bc8",
+    "original_audit_commit": "6a9c5ae64063ebb24e689d5da423e15aa008fb10",
+    "later_cross_case_id": "web_bench_grid_task1_5",
+    "recovery_controller_chain_is_separate": true,
+    "case_substitution_for_this_run": false
+  },
+  "frozen_identity": {
+    "frozen_runner_commit": "da0d49caad63f7f6ecd3dc43fe94e978e5d4e30b",
+    "runner_sha256": "18d0c86bcb1d98ecc43b75342dddc8c48045634d89c341af3bf187a5bab2f0ca",
+    "task_packet_sha256": "1faf6e2197eb6557df35f3938a03fad8bff24d5fdf20d0cd9a391142a3801aed",
+    "reference_dag_sha256": "5c71e22f6ecabdbe7cc2f4663e168ceffe73fd58d87770c4301aaabee583e7a1",
+    "default_prompt_sha256": "af22b01232b8026a50594b98d703819dbbad8710d878b31c75212e4c12d2366f",
+    "perfect_dag_prompt_sha256": "49efda0a77d7e242a8348d00d92f5b67d0a88a2fdaaca23041cec48efde64156",
+    "base_snapshot_sha256": "4d814fe496773ec417fd336c4b03b8e5a9e0f86d4835910558d7a7ddfd144a79",
+    "official_evaluator_digest": "9d2a74b7736e86e989bb7636528401c94acaee8b14a927b85f1b2e09734a5353"
+  },
+  "producer_layer": {
+    "path": "results/psb_paired_webbench_flex_gmin_revalidation_20260719",
+    "commit": "20a765e09c375d3d4fd32dce6934a96ed09e3bc6",
+    "result_bundle_sha256": "c62d2601ddf72bc89eb1e7f93d15ef4916e6b237a6fb1386a47256f02421c5c1",
+    "metrics_sha256": "052c4f8116aad37abf7a23ca6ebe9eb67c18ddd21ab5d6ac5818899991a2c861",
+    "sha256sums_sha256": "0a790f15f2639129df012aeae254b7b4f7117d596961d083ab971626e32440f6",
+    "sha256_entries_checked": 40,
+    "sha256_entries_passed": 40,
+    "raw_result_file_count_including_sha256sums": 41,
+    "remote": "origin",
+    "safety_ref": "refs/heads/safety/psb-research-assets-20260719",
+    "verified_remote_tip_after_raw_commit": "20a765e09c375d3d4fd32dce6934a96ed09e3bc6"
+  },
+  "audit_layer": {
+    "main_trace_audit_path": "audit/main_trace_audit.json",
+    "main_trace_audit_sha256": "d543f08e05df0905802f0e42e5503351159badd3120621e6225d91d936e4d843",
+    "main_trace_audit_verdict": "partial",
+    "audit_verification_verdict": "pass",
+    "independent_verifiers": [
+      {
+        "agent": "<INTERNAL_VERIFIER>",
+        "verdict": "partial",
+        "recommendation": "mark-unverified",
+        "trace_level_mapping_completed": false
+      },
+      {
+        "agent": "<INTERNAL_VERIFIER>",
+        "verdict": "pass",
+        "recommendation": "complete",
+        "trace_level_mapping_completed": true
+      }
+    ],
+    "independent_trace_mapping_completed": true,
+    "integrated_status": "partial_semantic_realization_with_passed_audit_verification"
+  },
+  "revalidation_observation": {
+    "official_evaluator": {
+      "default_status": "passed",
+      "perfect_dag_status": "passed",
+      "default_score": 19,
+      "perfect_dag_score": 19,
+      "expected_score": 19
+    },
+    "latency": {
+      "default_e2e_seconds": 279.825414542,
+      "perfect_dag_e2e_seconds": 170.18879912500006,
+      "default_over_perfect_ratio": 1.6442058230663825,
+      "latency_reduction_ratio": 0.391803637980653,
+      "performance_claim_eligible": false
+    },
+    "tokens": {
+      "default_total_tokens": 532636,
+      "perfect_dag_total_tokens": 188893,
+      "perfect_over_default_total_ratio": 0.35463806426903177,
+      "default_noncached_tokens": 65308,
+      "perfect_dag_noncached_tokens": 34909,
+      "perfect_over_default_noncached_ratio": 0.5345286948000245,
+      "monetary_cost": null
+    },
+    "execution": {
+      "default_model_attempts": 1,
+      "perfect_dag_model_attempts": 1,
+      "manual_reruns": 0,
+      "runner_retry_count": 0,
+      "runner_fallback_count": 0,
+      "prepared_source_unchanged": true
+    },
+    "dag_trace": {
+      "semantic_nodes_mapped": 14,
+      "semantic_realization": "partial",
+      "declared_read_frontier_width": 8,
+      "actual_max_concurrent_valid_reads": 3,
+      "rt5_start_delay_from_first_valid_read_seconds": 22.909819625,
+      "build_test_overlap_seconds": 0.00005491699999993216,
+      "post_validation_source_mutation_count": 0,
+      "graph_external_read_only_action_count": 8
+    }
+  },
+  "historical_observation": {
+    "source_commit": "a91007f3ddc485cc96a2cd1870121b2670ca7bc8",
+    "official_evaluator": {
+      "default_score": 19,
+      "perfect_dag_score": 19
+    },
+    "latency": {
+      "default_e2e_seconds": 237.80630154200003,
+      "perfect_dag_e2e_seconds": 181.25295874999995,
+      "default_over_perfect_ratio": 1.3120133496413895
+    },
+    "tokens": {
+      "default_total_tokens": 307490,
+      "perfect_dag_total_tokens": 185274,
+      "default_noncached_tokens": 44578,
+      "perfect_dag_noncached_tokens": 19514
+    },
+    "audit_verdict": "partial",
+    "physical_read_max_concurrency": 2,
+    "build_test_overlap_seconds": 0.13654704200001788,
+    "graph_external_read_only_action_count": 1
+  },
+  "comparison": {
+    "same_frozen_input_hashes": true,
+    "same_official_evaluator_scores": true,
+    "numeric_reproduction": false,
+    "historical_default_over_perfect_e2e_ratio": 1.3120133496413895,
+    "revalidation_default_over_perfect_e2e_ratio": 1.6442058230663825,
+    "historical_semantic_realization": "partial",
+    "revalidation_semantic_realization": "partial"
+  },
+  "state": {
+    "raw_evidence_remote_preserved": true,
+    "audit_evidence_remote_preservation_target": "refs/heads/safety/psb-research-assets-20260719",
+    "control_documents_modified_in_this_execution": false,
+    "cleanup_performed": false,
+    "main_branch_modified": false,
+    "original_dirty_flex_worktree_touched": false,
+    "next_action": "user_review_before_control_document_correction_or_cleanup"
+  }
+}

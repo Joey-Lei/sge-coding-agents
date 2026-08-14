@@ -1,0 +1,37 @@
+name: Evidence or claim issue
+description: Challenge a calculation, denominator, provenance link, or interpretation boundary.
+title: "[evidence] "
+labels: ["evidence"]
+body:
+  - type: input
+    id: claim
+    attributes:
+      label: Claim or artifact path
+    validations:
+      required: true
+  - type: textarea
+    id: concern
+    attributes:
+      label: Evidence concern
+      description: State the expected interpretation and the concrete contradictory evidence.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: Include commands, safe inputs, and observed output.
+    validations:
+      required: true
+  - type: dropdown
+    id: recommendation
+    attributes:
+      label: Suggested disposition
+      options:
+        - Correct calculation
+        - Narrow claim
+        - Mark invalid
+        - Add limitation
+        - Clarify documentation
+    validations:
+      required: true

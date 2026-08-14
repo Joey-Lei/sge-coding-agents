@@ -1,0 +1,2 @@
+# Preserve sealed historical CSV bytes (including original line endings).
+results/**/*.csv -diff -text

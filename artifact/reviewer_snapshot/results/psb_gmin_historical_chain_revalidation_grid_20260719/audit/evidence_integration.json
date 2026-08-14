@@ -1,0 +1,46 @@
+{
+  "schema_version": "psb-gmin-historical-chain-evidence-integration-v1",
+  "experiment_id": "EXP-20260719-PSB-WEBBENCH-GRID-GMIN-HISTORICAL-CHAIN-REVALIDATION",
+  "source_packet_experiment_id": "EXP-20260716-PSB-WEBBENCH-GRID-GMIN-DIRECT-PAIRED",
+  "integrated_at": "2026-07-19T18:53:18+08:00",
+  "producer_commit": "39d2bf33e1747d7a821c8fc3e2f2e2e52bf4c84d",
+  "producer_status": "pending_independent_trace_audit",
+  "producer_result_bundle_sha256": "77b892daaf3b066cd6b4eae580615244da245afa63db5da8049d870be32b5984",
+  "producer_sha256sums_sha256": "897e962f7b690e982b6dd97bd8d982004c2c320f8f16744bf98f9d344f3e25cd",
+  "producer_sha256_entries_checked": 42,
+  "producer_sha256_entries_passed": 42,
+  "independent_audit": {
+    "path": "audit/independent_trace_audit.json",
+    "sha256": "419809820803b27aec7a88b60ca8f431dc2081cd72ee3282c8c39d623abebe2e",
+    "verifier": "<INTERNAL_VERIFIER>",
+    "verdict": "pass",
+    "chain_health": "normal",
+    "semantic_realization": "partial"
+  },
+  "recorded_facts": {
+    "default_official_evaluator_score": 24,
+    "perfect_official_evaluator_score": 24,
+    "default_e2e_seconds": 228.364303875,
+    "perfect_e2e_seconds": 215.88309875,
+    "e2e_ratio": 1.0578146468957892,
+    "default_total_tokens": 331454,
+    "perfect_total_tokens": 166448,
+    "total_token_ratio": 0.5021752641392169,
+    "default_noncached_tokens": 63934,
+    "perfect_noncached_tokens": 33328,
+    "noncached_token_ratio": 0.5212875778146213,
+    "monetary_cost": null,
+    "runner_retry_count": 0,
+    "runner_fallback_count": 0,
+    "all_fourteen_semantic_nodes_mapped": true,
+    "post_validation_source_mutation_count": 0,
+    "read_frontier_actual_max_concurrency": 2,
+    "build_test_actual_overlap": false,
+    "extra_read_only_action_count": 1
+  },
+  "state": {
+    "evidence_integration": "complete",
+    "runner_packaging": "not_started",
+    "cleanup": "locked_pending_user_deletion_list_confirmation"
+  }
+}

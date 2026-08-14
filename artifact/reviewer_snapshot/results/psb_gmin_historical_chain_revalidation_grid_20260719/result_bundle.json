@@ -1,0 +1,148 @@
+{
+  "classification": "prompt_conditioned_gmin_cross_case_replication",
+  "default": {
+    "arm": "default",
+    "e2e_wall_seconds": 228.36430387500002,
+    "evaluator": {
+      "digest": "3bf076f6a48b02901d6c5e8213ddbc1ace4337db38d0446ba7c5c99535ba0c20",
+      "expected_score": 24,
+      "identity": "Web-Bench grid cumulative official evaluator tasks 1-5",
+      "observed_pass_counts": [
+        24
+      ],
+      "raw_output_path": "default/evaluator.stdout.log",
+      "score": 24,
+      "status": "passed",
+      "wall_seconds": 5.028374707999944
+    },
+    "evaluator_commands": [
+      {
+        "argv": [
+          "npm",
+          "run",
+          "build"
+        ],
+        "cwd": "<TEMP_ROOT>",
+        "return_code": 0,
+        "stage": "default_official_evaluator_build",
+        "wall_seconds": 0.10633466599995245
+      },
+      {
+        "argv": [
+          "npm",
+          "test",
+          "--",
+          "5"
+        ],
+        "cwd": "<TEMP_ROOT>",
+        "return_code": 0,
+        "stage": "default_official_evaluator_test",
+        "wall_seconds": 4.922040041999992
+      }
+    ],
+    "evaluator_wall_seconds": 5.028374707999944,
+    "final_source_sha256": "24416fb9da1f83d779fe4252bcd15d4664e1a09ed2a35ed85dc6ef8d6c8a9ea0",
+    "model_finished_at": "2026-07-19T09:48:40.400407Z",
+    "model_return_code": 0,
+    "model_started_at": "2026-07-19T09:44:57.047518Z",
+    "model_timed_out": false,
+    "model_wall_seconds": 223.32905895799996,
+    "monetary_cost": null,
+    "reported_noncached_tokens": 63934,
+    "reported_total_tokens": 331454,
+    "status": "passed",
+    "task_arrival_epoch": 1784454297.047455,
+    "trace_summary": {
+      "command_count": 30,
+      "command_overlap_seconds": 0.542115415999973,
+      "max_concurrent_commands": 3
+    },
+    "usage": {
+      "cached_input_tokens": 267520,
+      "input_tokens": 326467,
+      "output_tokens": 4987,
+      "reasoning_output_tokens": 1011
+    }
+  },
+  "experiment_id": "EXP-20260716-PSB-WEBBENCH-GRID-GMIN-DIRECT-PAIRED",
+  "fallback_count": 0,
+  "limitations": [
+    "single paired sample on a functional-only macOS host",
+    "ChatGPT login-state invocation exposes tokens but no monetary price",
+    "treatment is one direct Codex invocation conditioned on G_min, not canonical ready-frontier execution",
+    "the result is a cross-case replication diagnostic, not QUALIFY or paper-grade performance evidence",
+    "speedup remains diagnostic until independent trace conformance audit and user validation"
+  ],
+  "metrics_path": "metrics.json",
+  "packet_id": "PSB-PILOT-01-webbench-grid-task1-5-gmin-direct-pair-attempt-02-20260716",
+  "perfect_dag": {
+    "arm": "perfect_dag",
+    "e2e_wall_seconds": 215.88309875,
+    "evaluator": {
+      "digest": "3bf076f6a48b02901d6c5e8213ddbc1ace4337db38d0446ba7c5c99535ba0c20",
+      "expected_score": 24,
+      "identity": "Web-Bench grid cumulative official evaluator tasks 1-5",
+      "observed_pass_counts": [
+        24
+      ],
+      "raw_output_path": "perfect_dag/evaluator.stdout.log",
+      "score": 24,
+      "status": "passed",
+      "wall_seconds": 9.253993125000079
+    },
+    "evaluator_commands": [
+      {
+        "argv": [
+          "npm",
+          "run",
+          "build"
+        ],
+        "cwd": "<TEMP_ROOT>",
+        "return_code": 0,
+        "stage": "perfect_dag_official_evaluator_build",
+        "wall_seconds": 0.10833275000004505
+      },
+      {
+        "argv": [
+          "npm",
+          "test",
+          "--",
+          "5"
+        ],
+        "cwd": "<TEMP_ROOT>",
+        "return_code": 0,
+        "stage": "perfect_dag_official_evaluator_test",
+        "wall_seconds": 9.145660375000034
+      }
+    ],
+    "evaluator_wall_seconds": 9.253993125000079,
+    "final_source_sha256": "2023970321235c667d29190629ff3dbfea7725c4dda696d62f5065d968f1454b",
+    "model_finished_at": "2026-07-19T10:08:20.912071Z",
+    "model_return_code": 0,
+    "model_started_at": "2026-07-19T09:48:45.437815Z",
+    "model_timed_out": false,
+    "model_wall_seconds": 206.625112458,
+    "monetary_cost": null,
+    "reported_noncached_tokens": 33328,
+    "reported_total_tokens": 166448,
+    "status": "passed",
+    "task_arrival_epoch": 1784454525.4377291,
+    "trace_summary": {
+      "command_count": 17,
+      "command_overlap_seconds": 6.545800005142155e-05,
+      "max_concurrent_commands": 2
+    },
+    "usage": {
+      "cached_input_tokens": 133120,
+      "input_tokens": 162786,
+      "output_tokens": 3662,
+      "reasoning_output_tokens": 1028
+    }
+  },
+  "prepared_source_unchanged": true,
+  "retry_count": 0,
+  "same_base_digest": "7928bbd8f7dbc7d098fedac3fbfaee8db8bea8d287048706aa26e431594df827",
+  "schema_version": "psb-gmin-cross-case-replication-result-v1",
+  "status": "pending_independent_trace_audit",
+  "temporary_workspace_root": "<TEMP_ROOT>"
+}

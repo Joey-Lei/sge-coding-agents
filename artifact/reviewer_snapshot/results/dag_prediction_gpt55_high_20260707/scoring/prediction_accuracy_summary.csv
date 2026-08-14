@@ -1,0 +1,4 @@
+mode,n,node_precision_mean,node_recall_mean,edge_precision_mean,edge_recall_mean,phase_recall_mean,closure_rate_mean,retained_reference_work_ratio_mean,wasted_predicted_node_ratio_mean,wall_time_seconds_mean,input_tokens_total,input_tokens_mean,cached_input_tokens_total,cached_input_tokens_mean,output_tokens_total,output_tokens_mean,reasoning_output_tokens_total,reasoning_output_tokens_mean,total_tokens_total,total_tokens_mean
+full,5,0.9652,0.4038,0.0819,0.0811,1.0,0.9826,0.558,0.0348,81.4487,134590,26918.0,56704,11340.8,16706,3341.2,1777,355.4,151296,30259.2
+local,30,0.8778,0.2701,0.0444,0.0078,0.8267,0.8539,0.2954,0.1222,26.9459,861046,28701.53,216320,7210.67,32512,1083.73,12936,431.2,893558,29785.27
+all,35,0.8903,0.2892,0.0498,0.0183,0.8514,0.8723,0.3329,0.1097,34.732,995636,28446.74,273024,7800.69,49218,1406.23,14713,420.37,1044854,29852.97

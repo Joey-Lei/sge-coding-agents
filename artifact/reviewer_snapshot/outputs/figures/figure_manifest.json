@@ -1,0 +1,116 @@
+{
+  "classification": "evidence-governed manuscript figures; no synthetic scientific values",
+  "notes": {
+    "admission": "The principal scatter shows the nontrivial sensitivity; the matrix reports all paired windows.",
+    "locality": "Legacy rolling-local values are mixed-duration structural sensitivity.",
+    "prospective_alpha": "No valid quality-equivalent full-E2E pair is reported.",
+    "structural_ceiling": "Action-layer WorkGraph ceilings are not measured whole-task alpha_SGE."
+  },
+  "outputs": [
+    {
+      "id": "F-task-layer-map",
+      "path": "outputs/figures/task_layer_map_and_envelope.pdf",
+      "sha256": "c405a8dee8c23c17a179d910ab61f52bbcce30456a91db88f7d61a56dbd4adbd"
+    },
+    {
+      "id": "F-workgraph-case",
+      "path": "outputs/figures/workgraph_case_ceiling.pdf",
+      "sha256": "73d9a7d9a16ab0e065a094bdc57263804093c424e60831bcda32c7e2253caf51"
+    },
+    {
+      "id": "F-rolling-atlas",
+      "path": "outputs/figures/rolling_evidence_atlas.pdf",
+      "sha256": "35541ea8cae4e49f112235af2ef6923111f5ee01fa0251280a37822a0c07db3d"
+    },
+    {
+      "id": "F-admission",
+      "path": "outputs/figures/admission_calibration_nontrivial.pdf",
+      "sha256": "7bac779318270bd4161d5ccfd1a0f4a4045e7c0b6826193de08b7509e0cdeb0d"
+    },
+    {
+      "id": "F-evidence-boundary",
+      "path": "outputs/figures/evidence_maturity_boundary.pdf",
+      "sha256": "0aa88087294bef190a3176ec4b4cce1c4361926e562fbfbcb2a2a2e4d62d4c90"
+    }
+  ],
+  "review_outputs": [
+    {
+      "dpi": 300,
+      "id": "F-task-layer-map",
+      "path": "outputs/figures/task_layer_map_and_envelope.png",
+      "sha256": "4e6bfb93866dfdadc2c97c331414cfdcc5f915ff1a13bcb1a7dd49cde1eeeb5e"
+    },
+    {
+      "dpi": 300,
+      "id": "F-workgraph-case",
+      "path": "outputs/figures/workgraph_case_ceiling.png",
+      "sha256": "1631cc05fdf74461e92da73c3bff78783f6660db5a07686c8e71cc9a96796bbe"
+    },
+    {
+      "dpi": 300,
+      "id": "F-rolling-atlas",
+      "path": "outputs/figures/rolling_evidence_atlas.png",
+      "sha256": "e31a39b0f4ca5720ebaae117795eea641b01e80bd87501459797147cb273b663"
+    },
+    {
+      "dpi": 300,
+      "id": "F-admission",
+      "path": "outputs/figures/admission_calibration_nontrivial.png",
+      "sha256": "90eeeed4c01be695e13fa67519dabaeda561b78d98bd145d0bdaf412b1f0f025"
+    },
+    {
+      "dpi": 300,
+      "id": "F-evidence-boundary",
+      "path": "outputs/figures/evidence_maturity_boundary.png",
+      "sha256": "8d4d47866139eeb86585779b54f5d4ed6bd5a968a758f3fbea0690f8d1319a03"
+    }
+  ],
+  "schema_version": 1,
+  "source_artifacts": [
+    {
+      "id": "p30-extension-report",
+      "path": "results/sge_p30_ac_overlay_v2_20260728/extension_report.json",
+      "sha256": "12f84479a40a94d912ce1555b12a062836634c2f1f71c5a47d3544e05aa64d77"
+    },
+    {
+      "id": "p30-case-rows",
+      "path": "results/sge_p30_ac_overlay_v2_20260728/case_rows.json",
+      "sha256": "f77eca5e40ad2170474c5a98660ad2ab11ea3a13547410f9b15550e74a14665c"
+    },
+    {
+      "id": "p30-candidate-windows",
+      "path": "results/sge_p30_ac_overlay_v2_20260728/c_candidate_rows.json",
+      "sha256": "2f20df86ce6a69237c874e4bf7ba1a8f99981fbe5aa3e28df731a4461cc699ed"
+    },
+    {
+      "id": "p30-action-duration-ledger",
+      "path": "results/sge_p30_ac_overlay_v2_20260728/action_duration_ledger.json",
+      "sha256": "db9aa1195b69585eb359863e9390461cc72520108eea67fac27c199f9c746d57"
+    },
+    {
+      "id": "sklearn-25973-effective-workgraph",
+      "path": "results/sge_p30_trace_reference_dag_20260728/stage_b/cases/swebench_verified_scikit-learn_scikit-learn-25973/adjudication/effective_reference_dag.json",
+      "sha256": "7fbf4a167e4fa53ce30f9e09e431de5d6fd6b9628bffd6387eaa7a621bf9c8b6"
+    },
+    {
+      "id": "legacy-verified-locality",
+      "path": "results/local_rolling_dag_ablation_swe_verified_local_10_20260707/aggregate_by_k.csv",
+      "sha256": "38381a55f7a28b580e80fd0307d8592574680ec9efd0ae909c57917e3832b812"
+    },
+    {
+      "id": "legacy-swepro-locality",
+      "path": "results/local_rolling_dag_ablation_swe_pro_campaign_clean_20260707/aggregate_by_k.csv",
+      "sha256": "fc42bbc0f1a6581b61387fbbc9664977fa2b1cb1941e7f799ffabe5b04768397"
+    },
+    {
+      "id": "global-predictor-diagnostic",
+      "path": "results/dag_prediction_gpt55_high_20260707/scoring/prediction_accuracy_summary.csv",
+      "sha256": "5ce5e93e0db03d40b6e9289dc559995c933dfec838b58b7648701f0c06fa73a3"
+    },
+    {
+      "id": "canonical-local-executor",
+      "path": "results/canonical_dag_executor_family_smoke_20260708/summary.json",
+      "sha256": "07f1088c3c73a4277a66f57cbde25acf151343b3c8f449c7727a3f51efca4465"
+    }
+  ]
+}

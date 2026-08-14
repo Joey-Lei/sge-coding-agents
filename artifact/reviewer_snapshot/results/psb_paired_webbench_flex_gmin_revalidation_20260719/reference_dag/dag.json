@@ -1,0 +1,162 @@
+{
+  "schema_version": "psb-semantic-reference-dag-v1",
+  "case_id": "web_bench_flex_task1_5",
+  "source_trace_sha256": "21cdaee2f8058050e13b55bbbfac4ca629f1983ffaca62ed4d8af1f233dc0df0",
+  "nodes": [
+    {
+      "node_id": "D",
+      "intent": "Discover the project structure and available task files.",
+      "kind": "grep",
+      "depends_on": [],
+      "artifact_class": "project_inventory",
+      "risk_class": "read_only",
+      "batchability": "serial_entry"
+    },
+    {
+      "node_id": "RS",
+      "intent": "Read the current source implementation state.",
+      "kind": "read",
+      "depends_on": ["D"],
+      "artifact_class": "source_context",
+      "risk_class": "read_only",
+      "batchability": "parallel_read_frontier"
+    },
+    {
+      "node_id": "RT1",
+      "intent": "Read the official behavior requirements for task one.",
+      "kind": "read",
+      "depends_on": ["D"],
+      "artifact_class": "task_requirement",
+      "risk_class": "read_only",
+      "batchability": "parallel_read_frontier"
+    },
+    {
+      "node_id": "RT2",
+      "intent": "Read the official behavior requirements for task two.",
+      "kind": "read",
+      "depends_on": ["D"],
+      "artifact_class": "task_requirement",
+      "risk_class": "read_only",
+      "batchability": "parallel_read_frontier"
+    },
+    {
+      "node_id": "RT3",
+      "intent": "Read the official behavior requirements for task three.",
+      "kind": "read",
+      "depends_on": ["D"],
+      "artifact_class": "task_requirement",
+      "risk_class": "read_only",
+      "batchability": "parallel_read_frontier"
+    },
+    {
+      "node_id": "RT4",
+      "intent": "Read the official behavior requirements for task four.",
+      "kind": "read",
+      "depends_on": ["D"],
+      "artifact_class": "task_requirement",
+      "risk_class": "read_only",
+      "batchability": "parallel_read_frontier"
+    },
+    {
+      "node_id": "RT5",
+      "intent": "Read the official behavior requirements for task five.",
+      "kind": "read",
+      "depends_on": ["D"],
+      "artifact_class": "task_requirement",
+      "risk_class": "read_only",
+      "batchability": "parallel_read_frontier"
+    },
+    {
+      "node_id": "RP",
+      "intent": "Read package metadata and available project scripts.",
+      "kind": "read",
+      "depends_on": ["D"],
+      "artifact_class": "package_context",
+      "risk_class": "read_only",
+      "batchability": "parallel_read_frontier"
+    },
+    {
+      "node_id": "RR",
+      "intent": "Read the project README and its local guidance.",
+      "kind": "read",
+      "depends_on": ["D"],
+      "artifact_class": "documentation_context",
+      "risk_class": "read_only",
+      "batchability": "parallel_read_frontier"
+    },
+    {
+      "node_id": "I",
+      "intent": "Implement the cumulative flex layout requirements.",
+      "kind": "patch_candidate",
+      "depends_on": ["RS", "RT1", "RT2", "RT3", "RT4", "RT5", "RP", "RR"],
+      "artifact_class": "implementation_state",
+      "risk_class": "workspace_write",
+      "batchability": "after_eight_artifact_join"
+    },
+    {
+      "node_id": "B",
+      "intent": "Build the completed implementation with the project toolchain.",
+      "kind": "build",
+      "depends_on": ["I"],
+      "artifact_class": "build_verdict",
+      "risk_class": "read_only_verification",
+      "batchability": "parallel_validation_frontier"
+    },
+    {
+      "node_id": "T",
+      "intent": "Run the completed implementation through its behavior checks.",
+      "kind": "test",
+      "depends_on": ["I"],
+      "artifact_class": "behavior_verdict",
+      "risk_class": "read_only_verification",
+      "batchability": "parallel_validation_frontier"
+    },
+    {
+      "node_id": "DG",
+      "intent": "Diagnose a runner-environment failure reported by behavior validation.",
+      "kind": "diagnosis_branch",
+      "depends_on": ["T"],
+      "artifact_class": "environment_diagnosis",
+      "risk_class": "read_only",
+      "batchability": "conditional_on_runner_environment_failure"
+    },
+    {
+      "node_id": "RC",
+      "intent": "Perform one bounded check after runner-environment diagnosis.",
+      "kind": "test",
+      "depends_on": ["DG"],
+      "artifact_class": "bounded_recheck_verdict",
+      "risk_class": "read_only_verification",
+      "batchability": "single_bounded_attempt"
+    }
+  ],
+  "edges": [
+    {"src": "D", "dst": "RS", "reason": "project inventory reveals source context"},
+    {"src": "D", "dst": "RT1", "reason": "project inventory reveals task one"},
+    {"src": "D", "dst": "RT2", "reason": "project inventory reveals task two"},
+    {"src": "D", "dst": "RT3", "reason": "project inventory reveals task three"},
+    {"src": "D", "dst": "RT4", "reason": "project inventory reveals task four"},
+    {"src": "D", "dst": "RT5", "reason": "project inventory reveals task five"},
+    {"src": "D", "dst": "RP", "reason": "project inventory reveals package metadata"},
+    {"src": "D", "dst": "RR", "reason": "project inventory reveals project documentation"},
+    {"src": "RS", "dst": "I", "reason": "implementation requires source context"},
+    {"src": "RT1", "dst": "I", "reason": "implementation requires task one"},
+    {"src": "RT2", "dst": "I", "reason": "implementation requires task two"},
+    {"src": "RT3", "dst": "I", "reason": "implementation requires task three"},
+    {"src": "RT4", "dst": "I", "reason": "implementation requires task four"},
+    {"src": "RT5", "dst": "I", "reason": "implementation requires task five"},
+    {"src": "RP", "dst": "I", "reason": "implementation requires package context"},
+    {"src": "RR", "dst": "I", "reason": "implementation requires project guidance"},
+    {"src": "I", "dst": "B", "reason": "build validates the implementation"},
+    {"src": "I", "dst": "T", "reason": "behavior checks validate the implementation"},
+    {"src": "T", "dst": "DG", "reason": "conditional runner-environment failure diagnosis"},
+    {"src": "DG", "dst": "RC", "reason": "diagnosis enables one bounded recheck"}
+  ],
+  "duration_coverage": {
+    "measured_seconds": 0.0,
+    "imputed_seconds": 0.0,
+    "uncovered_seconds": 0.0,
+    "coverage_ratio": 0.0,
+    "serial_residue_node_ids": []
+  }
+}

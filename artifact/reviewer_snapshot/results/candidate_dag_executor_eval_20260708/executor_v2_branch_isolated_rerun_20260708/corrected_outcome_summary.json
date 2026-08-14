@@ -1,0 +1,52 @@
+{
+  "interpretation": "Because all runs abort/fallback, speedup_to_local_outcome is not end-to-end acceleration. Treat T_total and C_total as speculative overhead before default fallback.",
+  "runs": 10,
+  "cases": 5,
+  "local_dag_execution_success_count": 0,
+  "local_dag_execution_success_rate": 0.0,
+  "accepted_artifact_count": 0,
+  "accepted_artifact_rate": 0.0,
+  "abort_fallback_count": 10,
+  "abort_fallback_rate": 1.0,
+  "serial_wall_sum_seconds": 5550.8744,
+  "speculative_overhead_sum_seconds": 1958.3772,
+  "speculative_overhead_mean_seconds": 195.8377,
+  "predictor_wall_mean_seconds": 47.5029,
+  "executor_wall_mean_seconds": 148.3348,
+  "latency_overhead_ratio_if_abort_then_fallback": 0.3528,
+  "effective_speedup_if_all_abort_then_fallback": 0.7392,
+  "serial_tokens_sum": 24690802,
+  "speculative_tokens_sum": 5671662,
+  "prediction_tokens_sum_reused": 294935,
+  "executor_branch_tokens_sum_new": 5376727,
+  "extra_token_cost_ratio_if_abort_then_fallback": 0.2297,
+  "branch_count": 3,
+  "completed_branch_count": 3,
+  "accepted_branch_count": 0,
+  "branch_verification_failed_count": 3,
+  "node_status_counts": {
+    "branch_managed": 16,
+    "completed": 24,
+    "failed": 1,
+    "skipped": 10,
+    "timeout": 2,
+    "blocked": 6
+  },
+  "by_k": {
+    "2": {
+      "runs": 5,
+      "abort_fallback_rate": 1.0,
+      "accepted_artifact_rate": 0.0,
+      "speculative_overhead_mean_seconds": 268.0848,
+      "extra_token_cost_ratio_if_abort_then_fallback": 0.4474
+    },
+    "3": {
+      "runs": 5,
+      "abort_fallback_rate": 1.0,
+      "accepted_artifact_rate": 0.0,
+      "speculative_overhead_mean_seconds": 123.5906,
+      "extra_token_cost_ratio_if_abort_then_fallback": 0.012
+    }
+  },
+  "runner_wall_estimate_seconds_from_node_artifacts": 1497.384
+}

@@ -1,0 +1,379 @@
+{
+  "schema_version": "sge-p30-p018-independent-trace-mapping-v1",
+  "case_key": "P018",
+  "case_id": "swebench_verified_scikit-learn_scikit-learn-25973",
+  "verdict": "fail",
+  "machine_audit_sha256": "4d4f4916afb8bc5b4502d1ef080266303141bbfbd30e75937e1390aae34be92d",
+  "bindings": {
+    "raw_result_seal_sha256": "1699624f4041b5364ec3fc6989a8c6a01b1672bb980a1fba625e05e7afb230c7",
+    "source_trace_sha256": "53e1aca880a6e09c9071140f49075d2672c5560c5d158d8ce22210a46fde6281",
+    "effective_reference_dag_sha256": "7fbf4a167e4fa53ce30f9e09e431de5d6fd6b9628bffd6387eaa7a621bf9c8b6",
+    "public_dag_projection_sha256": "d4682a6ca002b2021c48d41fe9b8c734c55cd3c165e15c448f752e9884806aae",
+    "default_raw_trace_sha256": "c7497d1f7fa72f81dcdf2fc110fa2d53e1b7d95af485702ac0814e703ea181ba",
+    "default_timestamped_trace_sha256": "d9cc8df226f5d28f7e5a9dc44e0f23fbf1e10e13d406a97b181dcb174d08029a",
+    "default_telemetry_sha256": "4c0a1046c5b1a966d60bbc3cafc150709f35757b064c3ba532654cd441a30f6b",
+    "perfect_raw_trace_sha256": "fa4e0ee5b2614a2c889fc7d05c44e6a3e21ab2a18d86729e72adb77daf3838b8",
+    "perfect_timestamped_trace_sha256": "d5283c95411ec7d7e5e10df9eb41674b9d016d32e46b0659979e821b88760c4c",
+    "perfect_telemetry_sha256": "c06f0f1c3bd4452534fef4521b859d225e38846453d86a62e5dd5fa01f93d3ee"
+  },
+  "action_dispositions": [
+    {
+      "ordinal": 1,
+      "action_id": "item_2",
+      "action_type": "command_execution",
+      "disposition": "split_across_semantic_nodes",
+      "semantic_node_ids": ["n_target_search", "n_secondary_search"],
+      "treatment_changing": false,
+      "rationale": "The initial broad search explicitly locates both the target SFS surface and adjacent check_cv/split evidence."
+    },
+    {
+      "ordinal": 2,
+      "action_id": "item_1",
+      "action_type": "command_execution",
+      "disposition": "retain",
+      "semantic_node_ids": ["n_project_inventory"],
+      "treatment_changing": false,
+      "rationale": "The repository-wide file inventory realizes project resource discovery."
+    },
+    {
+      "ordinal": 3,
+      "action_id": "item_4",
+      "action_type": "command_execution",
+      "disposition": "merge_into_semantic_node",
+      "semantic_node_ids": ["n_primary_context"],
+      "treatment_changing": false,
+      "rationale": "Reading the SFS test module contributes primary behavioral context."
+    },
+    {
+      "ordinal": 4,
+      "action_id": "item_5",
+      "action_type": "command_execution",
+      "disposition": "merge_into_semantic_node",
+      "semantic_node_ids": ["n_primary_context"],
+      "treatment_changing": false,
+      "rationale": "Reading the SFS implementation contributes primary implementation context."
+    },
+    {
+      "ordinal": 5,
+      "action_id": "item_6",
+      "action_type": "command_execution",
+      "disposition": "merge_into_semantic_node",
+      "semantic_node_ids": ["n_secondary_context"],
+      "treatment_changing": false,
+      "rationale": "Reading model-selection split tests contributes adjacent CV behavior evidence."
+    },
+    {
+      "ordinal": 6,
+      "action_id": "item_7",
+      "action_type": "command_execution",
+      "disposition": "merge_into_semantic_node",
+      "semantic_node_ids": ["n_secondary_search"],
+      "treatment_changing": false,
+      "rationale": "The focused search locates adjacent CV declarations, documentation, and validation resources."
+    },
+    {
+      "ordinal": 7,
+      "action_id": "item_10",
+      "action_type": "command_execution",
+      "disposition": "merge_into_semantic_node",
+      "semantic_node_ids": ["n_secondary_context"],
+      "treatment_changing": false,
+      "rationale": "Reading the check_cv implementation contributes adjacent CV context."
+    },
+    {
+      "ordinal": 8,
+      "action_id": "item_12",
+      "action_type": "command_execution",
+      "disposition": "retain",
+      "semantic_node_ids": ["n_documentation_review"],
+      "treatment_changing": false,
+      "rationale": "Reading feature-selection documentation realizes the compatibility review."
+    },
+    {
+      "ordinal": 9,
+      "action_id": "item_11",
+      "action_type": "command_execution",
+      "disposition": "merge_into_semantic_node",
+      "semantic_node_ids": ["n_secondary_context"],
+      "treatment_changing": false,
+      "rationale": "Reading cross-validation implementation context contributes adjacent evidence."
+    },
+    {
+      "ordinal": 10,
+      "action_id": "item_9",
+      "action_type": "command_execution",
+      "disposition": "merge_into_semantic_node",
+      "semantic_node_ids": ["n_primary_context"],
+      "treatment_changing": false,
+      "rationale": "Reading the remaining SFS implementation completes primary context."
+    },
+    {
+      "ordinal": 11,
+      "action_id": "item_14",
+      "action_type": "command_execution",
+      "disposition": "merge_into_semantic_node",
+      "semantic_node_ids": ["n_secondary_context"],
+      "treatment_changing": false,
+      "rationale": "Reading adjacent RFE imports contributes comparison context."
+    },
+    {
+      "ordinal": 12,
+      "action_id": "item_15",
+      "action_type": "command_execution",
+      "disposition": "merge_into_semantic_node",
+      "semantic_node_ids": ["n_secondary_context"],
+      "treatment_changing": false,
+      "rationale": "Reading adjacent RFE CV usage completes the comparison context."
+    },
+    {
+      "ordinal": 13,
+      "action_id": "item_16",
+      "action_type": "command_execution",
+      "disposition": "merge_into_semantic_node",
+      "semantic_node_ids": ["n_secondary_search"],
+      "treatment_changing": false,
+      "rationale": "The refined search locates the check_cv call path used to settle the diagnosis."
+    },
+    {
+      "ordinal": 14,
+      "action_id": "item_18",
+      "action_type": "file_change",
+      "disposition": "merge_into_semantic_node",
+      "semantic_node_ids": ["n_patch_candidate"],
+      "treatment_changing": false,
+      "rationale": "The SFS implementation edit is part of the required patch candidate."
+    },
+    {
+      "ordinal": 15,
+      "action_id": "item_20",
+      "action_type": "file_change",
+      "disposition": "merge_into_semantic_node",
+      "semantic_node_ids": ["n_patch_candidate"],
+      "treatment_changing": false,
+      "rationale": "The regression-test edit is part of the required patch candidate."
+    },
+    {
+      "ordinal": 16,
+      "action_id": "item_22",
+      "action_type": "command_execution",
+      "disposition": "retain",
+      "semantic_node_ids": ["n_behavior_validation"],
+      "treatment_changing": false,
+      "rationale": "The focused pytest invocation realizes the required behavior-validation attempt."
+    },
+    {
+      "ordinal": 17,
+      "action_id": "item_24",
+      "action_type": "command_execution",
+      "disposition": "move_to_system_envelope",
+      "semantic_node_ids": [],
+      "treatment_changing": false,
+      "rationale": "The long native-extension build is environment preparation outside the frozen semantic node set."
+    },
+    {
+      "ordinal": 18,
+      "action_id": "item_41",
+      "action_type": "command_execution",
+      "disposition": "discard_redundant_exploration",
+      "semantic_node_ids": [],
+      "treatment_changing": false,
+      "rationale": "The post-build task-file diff inspection is extra read-only confirmation."
+    },
+    {
+      "ordinal": 19,
+      "action_id": "item_42",
+      "action_type": "command_execution",
+      "disposition": "move_to_system_envelope",
+      "semantic_node_ids": [],
+      "treatment_changing": false,
+      "rationale": "The workspace status inspection is system bookkeeping."
+    },
+    {
+      "ordinal": 20,
+      "action_id": "item_43",
+      "action_type": "command_execution",
+      "disposition": "move_to_system_envelope",
+      "semantic_node_ids": [],
+      "treatment_changing": false,
+      "rationale": "The Python compile check is extra static validation outside the frozen test node."
+    },
+    {
+      "ordinal": 21,
+      "action_id": "item_46",
+      "action_type": "command_execution",
+      "disposition": "discard_redundant_exploration",
+      "semantic_node_ids": [],
+      "treatment_changing": false,
+      "rationale": "The final implementation reread is extra read-only confirmation."
+    },
+    {
+      "ordinal": 22,
+      "action_id": "item_47",
+      "action_type": "command_execution",
+      "disposition": "discard_redundant_exploration",
+      "semantic_node_ids": [],
+      "treatment_changing": false,
+      "rationale": "The final regression-test reread is extra read-only confirmation."
+    },
+    {
+      "ordinal": 23,
+      "action_id": "item_45",
+      "action_type": "command_execution",
+      "disposition": "move_to_system_envelope",
+      "semantic_node_ids": [],
+      "treatment_changing": false,
+      "rationale": "The final whitespace check is extra static validation outside the frozen test node."
+    }
+  ],
+  "node_coverage": [
+    {
+      "node_id": "n_target_search",
+      "classification": "realized",
+      "action_ids": ["item_2"],
+      "rationale": "The initial broad search locates the target implementation and tests."
+    },
+    {
+      "node_id": "n_project_inventory",
+      "classification": "realized",
+      "action_ids": ["item_1"],
+      "rationale": "The repository file inventory realizes project orientation."
+    },
+    {
+      "node_id": "n_primary_context",
+      "classification": "realized",
+      "action_ids": ["item_4", "item_5", "item_9"],
+      "rationale": "Three reads cover the primary SFS tests and implementation."
+    },
+    {
+      "node_id": "n_secondary_search",
+      "classification": "realized",
+      "action_ids": ["item_2", "item_7", "item_16"],
+      "rationale": "The broad and refined searches locate adjacent check_cv and split evidence."
+    },
+    {
+      "node_id": "n_secondary_context",
+      "classification": "realized",
+      "action_ids": ["item_6", "item_10", "item_11", "item_14", "item_15"],
+      "rationale": "Five reads cover adjacent split, validation, and RFE behavior."
+    },
+    {
+      "node_id": "n_patch_candidate",
+      "classification": "realized",
+      "action_ids": ["item_18", "item_20"],
+      "rationale": "The implementation and regression-test edits jointly form the patch candidate."
+    },
+    {
+      "node_id": "n_behavior_validation",
+      "classification": "realized",
+      "action_ids": ["item_22"],
+      "rationale": "The focused pytest attempt realizes the frozen behavior-validation node."
+    },
+    {
+      "node_id": "n_documentation_review",
+      "classification": "realized",
+      "action_ids": ["item_12"],
+      "rationale": "The feature-selection documentation read realizes compatibility review."
+    }
+  ],
+  "edge_order": [
+    {
+      "edge_id": "se_target_primary",
+      "src": "n_target_search",
+      "dst": "n_primary_context",
+      "classification": "satisfied",
+      "source_latest_action_id": "item_2",
+      "destination_earliest_action_id": "item_4",
+      "rationale": "The target search completes before the first primary-context read starts."
+    },
+    {
+      "edge_id": "se_inventory_primary",
+      "src": "n_project_inventory",
+      "dst": "n_primary_context",
+      "classification": "satisfied",
+      "source_latest_action_id": "item_1",
+      "destination_earliest_action_id": "item_4",
+      "rationale": "The project inventory completes before the first primary-context read starts."
+    },
+    {
+      "edge_id": "se_target_secondary_search",
+      "src": "n_target_search",
+      "dst": "n_secondary_search",
+      "classification": "violated",
+      "source_latest_action_id": "item_2",
+      "destination_earliest_action_id": "item_2",
+      "rationale": "The same broad search is split across predecessor and successor nodes, so strict end-before-start ordering fails."
+    },
+    {
+      "edge_id": "se_target_secondary_context",
+      "src": "n_target_search",
+      "dst": "n_secondary_context",
+      "classification": "satisfied",
+      "source_latest_action_id": "item_2",
+      "destination_earliest_action_id": "item_6",
+      "rationale": "The target search completes before the first adjacent-context read starts."
+    },
+    {
+      "edge_id": "se_secondary_search_context",
+      "src": "n_secondary_search",
+      "dst": "n_secondary_context",
+      "classification": "violated",
+      "source_latest_action_id": "item_16",
+      "destination_earliest_action_id": "item_6",
+      "rationale": "Adjacent-context reading begins before the final secondary-search action completes; this reversal remains under the conservative sensitivity mapping."
+    },
+    {
+      "edge_id": "se_primary_patch",
+      "src": "n_primary_context",
+      "dst": "n_patch_candidate",
+      "classification": "satisfied",
+      "source_latest_action_id": "item_9",
+      "destination_earliest_action_id": "item_18",
+      "rationale": "Primary-context reading completes before the first patch edit starts."
+    },
+    {
+      "edge_id": "se_secondary_patch",
+      "src": "n_secondary_context",
+      "dst": "n_patch_candidate",
+      "classification": "satisfied",
+      "source_latest_action_id": "item_15",
+      "destination_earliest_action_id": "item_18",
+      "rationale": "Secondary-context reading completes before the first patch edit starts."
+    },
+    {
+      "edge_id": "se_patch_validation",
+      "src": "n_patch_candidate",
+      "dst": "n_behavior_validation",
+      "classification": "satisfied",
+      "source_latest_action_id": "item_20",
+      "destination_earliest_action_id": "item_22",
+      "rationale": "Both patch edits complete before the focused validation starts."
+    },
+    {
+      "edge_id": "se_target_documentation",
+      "src": "n_target_search",
+      "dst": "n_documentation_review",
+      "classification": "satisfied",
+      "source_latest_action_id": "item_2",
+      "destination_earliest_action_id": "item_12",
+      "rationale": "The target search completes before documentation review starts."
+    }
+  ],
+  "missing_required_node_ids": [],
+  "dependency_violation_edge_ids": [
+    "se_target_secondary_search",
+    "se_secondary_search_context"
+  ],
+  "treatment_changing_deviation_count": 0,
+  "treatment_changing_action_ids": [],
+  "extra_read_only_action_ids": ["item_41", "item_46", "item_47"],
+  "semantic_realization": "partial",
+  "failure_reasons": [
+    "Strict telemetry ordering finds se_target_secondary_search violated because item_2 is split across its source and destination nodes.",
+    "Sensitivity analysis still leaves se_secondary_search_context violated: item_6 starts before item_7 completes, and the later item_16 search makes the strict reversal larger."
+  ],
+  "reviewer_attestations": {
+    "all_completed_actions_reviewed_exactly_once": true,
+    "raw_evidence_not_modified": true,
+    "dag_adherence_pass": false
+  }
+}

@@ -1,0 +1,482 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Trace-to-conditional-reference-DAG annotation response",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "case_id",
+    "analysis_mode",
+    "candidate_status",
+    "nodes",
+    "action_dispositions",
+    "observed_edge_dispositions",
+    "semantic_edges",
+    "branches",
+    "system_envelope",
+    "uncertainties",
+    "blocked_reasons"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "trace-reference-dag-annotation-v1"
+    },
+    "case_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "analysis_mode": {
+      "type": "string",
+      "const": "duration_outcome_result_blind"
+    },
+    "candidate_status": {
+      "type": "string",
+      "enum": [
+        "ready_for_deterministic_verification",
+        "blocked"
+      ]
+    },
+    "nodes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/node"
+      }
+    },
+    "action_dispositions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/actionDisposition"
+      }
+    },
+    "observed_edge_dispositions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/observedEdgeDisposition"
+      }
+    },
+    "semantic_edges": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/semanticEdge"
+      }
+    },
+    "branches": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/branch"
+      }
+    },
+    "system_envelope": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/envelope"
+      }
+    },
+    "uncertainties": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "blocked_reasons": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "$defs": {
+    "sourceSupport": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_id",
+        "projected_action_ids",
+        "provenance_status",
+        "rationale"
+      ],
+      "properties": {
+        "source_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "projected_action_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "provenance_status": {
+          "type": "string",
+          "enum": [
+            "observed_in_trace",
+            "cross_trace_observed",
+            "task_contract_required",
+            "causally_inferred",
+            "oracle_augmented",
+            "unobserved"
+          ]
+        },
+        "rationale": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "node": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "node_id",
+        "intent",
+        "kind",
+        "depends_on",
+        "artifact_class",
+        "risk_class",
+        "batchability",
+        "guard_ids",
+        "source_support"
+      ],
+      "properties": {
+        "node_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z][A-Za-z0-9_-]{0,63}$"
+        },
+        "intent": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "shell",
+            "read",
+            "grep",
+            "fetch",
+            "env_probe",
+            "diagnosis_branch",
+            "lint",
+            "edit",
+            "patch_sketch",
+            "patch_candidate",
+            "targeted_test",
+            "test",
+            "build"
+          ]
+        },
+        "depends_on": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "artifact_class": {
+          "type": "string",
+          "minLength": 1
+        },
+        "risk_class": {
+          "type": "string",
+          "minLength": 1
+        },
+        "batchability": {
+          "type": "string",
+          "minLength": 1
+        },
+        "guard_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "source_support": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/sourceSupport"
+          }
+        }
+      }
+    },
+    "actionDisposition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_id",
+        "projected_action_id",
+        "disposition",
+        "semantic_node_ids",
+        "rationale"
+      ],
+      "properties": {
+        "source_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "projected_action_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "disposition": {
+          "type": "string",
+          "enum": [
+            "retain",
+            "merge_into_semantic_node",
+            "split_across_semantic_nodes",
+            "discard_redundant_exploration",
+            "discard_tool_noise",
+            "move_to_system_envelope"
+          ]
+        },
+        "semantic_node_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "rationale": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "observedEdgeDisposition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_id",
+        "projected_edge_id",
+        "disposition",
+        "semantic_edge_ids",
+        "rationale"
+      ],
+      "properties": {
+        "source_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "projected_edge_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "disposition": {
+          "type": "string",
+          "enum": [
+            "retain_causal",
+            "replace_by_semantic_edge",
+            "drop_incidental_temporal",
+            "drop_resource_serialization",
+            "merge_internal",
+            "move_to_system_envelope",
+            "reject_extractor_false_positive"
+          ]
+        },
+        "semantic_edge_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "rationale": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "semanticEdge": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "edge_id",
+        "src",
+        "dst",
+        "dependency_class",
+        "guard_id",
+        "provenance_status",
+        "source_edge_support",
+        "rationale"
+      ],
+      "properties": {
+        "edge_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z][A-Za-z0-9_-]{0,63}$"
+        },
+        "src": {
+          "type": "string",
+          "minLength": 1
+        },
+        "dst": {
+          "type": "string",
+          "minLength": 1
+        },
+        "dependency_class": {
+          "type": "string",
+          "enum": [
+            "data",
+            "discovery",
+            "write",
+            "join",
+            "validation",
+            "guard",
+            "artifact",
+            "envelope"
+          ]
+        },
+        "guard_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "provenance_status": {
+          "type": "string",
+          "enum": [
+            "observed_in_trace",
+            "cross_trace_observed",
+            "task_contract_required",
+            "causally_inferred",
+            "oracle_augmented",
+            "unobserved"
+          ]
+        },
+        "source_edge_support": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "source_id",
+              "projected_edge_ids"
+            ],
+            "properties": {
+              "source_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "projected_edge_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            }
+          }
+        },
+        "rationale": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "branch": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "branch_id",
+        "trigger_node_id",
+        "guard_id",
+        "observable_condition",
+        "activated_node_ids",
+        "else_behavior",
+        "terminal_destination",
+        "provenance_status",
+        "source_support",
+        "rationale"
+      ],
+      "properties": {
+        "branch_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z][A-Za-z0-9_-]{0,63}$"
+        },
+        "trigger_node_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "guard_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "observable_condition": {
+          "type": "string",
+          "minLength": 1
+        },
+        "activated_node_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "else_behavior": {
+          "type": "string",
+          "minLength": 1
+        },
+        "terminal_destination": {
+          "type": "string",
+          "minLength": 1
+        },
+        "provenance_status": {
+          "type": "string",
+          "enum": [
+            "observed_in_trace",
+            "cross_trace_observed",
+            "task_contract_required",
+            "causally_inferred",
+            "oracle_augmented",
+            "unobserved"
+          ]
+        },
+        "source_support": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/sourceSupport"
+          }
+        },
+        "rationale": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "envelope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "envelope_id",
+        "role",
+        "depends_on",
+        "rationale"
+      ],
+      "properties": {
+        "envelope_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "role": {
+          "type": "string",
+          "minLength": 1
+        },
+        "depends_on": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "rationale": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  }
+}

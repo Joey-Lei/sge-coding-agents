@@ -1,0 +1,118 @@
+{
+  "claim_boundaries": [
+    "Structural ceilings are not realized end-to-end speedups.",
+    "Rolling locality values use mixed-duration extracted DAGs.",
+    "Flex and Grid are historical whole-prompt functional observations with partial semantic realization.",
+    "P007 and P018 are invalid pairs; formal paired speedup, token, and cost metrics remain null.",
+    "No valid prospective quality-equivalent alpha_SGE is packaged."
+  ],
+  "claims": {
+    "command_heavy_negative_smoke": {
+      "abort_fallback_count": 10,
+      "accepted_artifact_count": 0,
+      "extra_token_cost_ratio_if_abort_then_fallback": 0.2297,
+      "latency_overhead_ratio_if_abort_then_fallback": 0.3528,
+      "runs": 10
+    },
+    "duration_blind_admission": {
+      "admitted_total": 56,
+      "case_count": 7,
+      "held_out_repository_count": 4,
+      "joint_unit_count": 130,
+      "mae": 0.08519728170300245,
+      "mape": 0.05652374175610231,
+      "nontrivial_mae": 0.2761567062097321,
+      "nontrivial_mape": 0.18321488707150405,
+      "nontrivial_spearman": 0.764917822861404,
+      "nontrivial_window_count": 58,
+      "observed_at_or_above_admitted": 52,
+      "observed_at_or_above_total": 53,
+      "observed_below_rejected": 131,
+      "observed_below_total": 135,
+      "rejected_total": 132,
+      "spearman": 0.9897596758463504,
+      "threshold": 1.1,
+      "window_count": 188
+    },
+    "exact_duration_structural_ceiling": {
+      "exact_duration_action_dag_count": 9,
+      "p4_max_ceiling": 1.5297149853671081,
+      "p4_mean_ceiling": 1.2138015292373572,
+      "p4_median_ceiling": 1.1770400775418222,
+      "physical_repository_count": 6
+    },
+    "full_graph_predictor_diagnostic": {
+      "case_count": 5,
+      "edge_recall": 0.0811,
+      "node_recall": 0.4038,
+      "retained_reference_work_ratio": 0.558,
+      "tokens_per_call": 30259.2,
+      "wall_seconds_per_call": 81.4487
+    },
+    "historical_functional_observations": {
+      "flex": {
+        "conditioned_over_unconditioned_total_token_ratio": 0.35463806426903177,
+        "conditioned_score": 19,
+        "default_score": 19,
+        "performance_claim_eligible": false,
+        "timing_claim_scope": "functional_only",
+        "unconditioned_over_conditioned_e2e_ratio": 1.6442058230663825
+      },
+      "grid": {
+        "conditioned_over_unconditioned_total_token_ratio": 0.5021752641392169,
+        "conditioned_score": 24,
+        "default_score": 24,
+        "performance_claim_eligible": false,
+        "timing_claim_scope": "functional_only",
+        "unconditioned_over_conditioned_e2e_ratio": 1.0578146468957892
+      }
+    },
+    "local_executor_smoke": {
+      "completed_node_artifacts": 49,
+      "deadlocks": 0,
+      "executor_wall_over_ideal_w4_wall": 1.0021,
+      "fallback_required": 2,
+      "local_closures": 8,
+      "mean_actual_max_concurrency": 2.6,
+      "window_count": 10
+    },
+    "rolling_locality_sensitivity": {
+      "swe_pro_case_count": 5,
+      "swe_pro_k2_retention": 0.9854,
+      "swe_pro_k3_retention": 0.9996,
+      "swe_verified_case_count": 10,
+      "swe_verified_k2_retention": 0.9489,
+      "swe_verified_k3_retention": 0.9857
+    },
+    "strict_pair_rejections": {
+      "P007": {
+        "failed_gates": [
+          "G09_semantic_dag_adherence_pass"
+        ],
+        "pair_validity": "invalid",
+        "paired_metrics": {
+          "S_perfect_exec": null,
+          "monetary_cost": null,
+          "perfect_over_default_noncached_token_ratio": null,
+          "perfect_over_default_total_token_ratio": null
+        },
+        "terminal_status": "invalid"
+      },
+      "P018": {
+        "failed_gates": [
+          "G09_semantic_dag_adherence_pass"
+        ],
+        "pair_validity": "invalid",
+        "paired_metrics": {
+          "S_perfect_exec": null,
+          "monetary_cost": null,
+          "perfect_over_default_noncached_token_ratio": null,
+          "perfect_over_default_total_token_ratio": null
+        },
+        "terminal_status": "invalid"
+      }
+    }
+  },
+  "execution_mode": "offline_recomputation_from_packaged_derived_evidence",
+  "schema_version": 1
+}
