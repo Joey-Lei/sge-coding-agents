@@ -16,7 +16,7 @@ python3 reproduce.py
 python3 -m pytest -q -p no:cacheprovider tests
 ~~~
 
-The snapshot performs no network, model, benchmark-target, or official-evaluator calls. It recomputes the reported values, renders five figures and accessibility previews, preserves negative and invalid cases, scans the package boundary, and checks its SHA-256 manifest.
+The snapshot performs no network, model, benchmark-target, or official-evaluator calls. By default it recomputes the reported values and renders five figures in temporary storage, preserves negative and invalid cases, scans the package boundary, and checks the sealed figures, accessibility previews, and SHA-256 manifest without modifying tracked files. Maintainers can run `python3 reproduce.py --refresh` to regenerate the platform-bound renderings and hashes.
 
 Start with:
 

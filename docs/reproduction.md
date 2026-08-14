@@ -28,7 +28,7 @@ python3 reproduce.py
 python3 -m pytest -q
 ~~~
 
-The artifact writes only beneath <code>artifact/reviewer_snapshot/outputs</code>, <code>artifact/reviewer_snapshot/audit</code>, and its two package-manifest files. It uses temporary cache directories for Matplotlib and font configuration.
+The portable default writes only to a temporary directory. It recomputes and byte-compares the quantitative claims, renders five PDF/PNG figure pairs to scratch space, and validates the untouched sealed artifact and its manifest. This keeps a clean checkout clean across operating systems and font stacks. It uses temporary cache directories for Matplotlib and font configuration.
 
 Expected outputs include:
 
@@ -39,6 +39,16 @@ Expected outputs include:
 - <code>artifact/reviewer_snapshot/provenance/artifact_manifest.json</code>
 - <code>artifact/reviewer_snapshot/SHA256SUMS</code>
 
+## Maintainer refresh
+
+The committed PDF/PNG bytes and accessibility previews are platform-bound renderings. To intentionally regenerate them and refresh the figure contract, audit records, artifact manifest, and `SHA256SUMS`, run:
+
+~~~bash
+python3 reproduce.py --refresh
+~~~
+
+Review the resulting diff before committing. Reviewers and CI should use the non-mutating default command.
+
 ## Release audit
 
 ~~~bash
@@ -46,7 +56,7 @@ python3 tools/check_release.py
 git diff --exit-code
 ~~~
 
-The release audit checks required public surfaces, forbidden raw file families, local machine paths, credential-like material, oversized files, local Markdown links, and the frozen artifact manifest. A clean <code>git diff</code> after reproduction confirms deterministic tracked outputs.
+The release audit checks required public surfaces, forbidden raw file families, local machine paths, credential-like material, oversized files, local Markdown links, and the frozen artifact manifest. A clean <code>git diff</code> after the default reproduction confirms that the portable path did not mutate tracked outputs.
 
 ## Container-free design
 

@@ -74,7 +74,7 @@ The exact claim-to-evidence map is in [artifact/reviewer_snapshot/CLAIMS.md](art
 
 ## Reproduce the reviewer artifact
 
-The full path is offline and deterministic. It recalculates quantitative claims, renders five evidence-governed figures, creates accessibility previews, checks invalid-pair preservation, scans for restricted material, and verifies the SHA-256 manifest.
+The default path is offline, cross-platform, and non-mutating. It recalculates quantitative claims and renders five evidence-governed figures in temporary storage, compares the claims with the sealed outputs, checks invalid-pair preservation, scans for restricted material, and verifies the SHA-256 manifest. Maintainers can explicitly refresh platform-bound renderings with `python3 reproduce.py --refresh`.
 
 ~~~bash
 python3 -m pip install -e ".[artifact,dev]"
@@ -86,7 +86,7 @@ python3 tools/check_release.py
 Expected terminal status:
 
 ~~~json
-{"artifact": "artifact/reviewer_snapshot", "mode": "offline", "status": "pass"}
+{"artifact": "artifact/reviewer_snapshot", "mode": "offline-portable", "status": "pass"}
 ~~~
 
 See [reproduction instructions](docs/reproduction.md) for the fast, full, and audit paths. Reproduction uses zero network, model, and official-evaluator calls after dependencies are installed.

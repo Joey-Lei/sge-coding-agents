@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import argparse
 import json
 import subprocess
 import sys
@@ -14,13 +15,23 @@ SNAPSHOT = ROOT / "artifact" / "reviewer_snapshot"
 
 
 def main() -> int:
-    subprocess.run([sys.executable, "reproduce.py"], cwd=SNAPSHOT, check=True)
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--refresh",
+        action="store_true",
+        help="rewrite the platform-bound canonical artifact renderings and hashes",
+    )
+    args = parser.parse_args()
+    command = [sys.executable, "reproduce.py"]
+    if args.refresh:
+        command.append("--refresh")
+    subprocess.run(command, cwd=SNAPSHOT, check=True)
     print(
         json.dumps(
             {
                 "status": "pass",
                 "artifact": "artifact/reviewer_snapshot",
-                "mode": "offline",
+                "mode": "offline-refresh" if args.refresh else "offline-portable",
                 "network_calls": 0,
                 "model_calls": 0,
                 "evaluator_calls": 0,

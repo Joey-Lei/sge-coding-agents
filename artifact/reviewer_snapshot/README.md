@@ -25,9 +25,15 @@ python3 reproduce.py
 python3 -m pytest -q -p no:cacheprovider tests/test_reviewer_artifact.py tests/test_core_model.py tests/test_trace_to_dag.py
 ```
 
-`reproduce.py` is offline. It makes no network, model, benchmark-target, or official-evaluator calls. It recalculates the quantitative claims, renders five evidence-governed PDF figures, scans the package for restricted paths and credential-like material, and refreshes the SHA-256 manifest.
+`reproduce.py` is offline. It makes no network, model, benchmark-target, or official-evaluator calls. Its portable default recalculates the quantitative claims and renders five evidence-governed PDF/PNG pairs in temporary storage, compares the claims with the sealed outputs, scans the package for restricted paths and credential-like material, and checks the canonical SHA-256 manifest without changing tracked files.
 
-Expected outputs:
+The sealed figure bytes depend on the platform's Matplotlib/font stack. Maintainers may intentionally regenerate those files, their accessibility previews, and all package hashes with:
+
+```bash
+python3 reproduce.py --refresh
+```
+
+Sealed outputs checked by the portable path (and regenerated only by `--refresh`):
 
 - `outputs/recomputed_claims.json` and `outputs/recomputed_claims.md`
 - `outputs/figures/*.pdf`, 300-DPI review PNGs, and `outputs/figures/figure_manifest.json`
