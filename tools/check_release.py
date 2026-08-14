@@ -13,7 +13,14 @@ from urllib.parse import unquote
 
 ROOT = Path(__file__).resolve().parents[1]
 SNAPSHOT = ROOT / "artifact" / "reviewer_snapshot"
-IGNORED_PARTS = {".git", ".pytest_cache", "__pycache__", ".venv", "verification"}
+IGNORED_PARTS = {
+    ".git",
+    ".pytest_cache",
+    "__pycache__",
+    ".venv",
+    "supervisors",
+    "verification",
+}
 TEXT_SUFFIXES = {".cff", ".csv", ".json", ".jsonl", ".md", ".py", ".toml", ".txt", ".yaml", ".yml"}
 FORBIDDEN_NAMES = {
     "auth.json",
