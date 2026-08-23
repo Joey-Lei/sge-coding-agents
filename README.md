@@ -4,22 +4,15 @@
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.10%2B-3776AB.svg)](pyproject.toml)
 
-**A research artifact for selective task-level speculation in coding agents.**
+**Small code release for Speculative Graph Execution.**
 
 ![SGE system boundary: selected WorkGraph nodes run ahead of the target-agent trunk and only verified artifacts update confirmed state.](docs/assets/sge-method.png)
 
 Speculative Graph Execution (SGE) asks whether a coding agent can release selected, dependency-ready work before the target agent confirms every later step. A semantic WorkGraph exposes structure, a frozen topology-first gate estimates finite-worker headroom, and verification controls what can enter confirmed state.
 
-This repository accompanies the SGE workshop manuscript. It releases a testable graph-analysis primitive and selected frozen evidence; it does not expose raw traces, provider integrations, evaluator assets, or a production executor.
+This is the small public code release accompanying the SGE workshop manuscript. It contains graph-analysis utilities and selected frozen evidence; raw traces, provider integrations, evaluator assets, and a production executor are not included.
 
-## What it does
-
-1. Represents candidate work as an annotated dependency DAG.
-2. Computes work/span and deterministic finite-worker schedule bounds.
-3. Uses a type-weighted structural ceiling as a selective admission feature.
-4. Keeps execution, verification, and end-to-end performance claims separate from the structural estimate.
-
-## Try the core primitive
+## Quick start
 
 The core package uses only the Python standard library at runtime.
 
@@ -36,7 +29,7 @@ sge analyze examples/minimal_workgraph.json \
 
 The included WorkGraph has a type-weighted four-worker ceiling of `1.2222x`. At the paper's frozen `1.10x` operating threshold, it is an admitted structural candidate. The command analyzes an annotated DAG only; it does not execute tools or claim end-to-end acceleration.
 
-## Results from the paper
+## Results
 
 | Evidence | Frozen coverage | Result |
 | --- | --- | --- |
@@ -46,7 +39,7 @@ The included WorkGraph has a type-weighted four-worker ceiling of `1.2222x`. At 
 
 These are structural and retrospective results. They do not establish a quality-equivalent prospective SGE speedup.
 
-## Reproduce selected evidence
+## Reproduce
 
 The optional [reviewer snapshot](artifact/reviewer_snapshot) packages sanitized derived rows, deterministic checks, provenance, and the claim map. It runs offline after dependencies are installed:
 
@@ -59,7 +52,7 @@ python3 tools/check_release.py
 
 See the [evidence guide](docs/evidence.md) for interpretation boundaries and the [claim map](artifact/reviewer_snapshot/CLAIMS.md) for source paths and allowed claims.
 
-## Research status
+## Notes
 
 Released here: graph analysis, finite-worker scheduling bounds, topology-first admission evidence, and a reviewer-safe data slice.
 
