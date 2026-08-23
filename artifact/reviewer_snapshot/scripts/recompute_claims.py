@@ -80,12 +80,13 @@ def recompute() -> dict[str, Any]:
     historical_p2 = [float(row["workers_2_list_makespan_units"]) for row in historical_rows]
     historical_p4 = [float(row["workers_4_list_makespan_units"]) for row in historical_rows]
     historical_p8 = [float(row["workers_8_list_makespan_units"]) for row in historical_rows]
+    historical_total_work = math.fsum(historical_work)
     historical = {
         "case_count": len(historical_rows),
-        "aggregate_unbounded_speedup": sum(historical_work) / sum(historical_span),
-        "aggregate_workers_2_list_speedup": sum(historical_work) / sum(historical_p2),
-        "aggregate_workers_4_list_speedup": sum(historical_work) / sum(historical_p4),
-        "aggregate_workers_8_list_speedup": sum(historical_work) / sum(historical_p8),
+        "aggregate_unbounded_speedup": historical_total_work / math.fsum(historical_span),
+        "aggregate_workers_2_list_speedup": historical_total_work / math.fsum(historical_p2),
+        "aggregate_workers_4_list_speedup": historical_total_work / math.fsum(historical_p4),
+        "aggregate_workers_8_list_speedup": historical_total_work / math.fsum(historical_p8),
         "case_median_unbounded_speedup": statistics.median(
             work / span for work, span in zip(historical_work, historical_span)
         ),
@@ -254,10 +255,10 @@ def validate_sealed_expectations(result: dict[str, Any]) -> None:
     claims = result["claims"]
     historical = claims["historical_same_trace_replay"]
     assert historical["case_count"] == 10
-    close(historical["aggregate_unbounded_speedup"], 4.268974222446017)
-    close(historical["aggregate_workers_2_list_speedup"], 1.9835817427018552)
+    close(historical["aggregate_unbounded_speedup"], 4.268974222446018)
+    close(historical["aggregate_workers_2_list_speedup"], 1.983581742701855)
     close(historical["aggregate_workers_4_list_speedup"], 3.405822357036705)
-    close(historical["aggregate_workers_8_list_speedup"], 4.268974222446017)
+    close(historical["aggregate_workers_8_list_speedup"], 4.268974222446018)
     close(historical["case_median_unbounded_speedup"], 5.229280734405555)
     close(historical["case_max_unbounded_speedup"], 6.422651933701657)
 

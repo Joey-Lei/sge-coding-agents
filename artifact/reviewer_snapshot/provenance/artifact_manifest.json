@@ -157,9 +157,9 @@
       "sha256": "1631cc05fdf74461e92da73c3bff78783f6660db5a07686c8e71cc9a96796bbe"
     },
     {
-      "bytes": 4638,
+      "bytes": 4637,
       "path": "outputs/recomputed_claims.json",
-      "sha256": "c74d07917e13bf2fd04211fc297c9241f7cfefcfaf1e7287aa51fd242554c2b1"
+      "sha256": "76068dd92980c4cbd188561cab2f292c62c05fa7e62e8916d789663fa76997b9"
     },
     {
       "bytes": 1055,
@@ -497,9 +497,9 @@
       "sha256": "eba323af6d9ae5de71768f03410855d0f4676a2842452bd8e91a8dc8526c15f5"
     },
     {
-      "bytes": 18922,
+      "bytes": 19004,
       "path": "scripts/recompute_claims.py",
-      "sha256": "68ea9d34861a7d20b521806a73e25eeb2bc35955535de65cd992d6e90304f6af"
+      "sha256": "a9279245036a199adfc968da1d966639d461a004e92a49eddfe349a3fbe1d253"
     },
     {
       "bytes": 11535,
