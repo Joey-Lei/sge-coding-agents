@@ -62,6 +62,6 @@ Sealed outputs checked by the portable path (and regenerated only by `--refresh`
 
 ## Distribution status
 
-This snapshot is distributed as part of the public SGE repository under the repository-root Apache License 2.0. See `LICENSE_STATUS.md` and `THIRD_PARTY_NOTICES.md` for the release boundary.
+This snapshot is distributed as part of the public SGE repository under the repository-root MIT License. See `LICENSE_STATUS.md` and `THIRD_PARTY_NOTICES.md` for the release boundary.
 
 The full upstream integration suite is intentionally not bundled: it requires frozen cohort trees, live-runner contracts, and raw Stage-B inputs outside the reviewer-safe allowlist. Historical live executor prototypes are also omitted because they were not self-contained public interfaces. The packaged tests exercise the core work/span model, trace conversion, quantitative recomputation, figure rendering, privacy boundary, and invalid-pair preservation.

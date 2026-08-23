@@ -35,7 +35,6 @@ REQUIRED = {
     "README.md",
     "LICENSE",
     "CITATION.cff",
-    "CONTRIBUTING.md",
     "SECURITY.md",
     "pyproject.toml",
     "src/sge/__init__.py",

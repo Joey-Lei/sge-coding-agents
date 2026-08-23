@@ -1,6 +1,6 @@
 # License status
 
-This reviewer snapshot is distributed within the public SGE repository under the repository-root Apache License 2.0.
+This reviewer snapshot is distributed within the public SGE repository under the repository-root MIT License.
 
 The release contains original SGE code and documentation, sanitized derived numerical evidence, public repository or case identifiers, and generated figures. It does not vendor benchmark task text, gold patches, reference solutions, hidden evaluator assets, third-party source code, model messages, or raw runtime traces.
 

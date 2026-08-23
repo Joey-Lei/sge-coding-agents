@@ -12,9 +12,9 @@
       "sha256": "596a455e618a9c714a224908110b79c054fc3131cc8451bf159393367cedd4ec"
     },
     {
-      "bytes": 650,
+      "bytes": 643,
       "path": "LICENSE_STATUS.md",
-      "sha256": "3e40b8d6a64583b63d263aebb6c928ea185fe124cf085ee0f92e3052d1f86bf7"
+      "sha256": "8c9fdcbea17da2e2dd1d7aed1966fa5345f5aa2516955951a01bacf0e6327c25"
     },
     {
       "bytes": 3118,
@@ -22,14 +22,14 @@
       "sha256": "3d874857e475edd52246c65211d1b932def1db79b2291a550543f42186902432"
     },
     {
-      "bytes": 4916,
+      "bytes": 4909,
       "path": "README.md",
-      "sha256": "e0665878a1baa95bf6f91ba4780593bae32f3a69609c15fd21f1315fab2519e2"
+      "sha256": "ba32c8d62089456b7c7ae358f60578e05ea655428a723aaa461a6572b2a30a74"
     },
     {
-      "bytes": 891,
+      "bytes": 884,
       "path": "STATUS.md",
-      "sha256": "c6382bb5b7e4dd84d602ed68b37453f22872a0c2c7926e6a9aaa8a8499404911"
+      "sha256": "ec5c32f4ed0ea97dfb2552c9e51ee273faac44ec8b99514830e271f44bf5e08c"
     },
     {
       "bytes": 825,

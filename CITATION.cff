@@ -9,7 +9,7 @@ authors:
   - name: "Ting Yang"
 repository-code: "https://github.com/Joey-Lei/sge-coding-agents"
 url: "https://github.com/Joey-Lei/sge-coding-agents"
-license: Apache-2.0
+license: MIT
 keywords:
   - coding agents
   - speculative execution

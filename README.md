@@ -1,7 +1,7 @@
 # Speculative Graph Execution
 
 [![CI](https://github.com/Joey-Lei/sge-coding-agents/actions/workflows/ci.yml/badge.svg)](https://github.com/Joey-Lei/sge-coding-agents/actions/workflows/ci.yml)
-[![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.10%2B-3776AB.svg)](pyproject.toml)
 
 **Small code release for Speculative Graph Execution.**
@@ -60,4 +60,4 @@ Open research work: online local-WorkGraph prediction, a bounded production exec
 
 ## Citation
 
-Use [CITATION.cff](CITATION.cff) to cite this software artifact. The project is released under the [Apache License 2.0](LICENSE).
+Use [CITATION.cff](CITATION.cff) to cite this software artifact. The project is released under the [MIT License](LICENSE).

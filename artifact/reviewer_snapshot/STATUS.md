@@ -8,5 +8,5 @@
 - Full upstream live/integration fixture suite: intentionally excluded; reviewer-safe unit and artifact tests are included.
 - Privacy sanitization: required and automated.
 - Figure audit: passing for source hashes, 396-point geometry, embedded fonts, vector PDFs, minimum 6.3-point source text, 300-DPI PNGs, and four accessibility previews per figure.
-- Open-source license: Apache-2.0 at the public repository root.
+- Open-source license: MIT at the public repository root.
 - Historical live runners: omitted from the public snapshot; compact sanitized summaries retained.
