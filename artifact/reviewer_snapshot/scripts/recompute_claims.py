@@ -74,6 +74,26 @@ def close(actual: float, expected: float, tolerance: float = 1e-12) -> None:
 
 
 def recompute() -> dict[str, Any]:
+    historical_rows = read_csv("results/historical_same_trace_replay/summary.csv")
+    historical_work = [float(row["serial_work_units"]) for row in historical_rows]
+    historical_span = [float(row["critical_path_units"]) for row in historical_rows]
+    historical_p2 = [float(row["workers_2_list_makespan_units"]) for row in historical_rows]
+    historical_p4 = [float(row["workers_4_list_makespan_units"]) for row in historical_rows]
+    historical_p8 = [float(row["workers_8_list_makespan_units"]) for row in historical_rows]
+    historical = {
+        "case_count": len(historical_rows),
+        "aggregate_unbounded_speedup": sum(historical_work) / sum(historical_span),
+        "aggregate_workers_2_list_speedup": sum(historical_work) / sum(historical_p2),
+        "aggregate_workers_4_list_speedup": sum(historical_work) / sum(historical_p4),
+        "aggregate_workers_8_list_speedup": sum(historical_work) / sum(historical_p8),
+        "case_median_unbounded_speedup": statistics.median(
+            work / span for work, span in zip(historical_work, historical_span)
+        ),
+        "case_max_unbounded_speedup": max(
+            work / span for work, span in zip(historical_work, historical_span)
+        ),
+    }
+
     case_rows = read_json("results/sge_p30_ac_overlay_v2_20260728/case_rows.json")
     exact = [row for row in case_rows if row.get("observed_duration_join_eligible")]
     p4 = [float(row["observed_duration_metrics"]["finite_workers"]["P4"]["list_headroom"]) for row in exact]
@@ -207,6 +227,7 @@ def recompute() -> dict[str, Any]:
         "schema_version": 1,
         "execution_mode": "offline_recomputation_from_packaged_derived_evidence",
         "claims": {
+            "historical_same_trace_replay": historical,
             "exact_duration_structural_ceiling": structural,
             "duration_blind_admission": admission,
             "rolling_locality_sensitivity": locality,
@@ -217,6 +238,7 @@ def recompute() -> dict[str, Any]:
             "strict_pair_rejections": invalid_pairs,
         },
         "claim_boundaries": [
+            "Historical same-trace replay is a zero-overhead structural ceiling over observed action traces.",
             "Structural ceilings are not realized end-to-end speedups.",
             "Rolling locality values use mixed-duration extracted DAGs.",
             "Flex and Grid are historical whole-prompt functional observations with partial semantic realization.",
@@ -230,6 +252,15 @@ def recompute() -> dict[str, Any]:
 
 def validate_sealed_expectations(result: dict[str, Any]) -> None:
     claims = result["claims"]
+    historical = claims["historical_same_trace_replay"]
+    assert historical["case_count"] == 10
+    close(historical["aggregate_unbounded_speedup"], 4.268974222446017)
+    close(historical["aggregate_workers_2_list_speedup"], 1.9835817427018552)
+    close(historical["aggregate_workers_4_list_speedup"], 3.405822357036705)
+    close(historical["aggregate_workers_8_list_speedup"], 4.268974222446017)
+    close(historical["case_median_unbounded_speedup"], 5.229280734405555)
+    close(historical["case_max_unbounded_speedup"], 6.422651933701657)
+
     structural = claims["exact_duration_structural_ceiling"]
     assert structural["exact_duration_action_dag_count"] == 9
     assert structural["physical_repository_count"] == 6
@@ -293,6 +324,7 @@ def validate_sealed_expectations(result: dict[str, Any]) -> None:
 
 def markdown(result: dict[str, Any]) -> str:
     c = result["claims"]
+    h = c["historical_same_trace_replay"]
     s = c["exact_duration_structural_ceiling"]
     a = c["duration_blind_admission"]
     lines = [
@@ -300,8 +332,9 @@ def markdown(result: dict[str, Any]) -> str:
         "",
         "All values below were recomputed from the packaged derived evidence without network, model, or evaluator calls.",
         "",
+        f"- Historical same-trace replay: {h['case_count']} clean Web-Bench traces; aggregate unbounded/P=2/P=4/P=8 list ceiling = {h['aggregate_unbounded_speedup']:.4f}x / {h['aggregate_workers_2_list_speedup']:.4f}x / {h['aggregate_workers_4_list_speedup']:.4f}x / {h['aggregate_workers_8_list_speedup']:.4f}x; case median/max unbounded ceiling = {h['case_median_unbounded_speedup']:.4f}x / {h['case_max_unbounded_speedup']:.4f}x.",
         f"- Exact-duration action DAGs: {s['exact_duration_action_dag_count']} across {s['physical_repository_count']} repositories; P=4 mean/median/max structural ceiling = {s['p4_mean_ceiling']:.4f}x / {s['p4_median_ceiling']:.4f}x / {s['p4_max_ceiling']:.4f}x.",
-        f"- Duration-blind admission: {a['window_count']} windows across {a['held_out_repository_count']} held-out repositories; Spearman = {a['spearman']:.4f}, MAE = {a['mae']:.4f}x, MAPE = {100*a['mape']:.2f}%.",
+        f"- Duration-blind admission: {a['window_count']} windows across {a['held_out_repository_count']} physical repositories; Spearman = {a['spearman']:.4f}, MAE = {a['mae']:.4f}x, MAPE = {100*a['mape']:.2f}%.",
         f"- At 1.10x: rejected {a['observed_below_rejected']}/{a['observed_below_total']} observed-low windows and admitted {a['observed_at_or_above_admitted']}/{a['observed_at_or_above_total']} observed-high windows.",
         f"- Nontrivial sensitivity: {a['nontrivial_window_count']} windows after removing {a['joint_unit_count']} joint-unit windows; Spearman = {a['nontrivial_spearman']:.4f}, MAE = {a['nontrivial_mae']:.4f}x, MAPE = {100*a['nontrivial_mape']:.2f}%.",
         "- Strict paired canaries: P007 and P018 are invalid and all formal paired metrics remain null.",

@@ -6,6 +6,8 @@ import subprocess
 import sys
 from pathlib import Path
 
+import pytest
+
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -26,6 +28,10 @@ def test_recompute_claims_from_packaged_rows(tmp_path: Path) -> None:
         check=True,
     )
     claims = json.loads(output.read_text(encoding="utf-8"))["claims"]
+    historical = claims["historical_same_trace_replay"]
+    assert historical["case_count"] == 10
+    assert historical["aggregate_unbounded_speedup"] == pytest.approx(4.268974222446017)
+    assert historical["aggregate_workers_4_list_speedup"] == pytest.approx(3.405822357036705)
     assert claims["exact_duration_structural_ceiling"]["exact_duration_action_dag_count"] == 9
     assert claims["duration_blind_admission"]["window_count"] == 188
     assert claims["duration_blind_admission"]["nontrivial_window_count"] == 58

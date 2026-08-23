@@ -1,11 +1,12 @@
 # Speculative Graph Execution: reviewer artifact
 
-This package is the smallest reviewer-facing slice of the SGE research repository that can reproduce the workshop paper's reported evidence without exposing private runtime data.
+This package is the smallest reviewer-facing slice of the SGE research repository that can recompute selected workshop-paper results without exposing private runtime data.
 
 SGE is a task-layer execution design for coding agents. It continuously reconstructs a small local semantic WorkGraph, estimates whether the ready frontier has enough structural headroom to justify speculation, releases dependency-ready work, and verifies or falls back before committing artifacts. The research object is this rolling **predict → bound → admit → execute → verify** loop—not token-level decoding speculation and not unrestricted parallel shell execution.
 
 ## What this artifact establishes
 
+- Historical same-trace structural replay over ten clean Web-Bench traces, including aggregate unbounded and finite-worker list ceilings.
 - Exact-duration structural ceilings for nine audited action DAGs.
 - Offline recalculation of the 188-window duration-blind admission study, including the harder 58-window nontrivial sensitivity.
 - Mixed-duration rolling-locality sensitivity and a predictor-only diagnostic.

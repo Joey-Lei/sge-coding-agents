@@ -54,6 +54,7 @@ def required_files() -> list[str]:
         "audit/figure_bundle_audit.json",
         "scripts/recompute_claims.py",
         "scripts/build_submission_visuals.py",
+        "results/historical_same_trace_replay/summary.csv",
         "results/sge_p30_ac_overlay_v2_20260728/case_rows.json",
         "results/sge_c1_structural_validation_20260729/window_rows.json",
         "results/sge_p30_paired_scale_audit_20260728/P007/evidence_integration.json",

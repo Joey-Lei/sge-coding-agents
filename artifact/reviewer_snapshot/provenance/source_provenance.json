@@ -1,9 +1,20 @@
 {
   "schema_version": 1,
   "artifact_identity": "mlforsys_2026_sge_reviewer_artifact",
-  "assembly_date": "2026-08-14",
+  "assembly_date": "2026-08-23",
   "base_repository_commit": "8f4aeb9749ba9eab07bfc7b0e96da62c3f23283a",
   "sources": [
+    {
+      "id": "historical_same_trace_replay",
+      "repository": "Speculative-Graph-Execution-workshop-writing",
+      "source_snapshot": "4793adc6b6c0c5162a391a6bbb235e8be789c8e3",
+      "paths": {
+        "results/dag_speedup_duration_model_comparison_web_bench_10case_gpt55_medium_20260706/observed/dag_speedup_estimates.csv": "98c9ce5b319705f1cf6286ad9192d4b4e83fb36dc3fac37c50519057c6fa5511",
+        "results/dag_speedup_duration_model_comparison_web_bench_10case_gpt55_medium_20260706/observed/dag_speedup_aggregate.csv": "08d39c5c353fe3cf99fd4003d675755f86c136e9bb7d816d5a5bdc4d528696ee"
+      },
+      "sanitized_output": "results/historical_same_trace_replay/summary.csv",
+      "note": "The public summary retains only case labels and structural scheduling units; source paths, commands, trace text, model metadata, and wall-clock fields are excluded."
+    },
     {
       "id": "p30_overlay",
       "repository": "Speculative-Graph-Execution",

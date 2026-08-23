@@ -16,7 +16,7 @@ Live provider adapters and production executors need a separate design discussio
 ## Development setup
 
 ~~~bash
-git clone https://github.com/decentralizedblack-maker/sge-coding-agents.git
+git clone https://github.com/Joey-Lei/sge-coding-agents.git
 cd sge-coding-agents
 python3 -m venv .venv
 . .venv/bin/activate

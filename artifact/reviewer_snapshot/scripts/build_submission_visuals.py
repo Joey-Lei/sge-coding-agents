@@ -489,7 +489,7 @@ def build_admission_figure(rows: list[dict[str, Any]], output: Path) -> None:
     ax.tick_params(length=0)
     for spine in ax.spines.values():
         spine.set_visible(False)
-    fig.text(0.71, 0.105, "188 duration-blind windows\n4 held-out repositories\n130 joint unit-ceiling windows\nappear only in this matrix.", fontsize=6.5, color=GRAY)
+    fig.text(0.71, 0.105, "188 duration-blind windows\n4 physical repositories\n130 joint unit-ceiling windows\nappear only in this matrix.", fontsize=6.5, color=GRAY)
     save(fig, output)
 
 

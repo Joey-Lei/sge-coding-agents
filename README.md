@@ -1,118 +1,70 @@
 # Speculative Graph Execution
 
-[![CI](https://github.com/decentralizedblack-maker/sge-coding-agents/actions/workflows/ci.yml/badge.svg)](https://github.com/decentralizedblack-maker/sge-coding-agents/actions/workflows/ci.yml)
+[![CI](https://github.com/Joey-Lei/sge-coding-agents/actions/workflows/ci.yml/badge.svg)](https://github.com/Joey-Lei/sge-coding-agents/actions/workflows/ci.yml)
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.10%2B-3776AB.svg)](pyproject.toml)
-[![Artifact](https://img.shields.io/badge/artifact-offline%20%2B%20hashed-5B8C5A.svg)](artifact/README.md)
 
-**Task-layer speculative execution for coding agents, represented as a rolling semantic WorkGraph.**
+**A research artifact for selective task-level speculation in coding agents.**
 
-Speculative Graph Execution (SGE) asks a systems question: while a coding agent is working, can we identify dependency-ready work early, execute only the safe frontier, and verify or fall back before committing the result? SGE operates above token decoding and below whole-agent orchestration.
+![SGE system boundary: selected WorkGraph nodes run ahead of the target-agent trunk and only verified artifacts update confirmed state.](docs/assets/sge-method.png)
 
-This repository is the clean, reviewer-facing release. It contains an installable analysis core, the trace-to-WorkGraph contract, a minimal example, and a frozen offline artifact that recomputes the paper evidence without network, model, or evaluator calls.
+Speculative Graph Execution (SGE) asks whether a coding agent can release selected, dependency-ready work before the target agent confirms every later step. A semantic WorkGraph exposes structure, a frozen topology-first gate estimates finite-worker headroom, and verification controls what can enter confirmed state.
 
-![SGE task-layer map and evidence envelope](artifact/reviewer_snapshot/outputs/figures/task_layer_map_and_envelope.png)
+This repository accompanies the SGE workshop manuscript. It releases a testable graph-analysis primitive and selected frozen evidence; it does not expose raw traces, provider integrations, evaluator assets, or a production executor.
 
-## SGE in 30 seconds
+## What it does
 
-~~~mermaid
-flowchart LR
-    A[Ongoing coding trace] --> B[Rolling semantic WorkGraph]
-    B --> C[Work / span bound]
-    C --> D{Admit ready frontier?}
-    D -->|yes| E[Isolated speculative work]
-    D -->|no| F[Continue serially]
-    E --> G[Verify]
-    G -->|valid| H[Commit artifact]
-    G -->|invalid| F
-~~~
+1. Represents candidate work as an annotated dependency DAG.
+2. Computes work/span and deterministic finite-worker schedule bounds.
+3. Uses a type-weighted structural ceiling as a selective admission feature.
+4. Keeps execution, verification, and end-to-end performance claims separate from the structural estimate.
 
-The research object is the rolling **predict → bound → admit → execute → verify** loop. This release implements and tests the offline graph model, finite-worker scheduler, replay utilities, observed-action trace conversion, annotation contracts, and evidence recomputation. A production online controller and a quality-equivalent prospective end-to-end speedup result are not claimed.
+## Try the core primitive
 
-## Quick start
+The core package uses only the Python standard library at runtime.
 
-The core package has no runtime dependencies outside the Python standard library.
-
-~~~bash
-git clone https://github.com/decentralizedblack-maker/sge-coding-agents.git
+```bash
+git clone https://github.com/Joey-Lei/sge-coding-agents.git
 cd sge-coding-agents
 python3 -m venv .venv
 . .venv/bin/activate
-python3 -m pip install --upgrade pip
 python3 -m pip install -e .
 
-sge analyze examples/minimal_workgraph.json --workers 1,2,4
-~~~
+sge analyze examples/minimal_workgraph.json \
+  --duration-model type_weighted --workers 4
+```
 
-The command reports total work, critical-path span, peak ready parallelism, relaxed worker bounds, and deterministic list-schedule estimates. Its output labels the result as a scheduling opportunity—not measured end-to-end acceleration.
+The included WorkGraph has a type-weighted four-worker ceiling of `1.2222x`. At the paper's frozen `1.10x` operating threshold, it is an admitted structural candidate. The command analyzes an annotated DAG only; it does not execute tools or claim end-to-end acceleration.
 
-Python users can call the same API directly:
+## Results from the paper
 
-~~~python
-from pathlib import Path
-from sge import summarize_dag
-
-result = summarize_dag(
-    Path("examples/minimal_workgraph.json"),
-    workers=[1, 2, 4],
-)
-print(result["workers_4_list_speedup"])
-~~~
-
-## Evidence at a glance
-
-| Evidence layer | What is included | What it supports |
+| Evidence | Frozen coverage | Result |
 | --- | --- | --- |
-| Structural ceiling | 9 exact-duration action DAGs | Work/span opportunity; not realized whole-task speedup |
-| Admission screen | 188 rolling windows, including a 58-window nontrivial sensitivity | Duration-blind ceiling classification under audited topology |
-| Local mechanism | Historical 10-window executor smoke and command-heavy negative smoke | Closure/fallback behavior, including adverse evidence |
-| Functional observations | Two historical whole-prompt summaries | Compatibility observations only; not prospective causal SGE speedup |
-| Strict failure cases | P007 and P018 with null formal paired metrics | Protocol rejection is preserved symmetrically |
-| Prospective end-to-end SGE | Not present | No <code>alpha_SGE</code>, SOTA, production, or generalization claim |
+| Historical same-trace replay | 10 clean Web-Bench traces | Aggregate unbounded ceiling **4.269x**; aggregate P=4 list ceiling **3.406x**; case median **5.229x** |
+| Topology-first admission | 188 nested windows from 7 cases and 4 physical repositories | Filters **70.2%**; admits **52/53** observed-high windows; FAR **7.14%** versus Matched-Random **62.5%--82.14%** |
+| Exact-duration opportunity | 9 audited action DAGs across 6 repositories | P=4 mean / median / maximum ceiling: **1.2138x / 1.1770x / 1.5297x** |
 
-The exact claim-to-evidence map is in [artifact/reviewer_snapshot/CLAIMS.md](artifact/reviewer_snapshot/CLAIMS.md). The [limitations](docs/limitations.md) are part of the release contract, not optional caveats.
+These are structural and retrospective results. They do not establish a quality-equivalent prospective SGE speedup.
 
-## Reproduce the reviewer artifact
+## Reproduce selected evidence
 
-The default path is offline, cross-platform, and non-mutating. It recalculates quantitative claims and renders five evidence-governed figures in temporary storage, compares the claims with the sealed outputs, checks invalid-pair preservation, scans for restricted material, and verifies the SHA-256 manifest. Maintainers can explicitly refresh platform-bound renderings with `python3 reproduce.py --refresh`.
+The optional [reviewer snapshot](artifact/reviewer_snapshot) packages sanitized derived rows, deterministic checks, provenance, and the claim map. It runs offline after dependencies are installed:
 
-~~~bash
+```bash
 python3 -m pip install -e ".[artifact,dev]"
 python3 reproduce.py
 python3 -m pytest -q
 python3 tools/check_release.py
-~~~
+```
 
-Expected terminal status:
+See the [evidence guide](docs/evidence.md) for interpretation boundaries and the [claim map](artifact/reviewer_snapshot/CLAIMS.md) for source paths and allowed claims.
 
-~~~json
-{"artifact": "artifact/reviewer_snapshot", "mode": "offline-portable", "status": "pass"}
-~~~
+## Research status
 
-See [reproduction instructions](docs/reproduction.md) for the fast, full, and audit paths. Reproduction uses zero network, model, and official-evaluator calls after dependencies are installed.
+Released here: graph analysis, finite-worker scheduling bounds, topology-first admission evidence, and a reviewer-safe data slice.
 
-## Repository map
+Open research work: online local-WorkGraph prediction, a bounded production executor and verifier, and a matched Target-Default evaluation with a common quality evaluator and full cost accounting.
 
-| Path | Purpose |
-| --- | --- |
-| [src/sge](src/sge) | Stable reviewer-safe Python API and CLI |
-| [examples](examples) | Small, inspectable WorkGraph input |
-| [contracts](contracts/trace_to_reference_dag) | Annotation, adjudication, and JSON-schema contract |
-| [artifact/reviewer_snapshot](artifact/reviewer_snapshot) | Frozen derived evidence, figures, provenance, and audit code |
-| [docs](docs) | Architecture, evidence, reproduction, data, and limitations |
-| [tests](tests) | Public API and adjacent-failure tests |
-| [.github/workflows](.github/workflows) | Clean-environment CI |
+## Citation
 
-The frozen artifact is intentionally separate from the public API. Live provider adapters, raw runtime telemetry, session histories, hidden evaluator assets, gold patches, unrestricted logs, and the historical prototype runners are excluded.
-
-## Scientific boundary
-
-SGE is not token-level speculative decoding, unrestricted parallel shell execution, or a claim that more workers always help. Dependency errors, side effects, verification cost, prediction miss rate, and fallback overhead can erase structural headroom. The strongest result in this repository is therefore an auditable opportunity and mechanism study, not a prospective end-to-end performance result.
-
-For the definitions and invariants, read [architecture](docs/architecture.md). For the negative evidence and non-transferable assumptions, read [limitations](docs/limitations.md).
-
-## Citation, license, and contributions
-
-Use [CITATION.cff](CITATION.cff) to cite this software artifact. Paper metadata can be added once the archival paper record is available.
-
-Original project code and documentation are released under the [Apache License 2.0](LICENSE). Dependencies and benchmark-derived identifiers are described in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). Contributions are welcome through [CONTRIBUTING.md](CONTRIBUTING.md); security-sensitive reports should follow [SECURITY.md](SECURITY.md).
+Use [CITATION.cff](CITATION.cff) to cite this software artifact. The project is released under the [Apache License 2.0](LICENSE).

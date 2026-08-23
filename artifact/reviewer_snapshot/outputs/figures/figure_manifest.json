@@ -25,7 +25,7 @@
     {
       "id": "F-admission",
       "path": "outputs/figures/admission_calibration_nontrivial.pdf",
-      "sha256": "7bac779318270bd4161d5ccfd1a0f4a4045e7c0b6826193de08b7509e0cdeb0d"
+      "sha256": "d67198a07ea32d39029bafe31fcd45f3426576bb3466d5fe9c5455f278a9df19"
     },
     {
       "id": "F-evidence-boundary",
@@ -56,7 +56,7 @@
       "dpi": 300,
       "id": "F-admission",
       "path": "outputs/figures/admission_calibration_nontrivial.png",
-      "sha256": "90eeeed4c01be695e13fa67519dabaeda561b78d98bd145d0bdaf412b1f0f025"
+      "sha256": "0523c15ad6526a0adecd742c1709426e2d87ab478b22743bf68dc612faae4759"
     },
     {
       "dpi": 300,

@@ -1,13 +1,14 @@
 cff-version: 1.2.0
-message: "If you use this software or its reviewer artifact, please cite this repository. Paper metadata will be added when an archival record is available."
-title: "Speculative Graph Execution for Coding Agents"
+message: "If you use this software or its reviewer artifact, please cite this repository and the accompanying workshop manuscript."
+title: "Speculative Graph Execution: Evaluating Selective Task-Level Speculation"
 type: software
 version: 0.1.0
-date-released: 2026-08-14
+date-released: 2026-08-23
 authors:
-  - name: "SGE Project Contributors"
-repository-code: "https://github.com/decentralizedblack-maker/sge-coding-agents"
-url: "https://github.com/decentralizedblack-maker/sge-coding-agents"
+  - name: "Xun Wang"
+  - name: "Ting Yang"
+repository-code: "https://github.com/Joey-Lei/sge-coding-agents"
+url: "https://github.com/Joey-Lei/sge-coding-agents"
 license: Apache-2.0
 keywords:
   - coding agents

@@ -1,5 +1,6 @@
 {
   "claim_boundaries": [
+    "Historical same-trace replay is a zero-overhead structural ceiling over observed action traces.",
     "Structural ceilings are not realized end-to-end speedups.",
     "Rolling locality values use mixed-duration extracted DAGs.",
     "Flex and Grid are historical whole-prompt functional observations with partial semantic realization.",
@@ -66,6 +67,15 @@
         "timing_claim_scope": "functional_only",
         "unconditioned_over_conditioned_e2e_ratio": 1.0578146468957892
       }
+    },
+    "historical_same_trace_replay": {
+      "aggregate_unbounded_speedup": 4.268974222446017,
+      "aggregate_workers_2_list_speedup": 1.9835817427018552,
+      "aggregate_workers_4_list_speedup": 3.405822357036705,
+      "aggregate_workers_8_list_speedup": 4.268974222446017,
+      "case_count": 10,
+      "case_max_unbounded_speedup": 6.422651933701657,
+      "case_median_unbounded_speedup": 5.229280734405555
     },
     "local_executor_smoke": {
       "completed_node_artifacts": 49,

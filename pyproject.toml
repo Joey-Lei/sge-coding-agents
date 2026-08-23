@@ -9,7 +9,7 @@ description = "Reviewer-safe WorkGraph analysis and offline evidence for Specula
 readme = "README.md"
 requires-python = ">=3.10"
 license = {file = "LICENSE"}
-authors = [{name = "SGE Project Contributors"}]
+authors = [{name = "Xun Wang"}, {name = "Ting Yang"}]
 keywords = ["coding-agents", "dag-scheduling", "speculative-execution", "workgraph"]
 classifiers = [
   "Development Status :: 3 - Alpha",
@@ -28,9 +28,9 @@ dev = ["pytest==8.4.2"]
 sge = "sge.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/decentralizedblack-maker/sge-coding-agents"
-Repository = "https://github.com/decentralizedblack-maker/sge-coding-agents"
-Issues = "https://github.com/decentralizedblack-maker/sge-coding-agents/issues"
+Homepage = "https://github.com/Joey-Lei/sge-coding-agents"
+Repository = "https://github.com/Joey-Lei/sge-coding-agents"
+Issues = "https://github.com/Joey-Lei/sge-coding-agents/issues"
 
 [tool.setuptools]
 package-dir = {"" = "src"}

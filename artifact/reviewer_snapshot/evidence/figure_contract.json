@@ -39,7 +39,7 @@
       "sha256": "2f20df86ce6a69237c874e4bf7ba1a8f99981fbe5aa3e28df731a4461cc699ed",
       "evidence_scope": {
         "independent_unit": "unique topology window nested within case and repository",
-        "sample_basis": "188 joined duration-blind windows from 7 cases and 4 held-out repositories",
+        "sample_basis": "188 joined duration-blind windows from 7 cases and 4 physical repositories",
         "aggregation": "pooled calibration plus visible joint-unit and nontrivial partitions",
         "estimand": "type-weighted P=4 ceiling versus observed-duration structural reference"
       }
@@ -247,8 +247,8 @@
       "caption_boundary": "Windows are nested in seven cases and four repositories; the observed reference is a structural ceiling, not realized utility.",
       "output": "outputs/figures/admission_calibration_nontrivial.pdf",
       "artifacts": [
-        {"format": "pdf", "path": "outputs/figures/admission_calibration_nontrivial.pdf", "sha256": "7bac779318270bd4161d5ccfd1a0f4a4045e7c0b6826193de08b7509e0cdeb0d"},
-        {"format": "png", "path": "outputs/figures/admission_calibration_nontrivial.png", "sha256": "90eeeed4c01be695e13fa67519dabaeda561b78d98bd145d0bdaf412b1f0f025"}
+        {"format": "pdf", "path": "outputs/figures/admission_calibration_nontrivial.pdf", "sha256": "d67198a07ea32d39029bafe31fcd45f3426576bb3466d5fe9c5455f278a9df19"},
+        {"format": "png", "path": "outputs/figures/admission_calibration_nontrivial.png", "sha256": "0523c15ad6526a0adecd742c1709426e2d87ab478b22743bf68dc612faae4759"}
       ],
       "accessibility_outputs": [
         {"profile": "grayscale", "path": "outputs/visual_checks/admission_calibration_nontrivial_grayscale.png"},

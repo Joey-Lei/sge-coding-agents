@@ -6,7 +6,7 @@ The current <code>main</code> branch and the latest tagged release receive secur
 
 ## Reporting a vulnerability
 
-Use [GitHub's private vulnerability reporting](https://github.com/decentralizedblack-maker/sge-coding-agents/security/advisories/new) for credential exposure, unsafe command handling, path traversal, artifact-isolation failures, or other security-sensitive findings.
+Use [GitHub's private vulnerability reporting](https://github.com/Joey-Lei/sge-coding-agents/security/advisories/new) for credential exposure, unsafe command handling, path traversal, artifact-isolation failures, or other security-sensitive findings.
 
 Do not open a public issue containing secrets, private traces, exploit payloads against third-party services, or identifying benchmark/evaluator material. A non-sensitive public issue is appropriate for ordinary correctness bugs.
 
